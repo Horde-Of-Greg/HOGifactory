@@ -1,6 +1,6 @@
 name: Feature Request
 description: Suggest an idea, a feature you want added, a mod to add or a direction in which the pack should go
-labels: enhancement
+labels: feature
 body:
   - type: dropdown
     id: request_category
