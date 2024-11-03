@@ -13,6 +13,8 @@ body:
         - "Processing Line Addition"
         - "New Multiblock/machine"
         - "Balance Change"
+    validations:
+      required: true
   - type: textarea
     id: idea description 
     attributes:
@@ -44,6 +46,3 @@ body:
       placeholder: "Example: This main motive for this idea is because X..."
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: Thank you for taking the time to fill out this feature request.
