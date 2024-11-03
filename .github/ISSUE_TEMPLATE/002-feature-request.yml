@@ -3,7 +3,7 @@ description: Suggest an idea, a feature you want added, a mod to add or a direct
 labels: enhancement
 body:
   - type: dropdown
-    id: request category
+    id: request_category
     attributes:
       label: Request Category
       description: "Chose an option below to help us already know what kind of feature request this is"
@@ -16,7 +16,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: idea description 
+    id: idea_description 
     attributes:
       label: Idea Description
       description: "Describe your idea without going in technical details at all, just explain what the idea is and why you want it"
@@ -39,7 +39,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: additional-info
+    id: additional_info
     attributes:
       label: Additional Information
       description: "Add any other context or screenshots about the feature request here. If you are suggesting a mod, please also add a link to the mod's CurseForge page."
