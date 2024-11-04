@@ -43,6 +43,6 @@ We have kept the addon mods of base Nomi-CEu but may just add some of them (like
 - Flux Networks compatibility recipes by [smudgerox](https://github.com/smudgerox).  
 
 ### Our credits
-- Forked from Nomi-CEu by Integer Limit
+- Based on [Nomi-CEu](https://github.com/Nomi-CEu/Nomi-CEu) by the [Nomi-CEu team](https://github.com/orgs/Nomi-CEu/people)
 
 **Thank you!**
