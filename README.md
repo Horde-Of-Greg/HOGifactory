@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/Horde Of Greg/HOGifactory/assets/images/HOGifactory-logo.png" alt="Logo"></p>
-<h1 >HOGifactory</h1>
+<h1 align="center">HOGifactory</h1>
 <p align="center"><b><i>Fork of <a href="https://github.com/Nomi-CEu/Nomi-CEu">Nomi-CEu</a>, expanding the lategame</i> </b> </p>
-<h1 >
+<h1 align="center">
     <a href="https://github.com/Horde-Of-Greg/HOGifactory/"><img src="https://img.shields.io/github/stars/Horde-Of-Greg/HOGifactory?style=for-the-badge&logo=github&logoColor=white" alt="Stars"></a>
     <a href="https://github.com/Horde-Of-Greg/HOGifactory/releases"><img src="https://img.shields.io/github/downloads/Horde-Of-Greg/HOGifactory/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub"></a>
 </h1>
