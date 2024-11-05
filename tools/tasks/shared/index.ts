@@ -144,6 +144,7 @@ async function fetchOrMakeChangelog() {
 		logInfo("Using Changelog Files from Branch.");
 		const url =
 			"https://raw.githubusercontent.com/Nomi-CEu/Nomi-CEu/{{ branch }}/{{ filename }}";
+		// I dont know what this does yet. Wont change it until I do
 		await downloadChangelogs(
 			mustache.render(url, {
 				branch: process.env.CHANGELOG_BRANCH,
