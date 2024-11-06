@@ -110,11 +110,10 @@ jobs:
         if: ${{ !inputs.update_files }}
         with:
           commit_message: "${{ inputs.release_type }} ${{ inputs.tag }}\n\n[NO CATEGORY]"
-          commit_author: horde-of-greg-management[bot] <155502507+horde-of-greg-management[bot]@users.noreply.github.com>
+          commit_author: horde-of-greg-management[bot] <1048098+horde-of-greg-management[bot]@users.noreply.github.com>
           commit_user_name: horde-of-greg-management[bot]
-          commit_user_email: 155502507+horde-of-greg-management[bot]@users.noreply.github.com
+          commit_user_email: 1048098+horde-of-greg-management[bot]@users.noreply.github.com
           tagging_message: "${{ inputs.tag }}"
-          # Need to create a GitHub app for this
 
       - name: Commit and Push Update Changes
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -122,10 +121,9 @@ jobs:
         if: ${{ inputs.update_files }}
         with:
           commit_message: "Update Issue, Server and Version Config Files from Templates\n\n[SKIP]"
-          commit_author: horde-of-greg-management[bot] <155502507+horde-of-greg-management[bot]@users.noreply.github.com>
+          commit_author: horde-of-greg-management[bot] <1048098+horde-of-greg-management[bot]@users.noreply.github.com>
           commit_user_name: horde-of-greg-management[bot]
-          commit_user_email: 155502507+horde-of-greg-management[bot]@users.noreply.github.com
-        # Need to create a GitHub app for this
+          commit_user_email: 1048098+horde-of-greg-management[bot]@users.noreply.github.com
 
       - name: Throw Error if No Changes were Detected
         if: ${{ steps.commit-release.outputs.changes_detected == 'false' || steps.commit-update.outputs.changes_detected == 'false' }}
