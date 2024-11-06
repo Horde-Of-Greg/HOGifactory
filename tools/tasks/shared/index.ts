@@ -143,8 +143,7 @@ async function fetchOrMakeChangelog() {
 	if (isEnvVariableSet("CHANGELOG_BRANCH")) {
 		logInfo("Using Changelog Files from Branch.");
 		const url =
-			"https://raw.githubusercontent.com/Nomi-CEu/Nomi-CEu/{{ branch }}/{{ filename }}";
-		// I dont know what this does yet. Wont change it until I do
+			"https://raw.githubusercontent.com/Horde-Of-Greg/HOGifactory/{{ branch }}/{{ filename }}";
 		await downloadChangelogs(
 			mustache.render(url, {
 				branch: process.env.CHANGELOG_BRANCH,
