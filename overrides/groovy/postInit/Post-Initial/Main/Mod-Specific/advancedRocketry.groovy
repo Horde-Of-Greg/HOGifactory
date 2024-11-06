@@ -12,7 +12,7 @@ mods.enderio.enchanter.recipeBuilder()
 	.amountPerLevel(1)
 	.xpCostMultiplier(3) // 27 Levels, 15 Lapis
 	.register()
-
+// Not removing cause we need an alternative way to craft it for now
 // Recipes for Industrial Rebreather Kit
 int airtightId = Enchantment.getEnchantmentID(enchantment('advancedrocketry:spacebreathing'))
 ItemStack airtight = item('minecraft:enchanted_book').withNbt(['StoredEnchantments': [['id': (short) airtightId, 'lvl': (short) 1]]])
