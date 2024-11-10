@@ -106,8 +106,8 @@ As a git standard, it's better if you sign your commits either through gpg or ss
 DO NOT CODE WITHIN GITHUB ITSELF. Unless you are doing something very simple and mostly text based (like writing this very text here), do not use github to modify code, it sucks. You can only commit one file at a time, you don't have the usual tools a regular IDE would give you, it's prone to making you lose your work if you exit the page, and it's overall just not a good option for anything other than text editing. We recommend using IntelliJ, but we won't tell you which IDE to use if you have your IDE that you like.
 ### 3.1.3 Sign-off commits
 This will not be enforced, but do make sure you sign-off your commits, this is just to improve tracking of which changes were made by who. Documentation on how to do it [here](https://dev.to/janderssonse/git-signoff-and-signing-like-a-champ-41f3). This is also pretty easy to do within IntelliJ, see below.
-<p><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/documentation/IntelliJ/sign-off/commit-settings.png?raw=true" alt="Logo" height="200" ></p>
-<p><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/documentation/IntelliJ/sign-off/sign-off.png?raw=true" alt="Logo" height="200" ></p>
+<p><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/documentation/IntelliJ/sign-off/commit-settings.png?raw=true" alt="commit-settings" height="200" ></p>
+<p><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/documentation/IntelliJ/sign-off/sign-off.png?raw=true" alt="sign-off" height="200" ></p>
 
 </details>
 
