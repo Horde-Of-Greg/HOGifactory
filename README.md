@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/images/HOGifactory-MC-Banner-vertical.png?raw=true" alt="Logo" height="256" ></p>
+<p align="center"><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/contribute-md/assets/images/HOGifactory-MC-Banner-vertical.png?raw=true" alt="Logo" height="256" ></p>
 <p align="center"><b><i>Fork of <a href="https://github.com/Nomi-CEu/Nomi-CEu">Nomi-CEu</a>, expanding the lategame</i> </b> </p>
 <h1 align="center">
     <a href="https://github.com/Horde-Of-Greg/HOGifactory/"><img src="https://img.shields.io/github/stars/Horde-Of-Greg/HOGifactory?style=for-the-badge&logo=github&logoColor=white" alt="Stars"></a>
