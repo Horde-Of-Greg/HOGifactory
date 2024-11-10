@@ -1,13 +1,36 @@
-<details>
+<h1>Scope of this document</h1>
+<h2>Who is this for?</h2>
+This document is for anyone wanting to contribute to our project and aims to provide a comprehensive guide at how and why we do what we do. This is meant for experienced maintainers of this project as well as for people who do have no prior experience with GitHub.
+<h2>Organization of the document</h2>
+
+### 1.How to contribute as someone who is not part of the project : 
+This section will explain how you can contribute as someone who is not part of the Horde Of Greg community. 
+#### 1.1 Pull Requests
+This explains how you can submit bug fixes and feature implementations directly to us without waiting for us to implement the code. If you have never coded this is probably not where you should be contributing.
+#### 1.2 Issues
+This explains how you can contribute to the project even if you have no experience whatsoever coding or using GitHub. This is where you submit bug reports or feature ideas
+### 2. How to contribute as someone who is part of the project
+This section will explain how you can contribute as someone who is not part of the Horde Of Greg community.
+#### 2.1 As a maintainer
+This section only applies to maintainers of the Project. This is only here for transparency's sake and to hold our maintainers accountable to our standards.
+#### 2.2 As a questbook writer
+This section is to explain how verified questbook contributors should contribute to the questbook. This is not the documentation on how to write quests.
+#### 2.3 As a Horde Of Greg member
+This sections applies to members of our Horde Of Greg community that do not have a role in the GitHub organization.
+### 3. Technical standards, conventions and requirements
+This section will explain how you should contribute to the project in technical terms. What tools you should use, what we expect, our naming conventions.
+#### 3.1 GitHub
+This section will explain all GitHub (and Git) related standards we expect. We won't talk about the standards we forced with rulesets like not being able to commit directly to main.
+#### 3.2 Pack Dev
+This section will explain what tools, languages, mods you should use to develop the pack. This is very important to follow as we will not accept PRs that do not follow these.
+
+<details open>
 
 <summary> <h1> 1. How to contribute as someone who is not part of the project </h1> </summary>
-
-This section will explain how you can contribute as someone who is not part of the Horde Of Greg community. 
 
 <details>
 <summary> <h2> 1.1 Pull Requests </h2> </summary>
 
-This subsection will explain how to contribute via pull requests (PR). If you're not familiar with GitHub this is how you contribute actual code to our project.
 ### 1.1.1 Create an issue
 Pull requests should be linked to an issue that details what this pull request aims to do. This is to keep things organized, and because if you decide, or we decide to close your PR, the issue will still be there to tell us there is something we should maybe add to the pack, or that a bug is present.
 ### 1.1.2 Create a fork of the repo on your personal profile
@@ -21,7 +44,6 @@ Once you opened your PR, we will review it to make sure it is what we want and h
 <details>
 <summary> <h2> 1.2 Issues </h2> </summary>
 
-This subsection will explain how you contribute to the project even if you can't code anything or don't want to.
 ### 1.2.1 Search the issues for your problem
 If you had a bug, chances are others already experienced it, so make sure you do your best to look in the issues for someone that has had the same problem as you. If you do find it, contribute to it by explaining your situation if it adds to the discussion or simply say "this happened to me too". Duplicate issues will be marked as such and closed.
 ### 1.2.2 Follow the template
@@ -36,10 +58,8 @@ This pack aims to get wild (Hog wild I should say), if you have an idea that doe
 
 
 
-<details>
+<details open>
 <summary> <h1> 2. How to contribute as someone who is part of the project </h1> </summary>
-
-This section will explain how you can contribute as someone who is not part of the Horde Of Greg community.
 
 <details>
 <summary> <h2> 2.1 As a maintainer </h2> </summary>
@@ -74,8 +94,8 @@ It's pretty simple, ask me on discord for a maintainer or questbook role, and I'
 
 
 
-<details>
-<summary> <h1> 3. Technical tandards, convetions and requirements </h1> </summary>
+<details open>
+<summary> <h1> 3. Technical standards, conventions and requirements </h1> </summary>
 
 <details>
 <summary> <h2>  3.1 GitHub </h2> </summary>
@@ -84,13 +104,18 @@ It's pretty simple, ask me on discord for a maintainer or questbook role, and I'
 As a git standard, it's better if you sign your commits either through gpg or ssh. We won't FORCE you to do this, as it can get annoying, but it's heavily recommended. This is the documentation to [GitHub](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits), and this is the documentation for [IntelliJ](https://www.jetbrains.com/help/idea/2024.2/set-up-GPG-commit-signing.html?Set_up_GPG_commit_signing&utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2024.2&keymap=macOS#set-up-gpg-keys)
 ### 3.1.2 Environment
 DO NOT CODE WITHIN GITHUB ITSELF. Unless you are doing something very simple and mostly text based (like writing this very text here), do not use github to modify code, it sucks. You can only commit one file at a time, you don't have the usual tools a regular IDE would give you, it's prone to making you lose your work if you exit the page, and it's overall just not a good option for anything other than text editing. We recommend using IntelliJ, but we won't tell you which IDE to use if you have your IDE that you like.
+### 3.1.3 Sign-off commits
+This will not be enforced, but do make sure you sign-off your commits, this is just to improve tracking of which changes were made by who. Documentation on how to do it [here](https://dev.to/janderssonse/git-signoff-and-signing-like-a-champ-41f3). This is also pretty easy to do within IntelliJ, see below.
+<p><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/documentation/IntelliJ/sign-off/commit-settings.png?raw=true" alt="Logo" height="200" ></p>
+<p><img src="https://github.com/Horde-Of-Greg/HOGifactory/blob/main/assets/documentation/IntelliJ/sign-off/sign-off.png?raw=true" alt="Logo" height="200" ></p>
+
 </details>
 
 <details>
 <summary> <h2>  3.2 Pack Dev </h2> </summary>
 
 ### 3.2.1 Tools used
-- Do not use CraftTweaker, use [GroovyScript](https://cleanroommc.com/groovy-script/) to make changes to the recipes or add items.
+- Do not use CraftTweaker, use [GroovyScript](https://cleanroommc.com/groovy-script/) to make changes to the recipes or add items. There are a lot of CraftTweaker scripts right now as there was no better option when it was written, but they should eventually get phased out.
 - TBD
 ### 3.2.2 Naming conventions
 - Use basic [Java naming conventions](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html). Don't use `My_Test_Variable`, use `myTestVariable`
