@@ -1,5 +1,4 @@
 import com.nomiceu.nomilabs.groovy.ChangeRecipeBuilder
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import gregtech.api.recipes.RecipeBuilder
 import gregtech.api.recipes.ingredients.GTRecipeInput
 import gregtech.api.recipes.recipeproperties.TemperatureProperty
@@ -57,24 +56,3 @@ mods.gregtech.alloy_blast_smelter.changeByOutput(null, [fluid('electrum_flux')])
 		.replaceAndRegister()
 	}
 
-if (LabsModeHelper.normal) {
-	// Red Alloy (Increases Output & Changes Copper/Redstone Ratio)
-	mods.gregtech.alloy_blast_smelter.changeByOutput(null, [fluid('red_alloy')])
-		.forEach { ChangeRecipeBuilder builder ->
-			builder.clearCircuitMeta()
-				.changeEachFluidOutput { fluid -> fluid * (L * 2) }
-				.builder { RecipeBuilder recipe ->
-					recipe.clearInputs()
-						.inputs(ore('dustCopper') * 2, item('minecraft:redstone') * 3)
-						.circuitMeta(2)
-				}.replaceAndRegister()
-		}
-
-	mods.gregtech.centrifuge.changeByInput([metaitem('dustRedAlloy')], null)
-		.changeEachInput { GTRecipeInput input ->
-			return input.copyWithAmount(2)
-		}.builder { RecipeBuilder recipe ->
-			recipe.clearOutputs()
-				.outputs(item('minecraft:redstone') * 3, metaitem('dustCopper') * 2)
-		}.replaceAndRegister()
-}

@@ -1,7 +1,6 @@
 import com.cleanroommc.groovyscript.helper.ingredient.OreDictIngredient
 import com.nomiceu.nomilabs.groovy.ChangeRecipeBuilderCollection
 import com.nomiceu.nomilabs.groovy.RecipePredicates
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import gregtech.api.recipes.builders.SimpleRecipeBuilder
 import net.minecraft.item.ItemStack
 import net.minecraftforge.fluids.FluidStack
@@ -84,31 +83,14 @@ mods.gregtech.assembler.recipeBuilder()
 	.duration(100).EUt(VA[ULV])
 	.buildAndRegister()
 
-// Steam Oven & Grinder (Follows Furnaces, so Steam Oven's recycling can have copper furnace included)
-if (LabsModeHelper.normal) {
-	replaceRecipeInput(metaitem('steam_oven'), [
-		[item('gregtech:metal_casing'), metaitem('gearInvar'), item('gregtech:metal_casing')],
-		[item('gregtech:boiler_firebox_casing'), item('morefurnaces:furnaceblock', 5), item('gregtech:boiler_firebox_casing')],
-		[item('gregtech:metal_casing'), metaitem('gearInvar'), item('gregtech:metal_casing')]
-	])
-
-	replaceRecipeInput(metaitem('steam_grinder'), [
-		[item('gregtech:metal_casing'), metaitem('gearPotin'), item('gregtech:metal_casing')],
-		[item('gregtech:metal_casing'), item('minecraft:diamond'), item('gregtech:metal_casing')],
-		[item('gregtech:metal_casing'), metaitem('gearPotin'), item('gregtech:metal_casing')]
-	])
-}
-
 // Drill Core Assembler Recipe
-if (LabsModeHelper.expert) {
-	mods.gregtech.assembler.recipeBuilder()
-		.inputWildNBT(metaitem('power_unit.lv'))
-		.inputs(metaitem('electric.motor.lv') * 4, metaitem('cableGtSingleTin') * 4, metaitem('gearSmallSteel') * 4)
-		.circuitMeta(2)
-		.outputs(item('actuallyadditions:item_misc', 16))
-		.duration(100).EUt(VA[ULV])
-		.buildAndRegister()
-}
+mods.gregtech.assembler.recipeBuilder()
+	.inputWildNBT(metaitem('power_unit.lv'))
+	.inputs(metaitem('electric.motor.lv') * 4, metaitem('cableGtSingleTin') * 4, metaitem('gearSmallSteel') * 4)
+	.circuitMeta(2)
+	.outputs(item('actuallyadditions:item_misc', 16))
+	.duration(100).EUt(VA[ULV])
+	.buildAndRegister()
 
 // Coated Circuit Board
 mods.gregtech.assembler.recipeBuilder()
