@@ -1,7 +1,11 @@
-<h1>Scope of this document</h1>
-<h2>Who is this for?</h2>
+# Scope of this document
+
+## Who is this for?
+
 This document is for anyone wanting to contribute to our project and aims to provide a comprehensive guide at how and why we do what we do. This is meant for experienced maintainers of this project as well as for people who do have no prior experience with GitHub.
-<h2>Organization of the document</h2>
+
+## Organization of the document
+
 - [1.1.1 Create an issue](#111-create-an-issue)
 - [1.1.2 Create a fork of the repo on your personal profile](#112-create-a-fork-of-the-repo-on-your-personal-profile)
 - [1.1.3 Create a pull request](#113-create-a-pull-request)
@@ -23,9 +27,9 @@ This document is for anyone wanting to contribute to our project and aims to pro
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-<h1> 1. How to contribute as someone who is not part of the project </h1>
+# 1. How to contribute as someone who is not part of the project
 
-<h2> 1.1 Pull Requests </h2>
+## 1.1 Pull Requests
 
 ### 1.1.1 Create an issue
 
@@ -43,7 +47,7 @@ From within your fork you should be able to create a pull request, make sure you
 
 Once you opened your PR, we will review it to make sure it is what we want and how we wanted it to be done. If we approve your PR we will merge it and everything is great. If we don't, we may either fix it ourselves, or ask you to do some more changes to it. If the latter happens, do NOT start getting defensive about your code. Either explain to us why you don't agree and why you think we may be wrong in our assumptions in a constructive way, or go change your code. Responses along the lines of "what would you know? I'm a much better developer than you anyway" help no one, and may end up with us not wanting to work with you anymore and closing your PR.
 
- <h2> 1.2 Issues </h2>
+## 1.2 Issues
 
 ### 1.2.1 Search the issues for your problem
 
@@ -61,9 +65,9 @@ The more details you add, the better, so don't be afraid to put as many logs as 
 
 This pack aims to get wild (Hog wild I should say), if you have an idea that doesn't fit any pack, maybe it will here. We won't judge any kind of idea, and you can propose anything. It doesn't mean we will add it, both for balance and technical reasons, but ideas are how we create discussion, and your idea may translate to something completely different. So don't be afraid, just bring up whatever is on your mind.
 
-<h1> 2. How to contribute as someone who is part of the project </h1>
+# 2. How to contribute as someone who is part of the project
 
-<h2> 2.1 As a maintainer </h2>
+## 2.1 As a maintainer
 
 ### 2.1.1 Make an issue if it's a breaking feature
 
@@ -89,16 +93,17 @@ The minimum amount of reviews to merge the project is 2, but depending on the ch
 
 Squash and merge the PR, and give the merge commit a good name, this is the most important name to give as it will stay in the codebase forever.
 
-<h2>  2.2 As a questbook writer </h2>
+## 2.2 As a questbook writer
 
 Placeholder for now. Not very well established.
 
-<h2>  2.3 As a Horde Of Greg member </h2>
+## 2.3 As a Horde Of Greg member
 
 It's pretty simple, ask me on discord for a maintainer or questbook role, and I'll consider what I should do depending on how much I trust you and how active you are.
 
-<h1> 3. Technical standards, conventions and requirements </h1>
-<h2>  3.1 GitHub </h2>
+# 3. Technical standards, conventions and requirements
+
+## 3.1 GitHub
 
 ### 3.1.1 Signed commits
 
@@ -112,7 +117,7 @@ Remember you can also [add aliases to git commands](https://stackoverflow.com/qu
 
 DO NOT CODE WITHIN GITHUB ITSELF. You can only commit one file at a time, you don't have the usual tools a regular IDE would give you, it's prone to make you lose your work if you exit the page. We recommend using IntelliJ, but we won't tell you which IDE to use if you have your IDE that you like.
 
-<h2>  3.2 Pack Dev </h2> </summary>
+## 3.2 Pack Dev
 
 ### 3.2.1 Tools used
 
@@ -123,6 +128,3 @@ DO NOT CODE WITHIN GITHUB ITSELF. You can only commit one file at a time, you do
 
 - Use basic [Java naming conventions](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html). Don't use `My_Test_Variable`, use `myTestVariable`
 - TBD
-</details>
-
-</details>
