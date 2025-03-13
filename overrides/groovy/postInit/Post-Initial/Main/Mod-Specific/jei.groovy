@@ -1,4 +1,3 @@
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import gregtech.common.metatileentities.MetaTileEntities
 import net.minecraft.item.ItemStack
 
@@ -61,11 +60,9 @@ hideItemIgnoreNBT(item('forge:bucketfilled'))
 mods.jei.category.hideCategory('Avatitia.Extreme')
 
 // DME
-if (LabsModeHelper.expert) {
-	mods.jei.category.hideCategory('deepmoblearning.simulation_chamber')
-	mods.jei.category.hideCategory('deepmoblearning.extraction_chamber')
-	mods.jei.category.hideCategory('deepmoblearning.trial_keystone')
-}
+mods.jei.category.hideCategory('deepmoblearning.simulation_chamber')
+mods.jei.category.hideCategory('deepmoblearning.extraction_chamber')
+mods.jei.category.hideCategory('deepmoblearning.trial_keystone')
 
 // EIO
 mods.jei.category.hideCategory('CombustionGenerator')
@@ -93,6 +90,5 @@ mods.jei.category.hideCategory('armorplus:ulti_tech_bench')
 mods.jei.category.hideCategory('armorplus:workbench')
 
 // Vanilla
-if (LabsModeHelper.expert) {
-    mods.jei.category.hideCategory('jeresources.mob')
-}
+mods.jei.category.hideCategory('jeresources.mob')
+

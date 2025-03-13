@@ -15,15 +15,13 @@ mods.gregtech.assembly_line.changeByOutput([metaitem('field.generator.zpm')], nu
 	}
 
 // UV Field Generator (HM Only)
-if (LabsModeHelper.expert) {
-	mods.gregtech.assembly_line.changeByOutput([metaitem('field.generator.uv')], null)
-		.forEach { ChangeRecipeBuilder builder ->
-			builder.builder { AssemblyLineRecipeBuilder recipe ->
-				recipe.fluidInputs(fluid('taranium') * 288)
-			}.copyProperties(ResearchProperty.instance)
-			.replaceAndRegister()
-		}
-}
+mods.gregtech.assembly_line.changeByOutput([metaitem('field.generator.uv')], null)
+	.forEach { ChangeRecipeBuilder builder ->
+		builder.builder { AssemblyLineRecipeBuilder recipe ->
+			recipe.fluidInputs(fluid('taranium') * 288)
+		}.copyProperties(ResearchProperty.instance)
+		.replaceAndRegister()
+	}
 
 // Dark Soularium Jetplate
 mods.gregtech.assembly_line.recipeBuilder()
@@ -47,46 +45,24 @@ mods.gregtech.assembly_line.recipeBuilder()
 	.buildAndRegister()
 
 // Rotary Hearth Furnace
-if (LabsModeHelper.normal) {
-	mods.gregtech.assembly_line.recipeBuilder()
-		.inputs(metaitem('electric_blast_furnace'), ore('circuitUv') * 4, metaitem('field.generator.luv') * 4, metaitem('springNaquadahAlloy') * 4, metaitem('plateDenseNaquadahAlloy') * 4, metaitem('wireGtQuadrupleUraniumRhodiumDinaquadide') * 4)
-		.fluidInputs(fluid('soldering_alloy') * 1152)
-		.outputs(metaitem('gcym:mega_blast_furnace'))
-		.changeRecycling()
-		.stationResearch(b -> b.researchStack(metaitem('electric_blast_furnace')).CWUt(16))
-		.duration(1200).EUt(VA[LuV])
-		.buildAndRegister()
-} else {
-	mods.gregtech.assembly_line.recipeBuilder()
-		.inputs(metaitem('electric_blast_furnace'), ore('circuitUhv') * 4, metaitem('field.generator.uv') * 4, metaitem('springTritanium') * 4, metaitem('plateTritanium') * 4, metaitem('wireGtQuadrupleUraniumRhodiumDinaquadide') * 4)
-		.fluidInputs(fluid('soldering_alloy') * 1152)
-		.outputs(metaitem('gcym:mega_blast_furnace'))
-		.changeRecycling()
-		.stationResearch(b -> b.researchStack(metaitem('electric_blast_furnace')).CWUt(128).EUt(VA[UHV]))
-		.duration(1200).EUt(VA[UV])
-		.buildAndRegister()
-}
+mods.gregtech.assembly_line.recipeBuilder()
+	.inputs(metaitem('electric_blast_furnace'), ore('circuitUhv') * 4, metaitem('field.generator.uv') * 4, metaitem('springTritanium') * 4, metaitem('plateTritanium') * 4, metaitem('wireGtQuadrupleUraniumRhodiumDinaquadide') * 4)
+	.fluidInputs(fluid('soldering_alloy') * 1152)
+	.outputs(metaitem('gcym:mega_blast_furnace'))
+	.changeRecycling()
+	.stationResearch(b -> b.researchStack(metaitem('electric_blast_furnace')).CWUt(128).EUt(VA[UHV]))
+	.duration(1200).EUt(VA[UV])
+	.buildAndRegister()
 
 // Bulk Blast Chiller
-if (LabsModeHelper.normal) {
-	mods.gregtech.assembly_line.recipeBuilder()
-		.inputs(metaitem('vacuum_freezer'), ore('circuitUv') * 4, metaitem('field.generator.luv') * 4, metaitem('pipeNormalFluidNaquadah') * 4, metaitem('plateDenseNaquadahAlloy') * 4, metaitem('wireGtQuadrupleUraniumRhodiumDinaquadide') * 4)
-		.fluidInputs(fluid('soldering_alloy') * 1152)
-		.outputs(metaitem('gcym:mega_vacuum_freezer'))
-		.changeRecycling()
-		.stationResearch(b -> b.researchStack(metaitem('vacuum_freezer')).CWUt(16))
-		.duration(1200).EUt(VA[LuV])
-		.buildAndRegister()
-} else {
-	mods.gregtech.assembly_line.recipeBuilder()
-		.inputs(metaitem('vacuum_freezer'), ore('circuitUhv') * 4, metaitem('field.generator.uv') * 4, metaitem('pipeNormalFluidDuranium') * 4, metaitem('plateDenseTritanium') * 4, metaitem('wireGtQuadrupleUraniumRhodiumDinaquadide') * 4)
-		.fluidInputs(fluid('soldering_alloy') * 1152)
-		.outputs(metaitem('gcym:mega_vacuum_freezer'))
-		.changeRecycling()
-		.stationResearch(b -> b.researchStack(metaitem('vacuum_freezer')).CWUt(128).EUt(VA[UHV]	))
-		.duration(1200).EUt(VA[UV])
-		.buildAndRegister()
-}
+mods.gregtech.assembly_line.recipeBuilder()
+	.inputs(metaitem('vacuum_freezer'), ore('circuitUhv') * 4, metaitem('field.generator.uv') * 4, metaitem('pipeNormalFluidDuranium') * 4, metaitem('plateDenseTritanium') * 4, metaitem('wireGtQuadrupleUraniumRhodiumDinaquadide') * 4)
+	.fluidInputs(fluid('soldering_alloy') * 1152)
+	.outputs(metaitem('gcym:mega_vacuum_freezer'))
+	.changeRecycling()
+	.stationResearch(b -> b.researchStack(metaitem('vacuum_freezer')).CWUt(128).EUt(VA[UHV]	))
+	.duration(1200).EUt(VA[UV])
+	.buildAndRegister()
 
 // Naquadah Reactor 1
 mods.gregtech.assembly_line.recipeBuilder()
@@ -150,13 +126,3 @@ mods.gregtech.assembly_line.recipeBuilder()
 	.duration(750).EUt(VA[UV])
 	.buildAndRegister()
 
-// Simulation Supercomputer
-if (LabsModeHelper.normal) {
-	mods.gregtech.assembly_line.recipeBuilder()
-		.inputs(item('gcym:large_multiblock_casing', 11), ore('plateTrinaquadalloy') * 6, item('deepmoblearning:simulation_chamber') * 4, item('nomilabs:heartofauniverse'), metaitem('robot.arm.uv') * 2, metaitem('field.generator.uv') * 2, ore('circuitUhv') * 4, item('draconicevolution:draconic_energy_core'))
-		.fluidInputs(fluid('soldering_alloy') * 1152)
-		.outputs(metaitem('nomilabs:dme_sim_chamber'))
-		.stationResearch(b -> b.researchStack(item('deepmoblearning:simulation_chamber')).CWUt(128).EUt(VA[UHV]))
-		.duration(1200).EUt(VA[UHV])
-		.buildAndRegister()
-}

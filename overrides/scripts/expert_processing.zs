@@ -1,5 +1,3 @@
-#packmode expert
-
 // Tungsten
 // Tungsten Dust * 1
 <recipemap:electrolyzer>.findRecipe(960, [<metaitem:dustTungsticAcid> * 7], null).remove();

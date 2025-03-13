@@ -1,9 +1,6 @@
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import net.minecraft.item.ItemStack
 
 import static gregtech.api.GTValues.*
-
-if (!LabsModeHelper.expert) return
 
 createStabilizedMinerRecipe(item('nomilabs:tieroneship'), item('nomilabs:tieroneship_stabilized'))
 createStabilizedMinerRecipe(item('nomilabs:tiertwoship'), item('nomilabs:tiertwoship_stabilized'))
