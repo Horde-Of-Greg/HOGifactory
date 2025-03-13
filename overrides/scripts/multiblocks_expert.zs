@@ -1,5 +1,3 @@
-#packmode expert
-
 import scripts.common.makeExtremeRecipe5 as makeExtremeRecipe5;
 import scripts.common.makeShaped as makeShaped;
 

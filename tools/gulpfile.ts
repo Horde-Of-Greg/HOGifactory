@@ -23,21 +23,21 @@ import * as modTasks from "./tasks/misc/downloadMods.ts";
 
 export const buildClient = gulp.series(sharedTasks.default, clientTasks);
 export const buildServer = gulp.series(
-	gulp.parallel(sharedTasks.default, modTasks.downloadSharedAndServer),
-	serverTasks,
+  gulp.parallel(sharedTasks.default, modTasks.downloadSharedAndServer),
+  serverTasks,
 );
 export const buildLang = gulp.series(sharedTasks.default, langTasks);
 export const buildMMC = gulp.series(
-	gulp.parallel(sharedTasks.default, modTasks.downloadSharedAndClient),
-	mmcTasks,
+  gulp.parallel(sharedTasks.default, modTasks.downloadSharedAndClient),
+  mmcTasks,
 );
 export const buildAll = gulp.series(
-	sharedTasks.default,
-	gulp.parallel(
-		clientTasks,
-		langTasks,
-		gulp.series(modTasks.downloadSharedAndServer, serverTasks),
-	),
+  sharedTasks.default,
+  gulp.parallel(
+    clientTasks,
+    langTasks,
+    gulp.series(modTasks.downloadSharedAndServer, serverTasks),
+  ),
 );
 export const buildChangelog = sharedTasks.buildChangelog;
 
@@ -66,9 +66,3 @@ export const deployReleases = release.default;
 import * as checkFix from "./tasks/helpers/questChecks/index.ts";
 export const checkQB = checkFix.check;
 export const fixQB = checkFix.fix;
-
-import * as qbPort from "./tasks/helpers/questPorting/index.ts";
-export const portQB = gulp.series(qbPort.default, fixQB);
-
-import * as qbInfo from "./tasks/helpers/questInfo/index.ts";
-export const infoQB = qbInfo.default;

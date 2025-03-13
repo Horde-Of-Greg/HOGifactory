@@ -1,64 +1,60 @@
 import fs from "fs";
 import upath from "upath";
 import {
-	overridesFolder,
-	configFolder,
-	configOverridesFolder,
-	sharedDestDirectory,
+  configFolder,
+  configOverridesFolder,
+  overridesFolder,
+  sharedDestDirectory,
 } from "#globals";
 import {
-	Quest,
-	QuestBook,
-	QuestLine as QuestLine,
+  Quest,
+  QuestBook,
+  QuestLine as QuestLine,
 } from "#types/bqQuestBook.ts";
 
 const sharedQBDefaults = upath.join(
-	sharedDestDirectory,
-	configFolder,
-	"betterquesting",
-);
-const sharedConfigOverrides = upath.join(
-	sharedDestDirectory,
-	configOverridesFolder,
+  sharedDestDirectory,
+  configFolder,
+  "betterquesting",
 );
 
 const langFileLocation = "resources/questbook/lang";
 
 function escapeString(string: string) {
-	return string.replace(/%/g, "%%").replace(/\n/g, "%n");
+  return string.replace(/%/g, "%%").replace(/\n/g, "%n");
 }
 
 function transformKeyPairs<T extends Quest | QuestLine>(
-	database: { [key: string]: T },
-	mode: string,
-	namespace: string,
-	lines: string[],
-	getId: (item: T) => number,
+  database: { [key: string]: T },
+  mode: string,
+  namespace: string,
+  lines: string[],
+  getId: (item: T) => number,
 ) {
-	Object.keys(database).forEach((key) => {
-		const item = database[key];
-		const id = getId(item);
+  Object.keys(database).forEach((key) => {
+    const item = database[key];
+    const id = getId(item);
 
-		const properties = item["properties:10"]["betterquesting:10"];
-		if (properties["name:8"] !== "Gap") {
-			const titleKey = `nomifactory.quest.${mode}.${namespace}.${id}.title`;
-			const descKey = `nomifactory.quest.${mode}.${namespace}.${id}.desc`;
+    const properties = item["properties:10"]["betterquesting:10"];
+    if (properties["name:8"] !== "Gap") {
+      const titleKey = `nomifactory.quest.${mode}.${namespace}.${id}.title`;
+      const descKey = `nomifactory.quest.${mode}.${namespace}.${id}.desc`;
 
-			// Push lang file lines.
-			lines.push(
-				`# ${namespace} ${id} of mode ${mode}`.trimEnd(),
-				`${titleKey}=${escapeString(properties["name:8"])}`.trimEnd(),
-				`${descKey}=${escapeString(properties["desc:8"])}`.trimEnd(),
-				"",
-			);
+      // Push lang file lines.
+      lines.push(
+        `# ${namespace} ${id} of mode ${mode}`.trimEnd(),
+        `${titleKey}=${escapeString(properties["name:8"])}`.trimEnd(),
+        `${descKey}=${escapeString(properties["desc:8"])}`.trimEnd(),
+        "",
+      );
 
-			properties["name:8"] = titleKey;
-			properties["desc:8"] = descKey;
-		} else {
-			properties["name:8"] = "";
-			properties["desc:8"] = "";
-		}
-	});
+      properties["name:8"] = titleKey;
+      properties["desc:8"] = descKey;
+    } else {
+      properties["name:8"] = "";
+      properties["desc:8"] = "";
+    }
+  });
 }
 
 /**
@@ -67,189 +63,117 @@ function transformKeyPairs<T extends Quest | QuestLine>(
  * Interesting, huh?
  */
 const uselessProps: Record<string, string | number> = {
-	"simultaneous:1": 0,
-	"ismain:1": 0,
-	"repeat_relative:1": 1,
-	"globalshare:1": 0,
-	"repeattime:3": -1,
-	"issilent:1": 0,
-	"snd_complete:8": "minecraft:entity.player.levelup",
-	"snd_update:8": "minecraft:entity.player.levelup",
-	"tasklogic:8": "AND",
-	"questlogic:8": "AND",
-	"entryLogic:8": "AND",
-	"visibility:8": "ALWAYS",
-	"partysinglereward:1": 0,
-	"lockedprogress:1": 0,
-	"OreDict:8": "",
-	"Damage:2": 0,
-	"Count:3": 0,
-	"autoclaim:1": 0,
-	"autoConsume:1": 0,
-	"consume:1": 0,
-	"groupDetect:1": 0,
-	"ignoreNBT:1": 0,
-	"index:3": 0,
-	"partialMatch:1": 1,
-	"ignoresview:1": 0,
+  "simultaneous:1": 0,
+  "ismain:1": 0,
+  "repeat_relative:1": 1,
+  "globalshare:1": 0,
+  "repeattime:3": -1,
+  "issilent:1": 0,
+  "snd_complete:8": "minecraft:entity.player.levelup",
+  "snd_update:8": "minecraft:entity.player.levelup",
+  "tasklogic:8": "AND",
+  "questlogic:8": "AND",
+  "entryLogic:8": "AND",
+  "visibility:8": "ALWAYS",
+  "partysinglereward:1": 0,
+  "lockedprogress:1": 0,
+  "OreDict:8": "",
+  "Damage:2": 0,
+  "Count:3": 0,
+  "autoclaim:1": 0,
+  "autoConsume:1": 0,
+  "consume:1": 0,
+  "groupDetect:1": 0,
+  "ignoreNBT:1": 0,
+  "index:3": 0,
+  "partialMatch:1": 1,
+  "ignoresview:1": 0,
 };
 
 function stripUselessMetadata(object: Record<string, unknown>) {
-	Object.keys(object).forEach((propName) => {
-		const prop = object[propName];
-		if (prop === uselessProps[propName]) {
-			return delete object[propName];
-		}
+  Object.keys(object).forEach((propName) => {
+    const prop = object[propName];
+    if (prop === uselessProps[propName]) {
+      return delete object[propName];
+    }
 
-		if (typeof prop === "object") {
-			if (Array.isArray(prop) && prop.length === 0) {
-				return delete object[propName];
-			}
+    if (typeof prop === "object") {
+      if (Array.isArray(prop) && prop.length === 0) {
+        return delete object[propName];
+      }
 
-			stripUselessMetadata(prop as Record<string, unknown>);
+      stripUselessMetadata(prop as Record<string, unknown>);
 
-			if (Object.keys(prop as Record<string, unknown>).length === 0) {
-				return delete object[propName];
-			}
-		}
-	});
+      if (Object.keys(prop as Record<string, unknown>).length === 0) {
+        return delete object[propName];
+      }
+    }
+  });
 }
 
 /**
  * Extract lang entries from the quest book and transform the database.
  */
 export async function transformQuestBook(): Promise<void> {
-	// Source Quest Book File Locations
-	const questPathNormalSource = upath.join(
-		sharedQBDefaults,
-		"DefaultQuests.json",
-	);
-	const questPathExpertSource = upath.join(
-		sharedQBDefaults,
-		"saved_quests",
-		"ExpertQuests.json",
-	);
+  // Source Quest Book File Locations
+  const questPathSource = upath.join(
+    sharedQBDefaults,
+    "DefaultQuests.json",
+  );
+  const questBook: QuestBook = JSON.parse(
+    await fs.promises.readFile(questPathSource, "utf-8"),
+  );
 
-	// Quest Book Objects
-	const questBookNormal: QuestBook = JSON.parse(
-		await fs.promises.readFile(questPathNormalSource, "utf-8"),
-	);
-	const questBookExpert: QuestBook = JSON.parse(
-		await fs.promises.readFile(questPathExpertSource, "utf-8"),
-	);
+  // Quest Book Paths
+  const questPath = upath.join(
+    sharedQBDefaults,
+    "DefaultQuests.json",
+  );
 
-	// Quest Book Paths
-	const questPathNormalDefault = upath.join(
-		sharedQBDefaults,
-		"DefaultQuests.json",
-	);
-	const questPathNormalOverride = upath.join(
-		sharedConfigOverrides,
-		"normal",
-		"betterquesting",
-		"DefaultQuests.json",
-	);
+  // Quest Lang Location
+  const questLangLocation = upath.join(
+    sharedDestDirectory,
+    overridesFolder,
+    langFileLocation,
+  );
 
-	const questPathExpertDefault = upath.join(
-		sharedQBDefaults,
-		"saved_quests",
-		"ExpertQuests.json",
-	);
-	const questPathExpertOverride = upath.join(
-		sharedConfigOverrides,
-		"expert",
-		"betterquesting",
-		"DefaultQuests.json",
-	);
+  // Traverse through the quest book and rewrite titles/descriptions.
+  // Extract title/desc pairs into a lang file.
+  const lines: string[] = [];
 
-	// Quest Lang Location
-	const questLangLocation = upath.join(
-		sharedDestDirectory,
-		overridesFolder,
-		langFileLocation,
-	);
+  lines.push(
+    "# DO NOT EDIT THIS FILE!",
+    "# THIS IS A SOURCE FILE ONLY!",
+    "# See https://github.com/Nomi-CEu/Nomi-CEu/wiki/Part-2:-Contributing-Information#section-2-quest-book-contributing FOR HOW TO EDIT THE QUEST BOOK!",
+    "",
+  );
 
-	// Traverse through the quest book and rewrite titles/descriptions.
-	// Extract title/desc pairs into a lang file.
-	const lines: string[] = [];
+  const questID = (item: Quest) => item["questID:3"];
+  const lineID = (item: QuestLine) => item["lineID:3"];
 
-	lines.push(
-		"# DO NOT EDIT THIS FILE!",
-		"# THIS IS A SOURCE FILE ONLY!",
-		"# See https://github.com/Nomi-CEu/Nomi-CEu/wiki/Part-2:-Contributing-Information#section-2-quest-book-contributing FOR HOW TO EDIT THE QUEST BOOK!",
-		"",
-	);
+  lines.push("# Normal Quest Lang Entries:", "");
 
-	const questID = (item: Quest) => item["questID:3"];
-	const lineID = (item: QuestLine) => item["lineID:3"];
+  // Normal Mode Quest lines.
+  transformKeyPairs(
+    questBook["questLines:9"],
+    "normal",
+    "line",
+    lines,
+    lineID,
+  );
 
-	lines.push("# Normal Quest Lang Entries:", "");
+  // Write lang file.
+  await fs.promises.mkdir(questLangLocation, { recursive: true });
+  await fs.promises.writeFile(
+    upath.join(questLangLocation, "en_us.lang"),
+    lines.join("\n"),
+  );
 
-	// Normal Mode Quest lines.
-	transformKeyPairs(
-		questBookNormal["questLines:9"],
-		"normal",
-		"line",
-		lines,
-		lineID,
-	);
+  stripUselessMetadata(questBook as unknown as Record<string, unknown>);
 
-	// Normal Mode Quests themselves.
-	transformKeyPairs(
-		questBookNormal["questDatabase:9"],
-		"normal",
-		"db",
-		lines,
-		questID,
-	);
-
-	lines.push("# Expert Quest Lang Entries:", "");
-
-	// Expert Mode Quest lines.
-	transformKeyPairs(
-		questBookExpert["questLines:9"],
-		"expert",
-		"line",
-		lines,
-		lineID,
-	);
-
-	// Expert Mode Quests themselves.
-	transformKeyPairs(
-		questBookExpert["questDatabase:9"],
-		"expert",
-		"db",
-		lines,
-		questID,
-	);
-
-	// Write lang file.
-	await fs.promises.mkdir(questLangLocation, { recursive: true });
-	await fs.promises.writeFile(
-		upath.join(questLangLocation, "en_us.lang"),
-		lines.join("\n"),
-	);
-
-	// Strip useless metadata.
-	stripUselessMetadata(questBookNormal as unknown as Record<string, unknown>);
-	stripUselessMetadata(questBookExpert as unknown as Record<string, unknown>);
-
-	// Write QB files.
-	await fs.promises.writeFile(
-		questPathNormalDefault,
-		JSON.stringify(questBookNormal, null, 2),
-	);
-	await fs.promises.writeFile(
-		questPathNormalOverride,
-		JSON.stringify(questBookNormal, null, 2),
-	);
-
-	await fs.promises.writeFile(
-		questPathExpertDefault,
-		JSON.stringify(questBookExpert, null, 2),
-	);
-	return await fs.promises.writeFile(
-		questPathExpertOverride,
-		JSON.stringify(questBookExpert, null, 2),
-	);
+  // Write QB files.
+  await fs.promises.writeFile(
+    questPath,
+    JSON.stringify(questBook, null, 2),
+  );
 }

@@ -1,4 +1,3 @@
-#packmode expert
 #priority -1
 
 import crafttweaker.mods.IMod;
