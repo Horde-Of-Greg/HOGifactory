@@ -1,4 +1,3 @@
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import gregtech.api.recipes.ingredients.nbtmatch.NBTCondition
 import gregtech.api.recipes.ingredients.nbtmatch.NBTMatcher
 import gregtech.api.recipes.ingredients.nbtmatch.NBTTagType
@@ -9,18 +8,16 @@ import static gregtech.api.recipes.RecipeMaps.*
 /* Adds Recycling Recipes to some GT Items */
 
 // 4x and 9x Fluid Hatches
-// Only add these in Hard Mode, in Normal Mode, these are added in Mode-Specific/Normal-Mode/buses.groovy
-if (LabsModeHelper.expert) {
-	changeStackRecycling(metaitem('fluid_hatch.import_4x'), ASSEMBLER_RECIPES)
-	changeStackRecycling(metaitem('fluid_hatch.import_4x.iv'), ASSEMBLER_RECIPES)
-	changeStackRecycling(metaitem('fluid_hatch.import_9x'), ASSEMBLER_RECIPES)
-	changeStackRecycling(metaitem('fluid_hatch.import_9x.iv'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.import_4x'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.import_4x.iv'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.import_9x'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.import_9x.iv'), ASSEMBLER_RECIPES)
 
-	changeStackRecycling(metaitem('fluid_hatch.export_4x'), ASSEMBLER_RECIPES)
-	changeStackRecycling(metaitem('fluid_hatch.export_4x.iv'), ASSEMBLER_RECIPES)
-	changeStackRecycling(metaitem('fluid_hatch.export_9x'), ASSEMBLER_RECIPES)
-	changeStackRecycling(metaitem('fluid_hatch.export_9x.iv'), ASSEMBLER_RECIPES)
-}
+changeStackRecycling(metaitem('fluid_hatch.export_4x'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.export_4x.iv'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.export_9x'), ASSEMBLER_RECIPES)
+changeStackRecycling(metaitem('fluid_hatch.export_9x.iv'), ASSEMBLER_RECIPES)
+
 
 // LuV, ZPM and UV Parts
 var addRecyclingToParts = { String tier ->

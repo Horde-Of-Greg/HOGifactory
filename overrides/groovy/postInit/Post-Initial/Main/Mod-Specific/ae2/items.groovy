@@ -1,6 +1,5 @@
 import com.nomiceu.nomilabs.groovy.ChangeRecipeBuilder
 import com.nomiceu.nomilabs.groovy.ChangeRecipeBuilderCollection
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import gregtech.api.recipes.RecipeBuilder
 import gregtech.api.recipes.ingredients.GTRecipeItemInput
 import gregtech.api.recipes.ingredients.nbtmatch.NBTCondition
@@ -172,91 +171,37 @@ crafting.shapedBuilder()
 	.replace().register()
 
 /* Fluid Storage (Different Across NM and HM) */
+// 1k Fluid Storage
+crafting.removeByOutput(item('appliedenergistics2:material', 54))
+mods.gregtech.assembler.recipeBuilder()
+	.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 22), ore('circuitEv') * 2)
+	.outputs(item('appliedenergistics2:material', 54))
+	.duration(100).EUt(VHA[EV])
+	.buildAndRegister()
 
-if (LabsModeHelper.normal) {
-	// 1k Fluid Storage
-	crafting.shapedBuilder()
-		.output(item('appliedenergistics2:material', 54))
-		.matrix(
-			'GPG',
-			'PCP',
-			'GPG')
-		.key('G', item('minecraft:glass'))
-		.key('P', metaitem('plateLapis'))
-		.key('C', ore('circuitLv'))
-		.replace().register()
+// 4k Fluid Storage
+crafting.removeByOutput(item('appliedenergistics2:material', 55))
+mods.gregtech.assembler.recipeBuilder()
+	.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 23), item('appliedenergistics2:material', 54) * 3)
+	.outputs(item('appliedenergistics2:material', 55))
+	.duration(100).EUt(VHA[EV])
+	.buildAndRegister()
 
-	// 4k Fluid Storage
-	crafting.shapedBuilder()
-		.output(item('appliedenergistics2:material', 55))
-		.matrix(
-			'ABA',
-			'CDC',
-			'ACA')
-		.key('A', item('minecraft:glass'))
-		.key('B', item('appliedenergistics2:material', 22))
-		.key('C', item('appliedenergistics2:material', 54))
-		.key('D', ore('circuitMv'))
-		.replace().register()
+// 16k Fluid Storage
+crafting.removeByOutput(item('appliedenergistics2:material', 56))
+mods.gregtech.assembler.recipeBuilder()
+	.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 23), item('appliedenergistics2:material', 55) * 3)
+	.outputs(item('appliedenergistics2:material', 56))
+	.duration(100).EUt(VHA[EV])
+	.buildAndRegister()
 
-	// 16k Fluid Storage
-	crafting.shapedBuilder()
-		.output(item('appliedenergistics2:material', 56))
-		.matrix(
-			'ABA',
-			'CDC',
-			'ACA')
-		.key('A', item('minecraft:glass'))
-		.key('B', item('appliedenergistics2:material', 24))
-		.key('C', item('appliedenergistics2:material', 55))
-		.key('D', ore('circuitHv'))
-		.replace().register()
-
-	// 64k Fluid Storage
-	crafting.shapedBuilder()
-		.output(item('appliedenergistics2:material', 57))
-		.matrix(
-			'ABA',
-			'CDC',
-			'ACA')
-		.key('A', item('appliedenergistics2:material', 22))
-		.key('B', item('appliedenergistics2:material', 24))
-		.key('C', item('appliedenergistics2:material', 56))
-		.key('D', ore('circuitEv'))
-		.replace().register()
-} else {
-	// 1k Fluid Storage
-	crafting.removeByOutput(item('appliedenergistics2:material', 54))
-	mods.gregtech.assembler.recipeBuilder()
-		.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 22), ore('circuitEv') * 2)
-		.outputs(item('appliedenergistics2:material', 54))
-		.duration(100).EUt(VHA[EV])
-		.buildAndRegister()
-
-	// 4k Fluid Storage
-	crafting.removeByOutput(item('appliedenergistics2:material', 55))
-	mods.gregtech.assembler.recipeBuilder()
-		.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 23), item('appliedenergistics2:material', 54) * 3)
-		.outputs(item('appliedenergistics2:material', 55))
-		.duration(100).EUt(VHA[EV])
-		.buildAndRegister()
-
-	// 16k Fluid Storage
-	crafting.removeByOutput(item('appliedenergistics2:material', 56))
-	mods.gregtech.assembler.recipeBuilder()
-		.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 23), item('appliedenergistics2:material', 55) * 3)
-		.outputs(item('appliedenergistics2:material', 56))
-		.duration(100).EUt(VHA[EV])
-		.buildAndRegister()
-
-	// 64k Fluid Storage
-	crafting.removeByOutput(item('appliedenergistics2:material', 57))
-	mods.gregtech.assembler.recipeBuilder()
-		.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 23), item('appliedenergistics2:material', 56) * 3)
-		.outputs(item('appliedenergistics2:material', 57))
-		.duration(100).EUt(VHA[EV])
-		.buildAndRegister()
-}
+// 64k Fluid Storage
+crafting.removeByOutput(item('appliedenergistics2:material', 57))
+mods.gregtech.assembler.recipeBuilder()
+	.inputs(ore('gemExquisiteLapis') * 2, ore('crystalPureCertusQuartz') * 4, item('appliedenergistics2:material', 23), item('appliedenergistics2:material', 56) * 3)
+	.outputs(item('appliedenergistics2:material', 57))
+	.duration(100).EUt(VHA[EV])
+	.buildAndRegister()
 
 // AE2 Processor Shortcut
 for (FluidStack joiningFluid : [fluid('tin') * 576, fluid('soldering_alloy') * 288]) {
