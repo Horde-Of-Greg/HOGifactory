@@ -10,15 +10,14 @@ import {
 } from "#tasks/helpers/actionQBUtils.ts";
 import { input, select } from "@inquirer/prompts";
 import { SourceOption } from "#types/actionQBTypes.ts";
-import logInfo, { logWarn } from "#utils/log.ts";
+import logInfo, { logError, logWarn } from "#utils/log.ts";
 import upath from "upath";
 import { rootDirectory } from "#globals";
 import colors from "colors";
 import { isEnvVariableSet } from "#utils/util.ts";
 import * as core from "@actions/core";
 import lodash from "lodash";
-
-const isAvailableForFormatting = /[0-9a-ek-or]/;
+import checkSpacesAndFormatting from "./checksFormatting.ts";
 
 export const check = async () => {
   try {
@@ -109,15 +108,15 @@ async function checkAndFixQB(
 
     index++;
 
-    // Check Name Formatting
-    quest["properties:10"]["betterquesting:10"]["name:8"] =
-      stripOrThrowExcessSpacesOrFormatting(
-        shouldCheck,
-        name(quest),
-        foundID,
-        "Quest",
-        "Name",
-      );
+		// Check Name Formatting
+		quest["properties:10"]["betterquesting:10"]["name:8"] =
+			checkSpacesAndFormatting(
+				shouldCheck,
+				name(quest),
+				foundID,
+				"Quest",
+				"Name",
+			);
 
     // Check for Empty Descriptions (Trim first, might be a space)
     if (!quest["properties:10"]["betterquesting:10"]["desc:8"].trim()) {
@@ -125,23 +124,21 @@ async function checkAndFixQB(
         throw new Error(`Quest with ID ${foundID} has Empty Description!`);
       }
 
-      quest["properties:10"]["betterquesting:10"]["desc:8"] = await input({
-        message: `Quest with ID ${foundID} and Name ${
-          quest["properties:10"]["betterquesting:10"]["name:8"]
-        } has an Empty Description! What should we Replace it With?`,
-        default: "No Description",
-        validate: (value) => Boolean(value.trim()),
-      });
-    }
-    // Check Desc Formatting (Still check if after, as user may have entered dupe formatting)
-    quest["properties:10"]["betterquesting:10"]["desc:8"] =
-      stripOrThrowExcessSpacesOrFormatting(
-        shouldCheck,
-        quest["properties:10"]["betterquesting:10"]["desc:8"],
-        foundID,
-        "Quest",
-        "Description",
-      );
+			quest["properties:10"]["betterquesting:10"]["desc:8"] = await input({
+				message: `Quest with ID ${foundID} and Name ${quest["properties:10"]["betterquesting:10"]["name:8"]} has an Empty Description! What should we Replace it With?`,
+				default: "No Description",
+				validate: (value) => Boolean(value.trim()),
+			});
+		}
+		// Check Desc Formatting (Still check if after, as user may have entered dupe formatting)
+		quest["properties:10"]["betterquesting:10"]["desc:8"] =
+			checkSpacesAndFormatting(
+				shouldCheck,
+				quest["properties:10"]["betterquesting:10"]["desc:8"],
+				foundID,
+				"Quest",
+				"Description",
+			);
 
     const trimmed = quest["properties:10"]["betterquesting:10"]["desc:8"]
       .trim();
@@ -249,192 +246,64 @@ async function checkAndFixQB(
     if (!shouldCheck) newQB[`${foundID}:10`] = quest;
   }
 
-  // Check for Redundant Formatting in Quest Lines
-  logInfo("Checking Quest Lines...");
-  for (const lineKey of Object.keys(qb["questLines:9"])) {
-    const line = qb["questLines:9"][lineKey];
-    line["properties:10"]["betterquesting:10"]["name:8"] =
-      stripOrThrowExcessSpacesOrFormatting(
-        shouldCheck,
-        line["properties:10"]["betterquesting:10"]["name:8"],
-        line["lineID:3"],
-        "Quest Line",
-        "Name",
-      );
-    line["properties:10"]["betterquesting:10"]["desc:8"] =
-      stripOrThrowExcessSpacesOrFormatting(
-        shouldCheck,
-        line["properties:10"]["betterquesting:10"]["desc:8"],
-        line["lineID:3"],
-        "Quest Line",
-        "Description",
-      );
-  }
-  if (!shouldCheck) qb["questDatabase:9"] = newQB;
+	// Check for Redundant Formatting in Quest Lines
+	logInfo("Checking Quest Lines...");
+	for (const lineKey of Object.keys(qb["questLines:9"])) {
+		const line = qb["questLines:9"][lineKey];
+		line["properties:10"]["betterquesting:10"]["name:8"] =
+			checkSpacesAndFormatting(
+				shouldCheck,
+				line["properties:10"]["betterquesting:10"]["name:8"],
+				line["lineID:3"],
+				"Quest Line",
+				"Name",
+			);
+		line["properties:10"]["betterquesting:10"]["desc:8"] =
+			checkSpacesAndFormatting(
+				shouldCheck,
+				line["properties:10"]["betterquesting:10"]["desc:8"],
+				line["lineID:3"],
+				"Quest Line",
+				"Description",
+			);
+	}
+	if (!shouldCheck) qb["questDatabase:9"] = newQB;
 
-  logInfo("Checking Properties...");
-  // Check Edit Mode
-  if (qb["questSettings:10"]["betterquesting:10"]["editmode:1"] !== 0) {
-    if (shouldCheck) throw new Error("Edit Mode is On!");
-    logWarn("Turning off Edit Mode...");
-    qb["questSettings:10"]["betterquesting:10"]["editmode:1"] = 0;
-  }
-}
+	logInfo("Checking Existence of Quests...");
 
-function stripOrThrowExcessSpacesOrFormatting(
-  shouldCheck: boolean,
-  value: string,
-  id: number,
-  name: string,
-  key: string,
-): string {
-  let formattingResult = stripOrThrowExcessFormatting(
-    shouldCheck,
-    value,
-    id,
-    name,
-    key,
-  );
-  const trimmedResult = formattingResult.trim();
+	const questIDs = new Set<number>();
 
-  if (trimmedResult !== formattingResult) {
-    if (shouldCheck) {
-      throw new Error(
-        `${name} with ID ${id} at ${key} has Extra Spaces or New Lines at Beginning or End!`,
-      );
-    }
-    logWarn(
-      `Removing Extra Spaces or New Lines in ${name} with ID ${id} at ${key}...`,
-    );
-    formattingResult = trimmedResult;
-  }
+	// Check if all quests exist in some quest line
+	for (const questKey of Object.keys(qb["questDatabase:9"])) {
+		const quest = qb["questDatabase:9"][questKey];
 
-  if (!value.includes("\n")) return formattingResult;
+		if (!isEmptyQuest(quest)) questIDs.add(quest["questID:3"]);
+	}
 
-  const builder: string[] = [];
-  for (const bit of formattingResult.split("\n")) {
-    const trimmedBit = bit.trim();
+	for (const lineKey of Object.keys(qb["questLines:9"])) {
+		const questEntries = qb["questLines:9"][lineKey]["quests:9"];
+		for (const questEntryKey of Object.keys(questEntries)) {
+			questIDs.delete(questEntries[questEntryKey]["id:3"]);
+		}
+	}
 
-    if (trimmedBit !== bit) {
-      if (shouldCheck) {
-        throw new Error(
-          `${name} with ID ${id} at ${key} has Extra Spaces at Beginning or End of a Line!`,
-        );
-      }
-      logWarn(
-        `Removing Extra Spaces in a Line of ${name} with ID ${id} at ${key}...`,
-      );
-    }
+	if (questIDs.size !== 0) {
+		// How do we fix this automatically? Just throw, tell the user to fix.
+		if (!shouldCheck)
+			logError(
+				"The below issue cannot be automatically fixed. Please fix it manually. The task `infoQB` may help.",
+			);
 
-    builder.push(trimmedBit);
-  }
-  return builder.join("\n");
-}
+		throw new Error(
+			`The Following Quests Exist, but are NOT in a Quest Line: ${[...questIDs].join(", ")}!`,
+		);
+	}
 
-function stripOrThrowExcessFormatting(
-  shouldCheck: boolean,
-  value: string,
-  id: number,
-  name: string,
-  key: string,
-): string {
-  if (!value.includes("§")) return value;
-
-  let builder: string[] = [];
-  let emptyAmt: number = 0;
-
-  for (let i = 0; i < value.length; i++) {
-    const char = value.charAt(i);
-
-    // If Space, ignore, add one to Empty Amt
-    if (char === " ") {
-      emptyAmt++;
-      builder.push(char);
-      continue;
-    }
-
-    // Else, reset Empty Amt
-    const oldEmptyAmt = emptyAmt;
-    emptyAmt = 0;
-
-    if (builder.at(-1) === "§") {
-      if (char === "f") {
-        if (shouldCheck) {
-          throw new Error(
-            `${name} with ID ${id} at ${key} has Formatting Code 'f'!`,
-          );
-        }
-        logWarn(
-          `Replacing Formatting Code 'f' with 'r' in ${name} with ID ${id} at ${key}...`,
-        );
-        builder.push("r");
-        continue;
-      }
-
-      if (!isAvailableForFormatting.test(char)) {
-        if (shouldCheck) {
-          throw new Error(
-            `${name} with ID ${id} at ${key} has Lone Formatting Signal!`,
-          );
-        }
-
-        logWarn(
-          `Removing Lone Formatting Signal in ${name} with ID ${id} at ${key}...`,
-        );
-
-        // Remove Last Element
-        builder = builder.slice(0, -1);
-        continue;
-      }
-
-      // Start of String, Remove Formatting is NOT Needed
-      if (builder.length === 1 && char === "r") {
-        if (shouldCheck) {
-          throw new Error(
-            `${name} with ID ${id} at ${key} has Redundant Formatting!`,
-          );
-        }
-
-        logWarn(
-          `Removing Redundant Formatting from ${name} with ID ${id} at ${key}...`,
-        );
-
-        // Remove Previous
-        builder = [];
-        continue;
-      }
-      builder.push(char);
-      continue;
-    }
-
-    if (char === "§") {
-      // If two characters before was not § (if builder length < 2, `.at` returns undefined)
-      // (Ignoring Spaces)
-      if (builder.at(-2 - oldEmptyAmt) !== "§") {
-        builder.push(char);
-        continue;
-      }
-
-      if (shouldCheck) {
-        throw new Error(
-          `${name} with ID ${id} at ${key} has Redundant Formatting!`,
-        );
-      }
-
-      logWarn(
-        `Removing Redundant Formatting from ${name} with ID ${id} at ${key}...`,
-      );
-
-      // Remove Previous
-      builder = builder.slice(0, -2 - oldEmptyAmt);
-
-      // Add Empty Amount Spaces
-      for (let i = 0; i < oldEmptyAmt; i++) {
-        builder.push(" ");
-      }
-    }
-
-    builder.push(char);
-  }
-  return builder.join("");
+	logInfo("Checking Properties...");
+	// Check Edit Mode
+	if (qb["questSettings:10"]["betterquesting:10"]["editmode:1"] !== 0) {
+		if (shouldCheck) throw new Error("Edit Mode is On!");
+		logWarn("Turning off Edit Mode...");
+		qb["questSettings:10"]["betterquesting:10"]["editmode:1"] = 0;
+	}
 }

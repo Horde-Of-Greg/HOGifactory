@@ -7,6 +7,9 @@ export type SourceOption = "CFG" | "CFG-OVERRIDE";
 
 export type YesIgnoreNo = "YES" | "IGNORE" | "NO";
 
+export type InfoMode = "SAVE_INFO" | "MODIFY";
+export type InfoAction = "DELETE" | "MASS_DEPS" | "NOTHING";
+
 // How should we apply description change?
 export type DescriptionTaskChange = "APPLY" | "REPLACE" | "CUSTOM" | "IGNORE";
 export type CustomDescriptionTaskTemplate = "APPLY" | "REPLACE" | "ORIGINAL";
