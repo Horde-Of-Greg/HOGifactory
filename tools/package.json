@@ -1,0 +1,19 @@
+{
+  "name": "hogifactory-build-tools",
+  "version": "1.0.0",
+  "description": "A set of tools to help during hogifactory development and during its CI/CD",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "edit-manifest": "node ./manifest/manifest.js"
+  },
+  "imports": {},
+  "author": "mkctao",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "path": "^0.12.7",
+    "prompt-sync": "^4.2.0"
+  }
+}
