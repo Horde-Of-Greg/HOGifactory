@@ -1,0 +1,903 @@
+{
+  "minecraft": {
+    "version": "1.12.2",
+    "modLoaders": [
+      {
+        "id": "forge-14.23.5.2860",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "overrides": "overrides",
+  "manifestVersion": 1,
+  "version": "0.1.0",
+  "author": "mkctao",
+  "name": "hogifactory",
+  "files": [
+    {
+      "projectID": 32274,
+      "fileID": 5172461,
+      "required": true,
+      "name": "journeymap-1.12.2-5.7.1p3.jar"
+    },
+    {
+      "projectID": 64578,
+      "fileID": 4674244,
+      "required": true,
+      "name": "EnderIO-1.12.2-5.3.72.jar"
+    },
+    {
+      "projectID": 69118,
+      "fileID": 2664449,
+      "required": true,
+      "name": "Morpheus-1.12.2-3.5.106.jar"
+    },
+    {
+      "projectID": 69162,
+      "fileID": 2920433,
+      "required": true,
+      "name": "CoFHCore-1.12.2-4.6.6.1-universal.jar"
+    },
+    {
+      "projectID": 69163,
+      "fileID": 2926431,
+      "required": true,
+      "name": "ThermalExpansion-1.12.2-5.5.7.1-universal.jar"
+    },
+    {
+      "projectID": 70496,
+      "fileID": 4675629,
+      "required": true,
+      "name": "bdlib-1.14.4.1-mc1.12.2.jar"
+    },
+    {
+      "projectID": 70631,
+      "fileID": 2939416,
+      "required": true,
+      "name": "RedstoneArsenal-1.12.2-2.6.6.1-universal.jar"
+    },
+    {
+      "projectID": 78778,
+      "fileID": 2524058,
+      "required": true,
+      "name": "ChestTransporter-1.12.2-2.8.8.jar"
+    },
+    {
+      "projectID": 220954,
+      "fileID": 3488553,
+      "required": true,
+      "name": "modtweaker-4.0.20.5.jar"
+    },
+    {
+      "projectID": 222880,
+      "fileID": 2926428,
+      "required": true,
+      "name": "ThermalFoundation-1.12.2-2.6.7.1-universal.jar"
+    },
+    {
+      "projectID": 223565,
+      "fileID": 3431261,
+      "required": true,
+      "name": "Draconic-Evolution-1.12.2-2.3.28.354-universal.jar"
+    },
+    {
+      "projectID": 223852,
+      "fileID": 5981297,
+      "required": true,
+      "name": "StorageDrawers-1.12.2-5.5.3.jar"
+    },
+    {
+      "projectID": 225561,
+      "fileID": 2678374,
+      "required": true,
+      "name": "extrautils2-1.12-1.9.9.jar"
+    },
+    {
+      "projectID": 226254,
+      "fileID": 3074246,
+      "required": true,
+      "name": "NuclearCraft-2.18y-1.12.2.jar"
+    },
+    {
+      "projectID": 226406,
+      "fileID": 2857869,
+      "required": true,
+      "sides": ["client"],
+      "name": "CustomMainMenu-MC1.12.2-2.0.9.1.jar"
+    },
+    {
+      "projectID": 226447,
+      "fileID": 2477566,
+      "required": true,
+      "sides": ["client"],
+      "name": "ResourceLoader-MC1.12.1-1.5.3.jar"
+    },
+    {
+      "projectID": 227083,
+      "fileID": 2518667,
+      "required": true,
+      "name": "Baubles-1.12-1.5.2.jar"
+    },
+    {
+      "projectID": 228404,
+      "fileID": 3117927,
+      "required": true,
+      "name": "ActuallyAdditions-1.12.2-r152.jar"
+    },
+    {
+      "projectID": 228525,
+      "fileID": 2836960,
+      "required": true,
+      "name": "Bookshelf-1.12.2-2.3.590.jar"
+    },
+    {
+      "projectID": 228702,
+      "fileID": 2745545,
+      "required": true,
+      "name": "ProjectRed-1.12.2-4.9.4.120-Base.jar"
+    },
+    {
+      "projectID": 229002,
+      "fileID": 2735197,
+      "required": true,
+      "name": "MrTJPCore-1.12.2-2.1.4.43-universal.jar"
+    },
+    {
+      "projectID": 229045,
+      "fileID": 2745548,
+      "required": true,
+      "name": "ProjectRed-1.12.2-4.9.4.120-integration.jar"
+    },
+    {
+      "projectID": 230497,
+      "fileID": 2450900,
+      "required": true,
+      "name": "Chameleon-1.12-4.1.3.jar"
+    },
+    {
+      "projectID": 231382,
+      "fileID": 3408276,
+      "required": true,
+      "name": "BrandonsCore-1.12.2-2.4.20.162-universal.jar"
+    },
+    {
+      "projectID": 231868,
+      "fileID": 4671384,
+      "required": true,
+      "name": "EnderCore-1.12.2-0.5.78.jar"
+    },
+    {
+      "projectID": 235279,
+      "fileID": 2915375,
+      "required": true,
+      "name": "Chisel-MC1.12.2-1.0.2.45.jar"
+    },
+    {
+      "projectID": 235577,
+      "fileID": 2722385,
+      "required": true,
+      "name": "TrashSlot_1.12.2-8.4.10.jar"
+    },
+    {
+      "projectID": 236541,
+      "fileID": 2949886,
+      "required": true,
+      "name": "LibVulpes-1.12.2-0.4.2-75-universal.jar"
+    },
+    {
+      "projectID": 236542,
+      "fileID": 3015079,
+      "required": true,
+      "name": "AdvancedRocketry-1.12.2-1.7.0-232-universal.jar"
+    },
+    {
+      "projectID": 237102,
+      "fileID": 3157548,
+      "required": true,
+      "name": "FTBUtilities-5.4.1.131.jar"
+    },
+    {
+      "projectID": 237167,
+      "fileID": 2985811,
+      "required": true,
+      "name": "FTBLib-5.4.7.2.jar"
+    },
+    {
+      "projectID": 237366,
+      "fileID": 2803109,
+      "required": true,
+      "name": "armorplus-1.12.2-11.25.1.62.jar"
+    },
+    {
+      "projectID": 238747,
+      "fileID": 2739582,
+      "required": true,
+      "sides": ["client"],
+      "name": "modnametooltip_1.12.2-1.10.1.jar"
+    },
+    {
+      "projectID": 239197,
+      "fileID": 4723169,
+      "required": true,
+      "name": "CraftTweaker2-1.12-4.1.20.692.jar"
+    },
+    {
+      "projectID": 240630,
+      "fileID": 2728585,
+      "required": true,
+      "name": "JustEnoughResources-1.12.2-0.9.2.60.jar"
+    },
+    {
+      "projectID": 241344,
+      "fileID": 2480458,
+      "required": true,
+      "name": "Snad-1.12.1-1.7.09.16a.jar"
+    },
+    {
+      "projectID": 242195,
+      "fileID": 2813586,
+      "required": true,
+      "name": "DarkUtils-1.12.2-1.8.230.jar"
+    },
+    {
+      "projectID": 242223,
+      "fileID": 3524685,
+      "required": true,
+      "name": "JustEnoughCalculation-1.12.2-3.2.7.jar"
+    },
+    {
+      "projectID": 242818,
+      "fileID": 2779848,
+      "required": true,
+      "name": "CodeChickenLib-1.12.2-3.2.3.358-universal.jar"
+    },
+    {
+      "projectID": 243146,
+      "fileID": 2540650,
+      "required": true,
+      "name": "CraftableElytra-1.1.jar"
+    },
+    {
+      "projectID": 243478,
+      "fileID": 2745657,
+      "required": true,
+      "sides": ["client"],
+      "name": "moreoverlays-1.15.1-mc1.12.2.jar"
+    },
+    {
+      "projectID": 244559,
+      "fileID": 2830252,
+      "required": true,
+      "name": "WirelessCraftingTerminal-1.12.2-3.12.97.jar"
+    },
+    {
+      "projectID": 245174,
+      "fileID": 2755787,
+      "required": true,
+      "name": "EnderStorage-1.12.2-2.4.6.137-universal.jar"
+    },
+    {
+      "projectID": 245211,
+      "fileID": 2667280,
+      "required": true,
+      "name": "theoneprobe-1.12-1.4.28.jar"
+    },
+    {
+      "projectID": 246974,
+      "fileID": 3050838,
+      "required": true,
+      "name": "SolarFluxReborn-1.12.2-12.4.11.jar"
+    },
+    {
+      "projectID": 246996,
+      "fileID": 3440963,
+      "required": true,
+      "name": "base-1.12.2-3.14.0.jar"
+    },
+    {
+      "projectID": 247111,
+      "fileID": 2887479,
+      "required": true,
+      "name": "topaddons-1.12.2-1.13.0.jar"
+    },
+    {
+      "projectID": 248055,
+      "fileID": 2580332,
+      "required": true,
+      "name": "thedragonlib-1.12.2-5.3.0.jar"
+    },
+    {
+      "projectID": 248787,
+      "fileID": 2987247,
+      "required": true,
+      "name": "AppleSkin-mc1.12-1.0.14.jar"
+    },
+    {
+      "projectID": 250363,
+      "fileID": 2746011,
+      "required": true,
+      "name": "AutoRegLib-1.3-32.jar"
+    },
+    {
+      "projectID": 250398,
+      "fileID": 4428378,
+      "required": true,
+      "sides": ["client"],
+      "name": "Controlling-3.0.12.2.jar"
+    },
+    {
+      "projectID": 250419,
+      "fileID": 2689502,
+      "required": true,
+      "name": "EnchantmentDescriptions-1.12.2-1.1.15.jar"
+    },
+    {
+      "projectID": 250832,
+      "fileID": 2845365,
+      "required": true,
+      "name": "ElevatorMod-1.12.2-1.3.14.jar"
+    },
+    {
+      "projectID": 251407,
+      "fileID": 2624712,
+      "required": true,
+      "sides": ["client"],
+      "name": "ClientTweaks_1.12.2-3.1.11.jar"
+    },
+    {
+      "projectID": 251792,
+      "fileID": 3017440,
+      "required": true,
+      "name": "SimplyJetpacks2-1.12.2-2.2.15.69.jar"
+    },
+    {
+      "projectID": 252354,
+      "fileID": 2464501,
+      "required": true,
+      "name": "OpenGlider-1.12.1-1.1.0.jar"
+    },
+    {
+      "projectID": 252848,
+      "fileID": 2893527,
+      "required": true,
+      "name": "NaturesCompass-1.12.2-1.8.5.jar"
+    },
+    {
+      "projectID": 253211,
+      "fileID": 3308160,
+      "required": true,
+      "name": "MTLib-3.0.7.jar"
+    },
+    {
+      "projectID": 254268,
+      "fileID": 3529742,
+      "required": true,
+      "name": "torchmaster_1.12.2-1.8.5.0.jar"
+    },
+    {
+      "projectID": 255232,
+      "fileID": 2830265,
+      "required": true,
+      "name": "p455w0rdslib-1.12.2-2.3.161.jar"
+    },
+    {
+      "projectID": 256717,
+      "fileID": 2666198,
+      "required": true,
+      "name": "Clumps-3.1.2.jar"
+    },
+    {
+      "projectID": 257573,
+      "fileID": 3248033,
+      "required": true,
+      "name": "Xtones-1.2.2.jar"
+    },
+    {
+      "projectID": 257814,
+      "fileID": 4722163,
+      "required": true,
+      "name": "CreativeCore_v1.10.71_mc1.12.2.jar"
+    },
+    {
+      "projectID": 257818,
+      "fileID": 5180387,
+      "required": true,
+      "name": "LittleTiles_v1.5.87_mc1.12.2.jar"
+    },
+    {
+      "projectID": 258426,
+      "fileID": 2755790,
+      "required": true,
+      "name": "ForgeMultipart-1.12.2-2.6.2.83-universal.jar"
+    },
+    {
+      "projectID": 258881,
+      "fileID": 2512758,
+      "required": true,
+      "name": "FasterLadderClimbing-1.12-0.1-146.jar"
+    },
+    {
+      "projectID": 260262,
+      "fileID": 3459767,
+      "required": true,
+      "name": "ToolBelt-1.12.2-1.9.14.jar"
+    },
+    {
+      "projectID": 261348,
+      "fileID": 3143349,
+      "required": true,
+      "name": "Avaritia-1.12.2-3.3.0.37-universal.jar"
+    },
+    {
+      "projectID": 262823,
+      "fileID": 2619249,
+      "required": true,
+      "name": "TombManyGraves-1.12-4.2.0.jar"
+    },
+    {
+      "projectID": 266736,
+      "fileID": 2668113,
+      "required": true,
+      "name": "moreplates-1.12.2-5.5.2.jar"
+    },
+    {
+      "projectID": 267602,
+      "fileID": 2915363,
+      "required": true,
+      "sides": ["client"],
+      "name": "CTM-MC1.12.2-1.0.2.31.jar"
+    },
+    {
+      "projectID": 269024,
+      "fileID": 2861574,
+      "required": true,
+      "name": "lostcities-1.12-2.0.22.jar"
+    },
+    {
+      "projectID": 270789,
+      "fileID": 2920436,
+      "required": true,
+      "name": "RedstoneFlux-1.12-2.1.1.1-universal.jar"
+    },
+    {
+      "projectID": 271384,
+      "fileID": 2920434,
+      "required": true,
+      "name": "CoFHWorld-1.12.2-1.4.0.1-universal.jar"
+    },
+    {
+      "projectID": 271835,
+      "fileID": 2920437,
+      "required": true,
+      "name": "ThermalCultivation-1.12.2-0.3.6.1-universal.jar"
+    },
+    {
+      "projectID": 272335,
+      "fileID": 2645867,
+      "required": true,
+      "name": "Cucumber-1.12.2-1.1.3.jar"
+    },
+    {
+      "projectID": 273430,
+      "fileID": 2459131,
+      "required": true,
+      "name": "ActuallyBaubles-1.12-1.1.jar"
+    },
+    {
+      "projectID": 277631,
+      "fileID": 4344128,
+      "required": true,
+      "name": "architecturecraft-1.12-3.108.jar"
+    },
+    {
+      "projectID": 278398,
+      "fileID": 2567799,
+      "required": true,
+      "name": "packmode-1.12.2-1.2.0.jar"
+    },
+    {
+      "projectID": 278799,
+      "fileID": 2833002,
+      "required": true,
+      "name": "DenseMetals-1.12.2-2.0.0.30.jar"
+    },
+    {
+      "projectID": 279172,
+      "fileID": 2491542,
+      "required": true,
+      "name": "CraftingNetherStar 1.12.1 -1.1.jar"
+    },
+    {
+      "projectID": 282313,
+      "fileID": 2689835,
+      "required": true,
+      "sides": ["client"],
+      "name": "TipTheScales-1.12.2-1.0.4.jar"
+    },
+    {
+      "projectID": 283644,
+      "fileID": 2694382,
+      "required": true,
+      "name": "Placebo-1.12.2-1.6.0.jar"
+    },
+    {
+      "projectID": 291737,
+      "fileID": 2920441,
+      "required": true,
+      "name": "ThermalInnovation-1.12.2-0.3.6.1-universal.jar"
+    },
+    {
+      "projectID": 297038,
+      "fileID": 6354438,
+      "required": true,
+      "sides": ["client"],
+      "name": "CraftPresence-2.5.4+1.12.2-forge.jar"
+    },
+    {
+      "projectID": 297209,
+      "fileID": 2607310,
+      "required": true,
+      "name": "hooked-1.0.3.jar"
+    },
+    {
+      "projectID": 298187,
+      "fileID": 3005950,
+      "required": true,
+      "name": "BuildingGadgets-2.8.4.jar"
+    },
+    {
+      "projectID": 299815,
+      "fileID": 3038801,
+      "required": true,
+      "name": "worleycaves-1.12.2-1.5.2.jar"
+    },
+    {
+      "projectID": 302113,
+      "fileID": 2847346,
+      "required": true,
+      "name": "effortlessbuilding-1.12.2-2.16.jar"
+    },
+    {
+      "projectID": 304024,
+      "fileID": 2830114,
+      "required": true,
+      "name": "AE2WTLib-1.12.2-1.0.34.jar"
+    },
+    {
+      "projectID": 304346,
+      "fileID": 4674241,
+      "required": true,
+      "name": "EnderIO-endergy-1.12.2-5.3.72.jar"
+    },
+    {
+      "projectID": 304920,
+      "fileID": 2669468,
+      "required": true,
+      "name": "morelibs-1.12.2-1.2.2.jar"
+    },
+    {
+      "projectID": 306028,
+      "fileID": 2833640,
+      "required": true,
+      "name": "ProjectIntelligence-1.12.2-1.0.9.28-universal.jar"
+    },
+    {
+      "projectID": 306555,
+      "fileID": 2707092,
+      "required": true,
+      "sides": ["client"],
+      "name": "moresoundconfig-1.0.4.jar"
+    },
+    {
+      "projectID": 306770,
+      "fileID": 3162874,
+      "required": true,
+      "name": "Patchouli-1.0-23.6.jar"
+    },
+    {
+      "projectID": 308380,
+      "fileID": 6312996,
+      "required": true,
+      "name": "PackagedAuto-1.12.2-1.0.18.63.jar"
+    },
+    {
+      "projectID": 309516,
+      "fileID": 2949667,
+      "required": true,
+      "name": "Bountiful-2.2.2.jar"
+    },
+    {
+      "projectID": 313141,
+      "fileID": 2675884,
+      "required": true,
+      "name": "advsolars-1.0.jar"
+    },
+    {
+      "projectID": 314904,
+      "fileID": 2819669,
+      "required": true,
+      "name": "FTBBackups-1.1.0.1.jar"
+    },
+    {
+      "projectID": 322861,
+      "fileID": 6293114,
+      "required": true,
+      "name": "PackagedExCrafting-1.12.2-1.0.2.27.jar"
+    },
+    {
+      "projectID": 342584,
+      "fileID": 3533131,
+      "required": true,
+      "name": "collective-1.12.2-3.0.jar"
+    },
+    {
+      "projectID": 361579,
+      "fileID": 3245793,
+      "required": true,
+      "name": "spark-forge1122.jar"
+    },
+    {
+      "projectID": 363856,
+      "fileID": 2886150,
+      "required": true,
+      "name": "supersoundmuffler-revived_1.12.2_1.0.2.10.jar"
+    },
+    {
+      "projectID": 376351,
+      "fileID": 3015136,
+      "required": true,
+      "name": "framedcompactdrawers-1.2.7.jar"
+    },
+    {
+      "projectID": 383632,
+      "fileID": 3056455,
+      "required": true,
+      "sides": ["client"],
+      "name": "dynamistics-1.0.2.jar"
+    },
+    {
+      "projectID": 391401,
+      "fileID": 3613142,
+      "required": true,
+      "name": "MoreFurnaces-Nomifactory-Edition-1.12.2-1.11.0.jar"
+    },
+    {
+      "projectID": 398267,
+      "fileID": 5778512,
+      "required": true,
+      "name": "extendedcrafting-nomifactory-edition-1.7.0.7.jar"
+    },
+    {
+      "projectID": 419286,
+      "fileID": 5640857,
+      "required": true,
+      "name": "!mixinbooter-9.3.jar"
+    },
+    {
+      "projectID": 431982,
+      "fileID": 3671689,
+      "required": true,
+      "name": "DimensionalEdibles-1.12.2-1.6.4.jar"
+    },
+    {
+      "projectID": 456403,
+      "fileID": 5624708,
+      "required": true,
+      "name": "Forgelin-Continuous-2.0.10.0.jar"
+    },
+    {
+      "projectID": 460609,
+      "fileID": 6333774,
+      "required": true,
+      "name": "censoredasm5.28.jar"
+    },
+    {
+      "projectID": 461660,
+      "fileID": 5876158,
+      "required": true,
+      "sides": ["client"],
+      "name": "mousetweaks-1.12.2-3.1.5.jar"
+    },
+    {
+      "projectID": 473325,
+      "fileID": 3407210,
+      "required": true,
+      "name": "uberconduitprobe-1.0.3.jar"
+    },
+    {
+      "projectID": 490698,
+      "fileID": 3337685,
+      "required": true,
+      "name": "DefaultWorldGenerator-port-1.12-2.3.1.jar"
+    },
+    {
+      "projectID": 513857,
+      "fileID": 3739783,
+      "required": true,
+      "sides": ["client"],
+      "name": "oauth-1.06.4.jar"
+    },
+    {
+      "projectID": 557242,
+      "fileID": 5519022,
+      "required": true,
+      "name": "gregtech-1.12.2-2.8.10-beta.jar"
+    },
+    {
+      "projectID": 557549,
+      "fileID": 6187146,
+      "required": true,
+      "name": "HadEnoughItems_1.12.2-4.27.3.jar"
+    },
+    {
+      "projectID": 564858,
+      "fileID": 5619513,
+      "required": true,
+      "name": "GregicalityMultiblocks-1.2.11.jar"
+    },
+    {
+      "projectID": 570458,
+      "fileID": 5378163,
+      "required": true,
+      "name": "ae2-uel-v0.56.5.jar"
+    },
+    {
+      "projectID": 610085,
+      "fileID": 3748963,
+      "required": true,
+      "name": "findme-1.12.2-1.0.0.jar"
+    },
+    {
+      "projectID": 616190,
+      "fileID": 4630499,
+      "required": true,
+      "name": "JEI-Utilities-1.12.2-0.2.12.jar"
+    },
+    {
+      "projectID": 624243,
+      "fileID": 4996326,
+      "required": true,
+      "name": "modularui-2.4.2.jar"
+    },
+    {
+      "projectID": 629629,
+      "fileID": 5183601,
+      "required": true,
+      "name": "BetterQuestingUnofficial-4.2.2.jar"
+    },
+    {
+      "projectID": 632327,
+      "fileID": 5650806,
+      "required": true,
+      "name": "bogosorter-1.4.9.jar"
+    },
+    {
+      "projectID": 633720,
+      "fileID": 3852709,
+      "required": true,
+      "name": "CraftingTweaks_1.12.2-9.0.1.jar"
+    },
+    {
+      "projectID": 635555,
+      "fileID": 4912949,
+      "required": true,
+      "name": "ULVCovers-1.12.2-2.8.0.jar"
+    },
+    {
+      "projectID": 687577,
+      "fileID": 5635093,
+      "required": true,
+      "name": "groovyscript-1.1.3.jar"
+    },
+    {
+      "projectID": 705000,
+      "fileID": 6123916,
+      "required": true,
+      "name": "UniversalTweaks-1.12.2-1.14.0.jar"
+    },
+    {
+      "projectID": 737252,
+      "fileID": 5985530,
+      "required": true,
+      "name": "DeepMobEvolution-1.12.2-1.2.3.jar"
+    },
+    {
+      "projectID": 833931,
+      "fileID": 6034816,
+      "required": true,
+      "name": "PackagedDraconic-1.12.2-1.0.2.19.jar"
+    },
+    {
+      "projectID": 845779,
+      "fileID": 5006537,
+      "required": true,
+      "name": "gregtech-drawers-1.12.2-1.0.7.jar"
+    },
+    {
+      "projectID": 870276,
+      "fileID": 5212709,
+      "required": true,
+      "name": "!configanytime-3.0.jar"
+    },
+    {
+      "projectID": 870486,
+      "fileID": 4569618,
+      "required": true,
+      "name": "nonetherportals-1.1.0.jar"
+    },
+    {
+      "projectID": 871198,
+      "fileID": 6300725,
+      "required": true,
+      "name": "vintagefix-0.5.5.jar"
+    },
+    {
+      "projectID": 873867,
+      "fileID": 6147102,
+      "required": true,
+      "name": "!Red-Core-MC-1.8-1.12-0.6.jar"
+    },
+    {
+      "projectID": 884359,
+      "fileID": 5380800,
+      "required": true,
+      "name": "nae2-1.6.4.jar"
+    },
+    {
+      "projectID": 895539,
+      "fileID": 5828524,
+      "required": true,
+      "name": "visualores-0.2.6.jar"
+    },
+    {
+      "projectID": 896591,
+      "fileID": 5187152,
+      "required": true,
+      "name": "serializationisbad-1.5.2.jar"
+    },
+    {
+      "projectID": 910715,
+      "fileID": 6182667,
+      "required": true,
+      "name": "Alfheim-1.5.jar"
+    },
+    {
+      "projectID": 932060,
+      "fileID": 6438352,
+      "required": true,
+      "name": "NomiLabs-0.15.1.jar"
+    },
+    {
+      "projectID": 943734,
+      "fileID": 4928154,
+      "required": true,
+      "name": "betterp2p-1.12.2-1.3.2.jar"
+    },
+    {
+      "projectID": 945503,
+      "fileID": 4941450,
+      "required": true,
+      "name": "RealBench-Nomi-CEu-1.0.4.jar"
+    },
+    {
+      "projectID": 951064,
+      "fileID": 5002181,
+      "required": true,
+      "name": "ae2stuff-1.12.2-0.9.jar"
+    },
+    {
+      "projectID": 1056812,
+      "fileID": 6088140,
+      "required": true,
+      "sides": ["client"],
+      "name": "UniLib-1.0.5+1.12.2-forge.jar"
+    },
+    {
+      "projectID": 1058274,
+      "fileID": 5531643,
+      "required": true,
+      "name": "LibrarianLib-Continuous-1.12.2-4.22-2.0-1.jar"
+    }
+  ]
+}
