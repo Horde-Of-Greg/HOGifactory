@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "mkctao",
   "name": "hogifactory",
   "files": [
@@ -20,12 +20,6 @@
       "fileID": 5172461,
       "required": true,
       "name": "journeymap-1.12.2-5.7.1p3.jar"
-    },
-    {
-      "projectID": 64578,
-      "fileID": 4674244,
-      "required": true,
-      "name": "EnderIO-1.12.2-5.3.72.jar"
     },
     {
       "projectID": 69118,
@@ -62,12 +56,6 @@
       "fileID": 2524058,
       "required": true,
       "name": "ChestTransporter-1.12.2-2.8.8.jar"
-    },
-    {
-      "projectID": 220954,
-      "fileID": 3488553,
-      "required": true,
-      "name": "modtweaker-4.0.20.5.jar"
     },
     {
       "projectID": 222880,
@@ -162,12 +150,6 @@
       "name": "BrandonsCore-1.12.2-2.4.20.162-universal.jar"
     },
     {
-      "projectID": 231868,
-      "fileID": 4671384,
-      "required": true,
-      "name": "EnderCore-1.12.2-0.5.78.jar"
-    },
-    {
       "projectID": 235279,
       "fileID": 2915375,
       "required": true,
@@ -178,18 +160,6 @@
       "fileID": 2722385,
       "required": true,
       "name": "TrashSlot_1.12.2-8.4.10.jar"
-    },
-    {
-      "projectID": 236541,
-      "fileID": 2949886,
-      "required": true,
-      "name": "LibVulpes-1.12.2-0.4.2-75-universal.jar"
-    },
-    {
-      "projectID": 236542,
-      "fileID": 3015079,
-      "required": true,
-      "name": "AdvancedRocketry-1.12.2-1.7.0-232-universal.jar"
     },
     {
       "projectID": 237102,
@@ -204,23 +174,11 @@
       "name": "FTBLib-5.4.7.2.jar"
     },
     {
-      "projectID": 237366,
-      "fileID": 2803109,
-      "required": true,
-      "name": "armorplus-1.12.2-11.25.1.62.jar"
-    },
-    {
       "projectID": 238747,
       "fileID": 2739582,
       "required": true,
       "sides": ["client"],
       "name": "modnametooltip_1.12.2-1.10.1.jar"
-    },
-    {
-      "projectID": 239197,
-      "fileID": 4723169,
-      "required": true,
-      "name": "CraftTweaker2-1.12-4.1.20.692.jar"
     },
     {
       "projectID": 240630,
@@ -253,23 +211,11 @@
       "name": "CodeChickenLib-1.12.2-3.2.3.358-universal.jar"
     },
     {
-      "projectID": 243146,
-      "fileID": 2540650,
-      "required": true,
-      "name": "CraftableElytra-1.1.jar"
-    },
-    {
       "projectID": 243478,
       "fileID": 2745657,
       "required": true,
       "sides": ["client"],
       "name": "moreoverlays-1.15.1-mc1.12.2.jar"
-    },
-    {
-      "projectID": 244559,
-      "fileID": 2830252,
-      "required": true,
-      "name": "WirelessCraftingTerminal-1.12.2-3.12.97.jar"
     },
     {
       "projectID": 245174,
@@ -461,18 +407,6 @@
       "name": "RedstoneFlux-1.12-2.1.1.1-universal.jar"
     },
     {
-      "projectID": 271384,
-      "fileID": 2920434,
-      "required": true,
-      "name": "CoFHWorld-1.12.2-1.4.0.1-universal.jar"
-    },
-    {
-      "projectID": 271835,
-      "fileID": 2920437,
-      "required": true,
-      "name": "ThermalCultivation-1.12.2-0.3.6.1-universal.jar"
-    },
-    {
       "projectID": 272335,
       "fileID": 2645867,
       "required": true,
@@ -491,22 +425,10 @@
       "name": "architecturecraft-1.12-3.108.jar"
     },
     {
-      "projectID": 278398,
-      "fileID": 2567799,
-      "required": true,
-      "name": "packmode-1.12.2-1.2.0.jar"
-    },
-    {
       "projectID": 278799,
       "fileID": 2833002,
       "required": true,
       "name": "DenseMetals-1.12.2-2.0.0.30.jar"
-    },
-    {
-      "projectID": 279172,
-      "fileID": 2491542,
-      "required": true,
-      "name": "CraftingNetherStar 1.12.1 -1.1.jar"
     },
     {
       "projectID": 282313,
@@ -520,12 +442,6 @@
       "fileID": 2694382,
       "required": true,
       "name": "Placebo-1.12.2-1.6.0.jar"
-    },
-    {
-      "projectID": 291737,
-      "fileID": 2920441,
-      "required": true,
-      "name": "ThermalInnovation-1.12.2-0.3.6.1-universal.jar"
     },
     {
       "projectID": 297038,
@@ -557,12 +473,6 @@
       "fileID": 2847346,
       "required": true,
       "name": "effortlessbuilding-1.12.2-2.16.jar"
-    },
-    {
-      "projectID": 304024,
-      "fileID": 2830114,
-      "required": true,
-      "name": "AE2WTLib-1.12.2-1.0.34.jar"
     },
     {
       "projectID": 304346,
@@ -698,12 +608,6 @@
       "required": true,
       "sides": ["client"],
       "name": "mousetweaks-1.12.2-3.1.5.jar"
-    },
-    {
-      "projectID": 473325,
-      "fileID": 3407210,
-      "required": true,
-      "name": "uberconduitprobe-1.0.3.jar"
     },
     {
       "projectID": 490698,
