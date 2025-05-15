@@ -1,0 +1,35 @@
+.cache
+*.pdf
+.env
+overrides/config/brandon3055/ProjectIntelligence
+overrides/config/brandon3055/ResourceCache
+build
+tools/node_modules
+
+*iml
+/overrides/groovy/assets/
+/overrides/groovy/lib/
+
+**/.idea/
+**/.idea_modules/
+idea/*
+
+.vscode/
+tools/.vscode/
+
+# Tools Debugging
+tools/.dest/
+
+# OS Specific
+
+# Mac
+*.icloud
+*.DS_Store
+
+# Linux
+*~
+
+# NPM
+package-lock.json
+package.json
+node_modules/*
