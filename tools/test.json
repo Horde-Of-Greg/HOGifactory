@@ -1,0 +1,1249 @@
+{
+  "data": [
+    {
+      "id": 6399818,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.16.1",
+      "fileName": "zbgt-0.16.1.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "b9b46a1d9b63075aa7df60f80d93555b8570040b", "algo": 1 },
+        { "value": "b38495e152564b166f320d7a420e0e5b", "algo": 2 }
+      ],
+      "fileDate": "2025-04-08T17:06:58.417Z",
+      "fileLength": 1257719,
+      "downloadCount": 362,
+      "fileSizeOnDisk": 1922812,
+      "downloadUrl": "https://edge.forgecdn.net/files/6399/818/zbgt-0.16.1.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 }
+      ],
+      "alternateFileId": 6399819,
+      "isServerPack": false,
+      "fileFingerprint": 2283288113,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 3557407885 },
+        { "name": "assets", "fingerprint": 252338834 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mixins.zbgt.json", "fingerprint": 299113743 },
+        { "name": "mcmod.info", "fingerprint": 3895713414 }
+      ]
+    },
+    {
+      "id": 6314013,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.16.0",
+      "fileName": "zbgt-0.16.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "bbab6b03b4a67ea9032e1e1ff17c8507f202ddf2", "algo": 1 },
+        { "value": "98450824b07620214ba8339140c2a55a", "algo": 2 }
+      ],
+      "fileDate": "2025-03-17T00:54:30.48Z",
+      "fileLength": 1255066,
+      "downloadCount": 974,
+      "fileSizeOnDisk": 1917513,
+      "downloadUrl": "https://edge.forgecdn.net/files/6314/13/zbgt-0.16.0.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6314014,
+      "isServerPack": false,
+      "fileFingerprint": 4281506738,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 676977623 },
+        { "name": "assets", "fingerprint": 3934035757 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mixins.zbgt.json", "fingerprint": 299113743 },
+        { "name": "mcmod.info", "fingerprint": 242108735 }
+      ]
+    },
+    {
+      "id": 6198556,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.7",
+      "fileName": "zbgt-0.15.7.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "a1f7f4fd0942936d0a6155470948ea1acaf835eb", "algo": 1 },
+        { "value": "3681838e85ab331dffae03c59a88674a", "algo": 2 }
+      ],
+      "fileDate": "2025-02-16T07:07:44.243Z",
+      "fileLength": 1227857,
+      "downloadCount": 330,
+      "fileSizeOnDisk": 1852317,
+      "downloadUrl": "https://edge.forgecdn.net/files/6198/556/zbgt-0.15.7.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6198557,
+      "isServerPack": false,
+      "fileFingerprint": 2353601232,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 877114131 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "assets", "fingerprint": 2008616217 },
+        { "name": "mcmod.info", "fingerprint": 2865434607 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 }
+      ]
+    },
+    {
+      "id": 6194588,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.6",
+      "fileName": "zbgt-0.15.6.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "b7a5cec4627166f2ee66f301d459629fcd254261", "algo": 1 },
+        { "value": "a0b80b7a9fe15d39b3656613c5ead887", "algo": 2 }
+      ],
+      "fileDate": "2025-02-15T01:45:58.84Z",
+      "fileLength": 1227418,
+      "downloadCount": 37,
+      "fileSizeOnDisk": 1851363,
+      "downloadUrl": "https://edge.forgecdn.net/files/6194/588/zbgt-0.15.6.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6194589,
+      "isServerPack": false,
+      "fileFingerprint": 1321472748,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 1272621459 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "assets", "fingerprint": 2008616217 },
+        { "name": "mcmod.info", "fingerprint": 4006704824 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 }
+      ]
+    },
+    {
+      "id": 6184248,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.5",
+      "fileName": "zbgt-0.15.5.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "3056a2d3ffb046397a4d18328a55f4b3289a94cd", "algo": 1 },
+        { "value": "ed10b9d998faf303cda69baffee28053", "algo": 2 }
+      ],
+      "fileDate": "2025-02-12T08:12:31.007Z",
+      "fileLength": 1211601,
+      "downloadCount": 56,
+      "fileSizeOnDisk": 1820388,
+      "downloadUrl": "https://edge.forgecdn.net/files/6184/248/zbgt-0.15.5.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6184249,
+      "isServerPack": false,
+      "fileFingerprint": 2938463114,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 3262834347 },
+        { "name": "mcmod.info", "fingerprint": 63751481 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "assets", "fingerprint": 4207006331 }
+      ]
+    },
+    {
+      "id": 6105345,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.4",
+      "fileName": "zbgt-0.15.4.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "ae9d36fd743baf6f21113866ff0995248ad7e271", "algo": 1 },
+        { "value": "6d4a0eaa04071cd84520111c479d5b1a", "algo": 2 }
+      ],
+      "fileDate": "2025-01-20T01:44:06.907Z",
+      "fileLength": 1206909,
+      "downloadCount": 205,
+      "fileSizeOnDisk": 1809007,
+      "downloadUrl": "https://edge.forgecdn.net/files/6105/345/zbgt-0.15.4.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6105346,
+      "isServerPack": false,
+      "fileFingerprint": 3833190821,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 1322516028 },
+        { "name": "assets", "fingerprint": 2742949289 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mcmod.info", "fingerprint": 3568194424 }
+      ]
+    },
+    {
+      "id": 6074868,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.3",
+      "fileName": "zbgt-0.15.3.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "2abfad767e97443846f88c8e6fb711589ecf0d44", "algo": 1 },
+        { "value": "dc92f8fe65dd5f1ce34969e5a3193bbf", "algo": 2 }
+      ],
+      "fileDate": "2025-01-10T23:06:58.363Z",
+      "fileLength": 1207458,
+      "downloadCount": 49,
+      "fileSizeOnDisk": 1811648,
+      "downloadUrl": "https://edge.forgecdn.net/files/6074/868/zbgt-0.15.3.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6074869,
+      "isServerPack": false,
+      "fileFingerprint": 3576984728,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 261866705 },
+        { "name": "assets", "fingerprint": 2742949289 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mcmod.info", "fingerprint": 1339533950 }
+      ]
+    },
+    {
+      "id": 6054083,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.2",
+      "fileName": "zbgt-0.15.2.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "2f6a89dae9b11c4505dedac6ec19163ae6cf0f07", "algo": 1 },
+        { "value": "fd7a4f49f933d6bb50b4738d334d01e3", "algo": 2 }
+      ],
+      "fileDate": "2025-01-04T22:26:11.107Z",
+      "fileLength": 952172,
+      "downloadCount": 38,
+      "fileSizeOnDisk": 1554497,
+      "downloadUrl": "https://edge.forgecdn.net/files/6054/83/zbgt-0.15.2.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 }
+      ],
+      "alternateFileId": 6054084,
+      "isServerPack": false,
+      "fileFingerprint": 3801568401,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 4200496164 },
+        { "name": "assets", "fingerprint": 3842503133 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 },
+        { "name": "mcmod.info", "fingerprint": 2310682836 }
+      ]
+    },
+    {
+      "id": 6003419,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.1",
+      "fileName": "zbgt-0.15.1.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "539cf280d25886e70efbc4ddbe0f2b1cb9ac3c62", "algo": 1 },
+        { "value": "47dcb042653615d56c5297e63da4cbf6", "algo": 2 }
+      ],
+      "fileDate": "2024-12-18T23:09:27.277Z",
+      "fileLength": 947294,
+      "downloadCount": 77,
+      "fileSizeOnDisk": 1542630,
+      "downloadUrl": "https://edge.forgecdn.net/files/6003/419/zbgt-0.15.1.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2172791157,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 816822056 },
+        { "name": "assets", "fingerprint": 3842503133 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 1454690349 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 6001290,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.15.0",
+      "fileName": "zbgt-0.15.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "babd99c5e65e5eb92c1d54417631b356fb6db60a", "algo": 1 },
+        { "value": "873be0263c744236c0354452dcd8a664", "algo": 2 }
+      ],
+      "fileDate": "2024-12-18T07:49:54.613Z",
+      "fileLength": 919640,
+      "downloadCount": 17,
+      "fileSizeOnDisk": 1514196,
+      "downloadUrl": "https://edge.forgecdn.net/files/6001/290/zbgt-0.15.0.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 6001291,
+      "isServerPack": false,
+      "fileFingerprint": 1729840391,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 2443185098 },
+        { "name": "assets", "fingerprint": 539262987 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 3594671246 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5994816,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.14.4",
+      "fileName": "zbgt-0.14.4.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "66c52db9978070926ad9bb2a072a4910e7a7f06d", "algo": 1 },
+        { "value": "b22cf850f38fcd75b6075768a1f0ed84", "algo": 2 }
+      ],
+      "fileDate": "2024-12-16T00:30:25.877Z",
+      "fileLength": 794146,
+      "downloadCount": 11,
+      "fileSizeOnDisk": 1367825,
+      "downloadUrl": "https://edge.forgecdn.net/files/5994/816/zbgt-0.14.4.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 5994817,
+      "isServerPack": false,
+      "fileFingerprint": 291768474,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 3770516193 },
+        { "name": "assets", "fingerprint": 2778316570 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 3918389302 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5955526,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.14.3",
+      "fileName": "zbgt-0.14.3.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "a7ac689caa78fddc4b779355af0068e2dc9bfe3f", "algo": 1 },
+        { "value": "d604640f05ffdb67338cf77147f620e5", "algo": 2 }
+      ],
+      "fileDate": "2024-12-02T03:12:21.943Z",
+      "fileLength": 787893,
+      "downloadCount": 15,
+      "fileSizeOnDisk": 1353334,
+      "downloadUrl": "https://edge.forgecdn.net/files/5955/526/zbgt-0.14.3.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 5955527,
+      "isServerPack": false,
+      "fileFingerprint": 97189146,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 2461900252 },
+        { "name": "assets", "fingerprint": 3063006358 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 1312390991 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5906794,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.14.2",
+      "fileName": "zbgt-0.14.2.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "9d24efb5ded25e477f2c279b35b4eb8f669b1b50", "algo": 1 },
+        { "value": "2837db4fa6947ddd7eadc7c78f292b24", "algo": 2 }
+      ],
+      "fileDate": "2024-11-16T01:40:46.937Z",
+      "fileLength": 787903,
+      "downloadCount": 80,
+      "fileSizeOnDisk": 1353340,
+      "downloadUrl": "https://edge.forgecdn.net/files/5906/794/zbgt-0.14.2.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 5906795,
+      "isServerPack": false,
+      "fileFingerprint": 1503623060,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 2974637053 },
+        { "name": "assets", "fingerprint": 3063006358 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 807356804 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5904233,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.14.1",
+      "fileName": "zbgt-0.14.1.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "b19425ffdfa4adeb3fa4e8c9ce1bc048c3b45ff2", "algo": 1 },
+        { "value": "796656867638809810bf2b71be6c78ad", "algo": 2 }
+      ],
+      "fileDate": "2024-11-15T03:16:05.97Z",
+      "fileLength": 787445,
+      "downloadCount": 23,
+      "fileSizeOnDisk": 1352683,
+      "downloadUrl": "https://edge.forgecdn.net/files/5904/233/zbgt-0.14.1.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 }
+      ],
+      "alternateFileId": 5904234,
+      "isServerPack": false,
+      "fileFingerprint": 1685681547,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 1485152615 },
+        { "name": "assets", "fingerprint": 3063006358 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 4036179157 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5893164,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.14.0",
+      "fileName": "zbgt-0.14.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "d44eceba92189a365554abc5d9c236c62825a7b5", "algo": 1 },
+        { "value": "4a1c120097235721d3ad315f5d10c2d1", "algo": 2 }
+      ],
+      "fileDate": "2024-11-11T04:43:14.68Z",
+      "fileLength": 787365,
+      "downloadCount": 19,
+      "fileSizeOnDisk": 1352496,
+      "downloadUrl": "https://edge.forgecdn.net/files/5893/164/zbgt-0.14.0.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 5893165,
+      "isServerPack": false,
+      "fileFingerprint": 1522303379,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 2603494999 },
+        { "name": "assets", "fingerprint": 599869078 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 1581575881 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5892312,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.13.3",
+      "fileName": "zbgt-0.13.3.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "4b2bdce1b07a68024fd4e306fcdadd641f3e9c43", "algo": 1 },
+        { "value": "cc4811b65fff28181876e9f0450d476a", "algo": 2 }
+      ],
+      "fileDate": "2024-11-10T21:50:08.91Z",
+      "fileLength": 565809,
+      "downloadCount": 11,
+      "fileSizeOnDisk": 1014786,
+      "downloadUrl": "https://edge.forgecdn.net/files/5892/312/zbgt-0.13.3.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 5892313,
+      "isServerPack": false,
+      "fileFingerprint": 3339146985,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 554099491 },
+        { "name": "assets", "fingerprint": 719273054 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 547587986 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5864218,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.13.2",
+      "fileName": "zbgt-0.13.2.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "c5a2221a01528cdb871214421027b912cef5d50c", "algo": 1 },
+        { "value": "642d8ed2559e9c807d8078f7f22375b5", "algo": 2 }
+      ],
+      "fileDate": "2024-10-31T23:46:11.313Z",
+      "fileLength": 562744,
+      "downloadCount": 10,
+      "fileSizeOnDisk": 1007634,
+      "downloadUrl": "https://edge.forgecdn.net/files/5864/218/zbgt-0.13.2.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 5864219,
+      "isServerPack": false,
+      "fileFingerprint": 1014710352,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 1052936702 },
+        { "name": "assets", "fingerprint": 3892361923 },
+        { "name": "mixins.zbgt.json", "fingerprint": 1711371956 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 3903404707 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5836231,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.13.1",
+      "fileName": "zbgt-0.13.1.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "7c78e3eaa66105c8a601cb0eb8caf5ba3cea90ea", "algo": 1 },
+        { "value": "dac1159e167074bf9f9e0c9a58ff5169", "algo": 2 }
+      ],
+      "fileDate": "2024-10-23T05:23:23.783Z",
+      "fileLength": 554579,
+      "downloadCount": 84,
+      "fileSizeOnDisk": 991016,
+      "downloadUrl": "https://edge.forgecdn.net/files/5836/231/zbgt-0.13.1.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 5836232,
+      "isServerPack": false,
+      "fileFingerprint": 3153784918,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 3375001482 },
+        { "name": "assets", "fingerprint": 2828998080 },
+        { "name": "mixins.zbgt.json", "fingerprint": 2499483669 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 2225980279 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5799310,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.13.0",
+      "fileName": "zbgt-0.13.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "0d815220752f61d926d94bb302ba2da911de1bf5", "algo": 1 },
+        { "value": "d24c1cccb5dbdc7d935f9297056b0868", "algo": 2 }
+      ],
+      "fileDate": "2024-10-10T03:36:54.423Z",
+      "fileLength": 548972,
+      "downloadCount": 138,
+      "fileSizeOnDisk": 980672,
+      "downloadUrl": "https://edge.forgecdn.net/files/5799/310/zbgt-0.13.0.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 5799311,
+      "isServerPack": false,
+      "fileFingerprint": 418189422,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 3960761446 },
+        { "name": "com", "fingerprint": 2106657091 },
+        { "name": "assets", "fingerprint": 4245817456 },
+        { "name": "mixins.zbgt.json", "fingerprint": 2499483669 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "mcmod.info", "fingerprint": 1577340653 },
+        { "name": "mixins.zbgt.refmap.json", "fingerprint": 1493072104 }
+      ]
+    },
+    {
+      "id": 5730766,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.12.0",
+      "fileName": "zbgt-0.12.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "1c8ab328231871e3a7d3f03548a0a7f46bfb782e", "algo": 1 },
+        { "value": "f081df75a922a02ba32c4283c58b7612", "algo": 2 }
+      ],
+      "fileDate": "2024-09-17T06:13:59.297Z",
+      "fileLength": 410071,
+      "downloadCount": 50,
+      "fileSizeOnDisk": 755367,
+      "downloadUrl": "https://edge.forgecdn.net/files/5730/766/zbgt-0.12.0.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 564858, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 }
+      ],
+      "alternateFileId": 5730767,
+      "isServerPack": false,
+      "fileFingerprint": 1496360958,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 2464251221 },
+        { "name": "com", "fingerprint": 1644521550 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "assets", "fingerprint": 1593348365 },
+        { "name": "mcmod.info", "fingerprint": 3569389568 }
+      ]
+    },
+    {
+      "id": 5717454,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "Zorbatron's GT:CEu Extras − 0.11.2",
+      "fileName": "zbgt-0.11.2.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "dca1f46033a443bb223dae35c2726fc10db86c53", "algo": 1 },
+        { "value": "f53cab0329b0b2d72cc8a3663afecbd5", "algo": 2 }
+      ],
+      "fileDate": "2024-09-12T18:39:33.277Z",
+      "fileLength": 326896,
+      "downloadCount": 47,
+      "fileSizeOnDisk": 616306,
+      "downloadUrl": "https://edge.forgecdn.net/files/5717/454/zbgt-0.11.2.jar",
+      "gameVersions": ["Forge", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 5717455,
+      "isServerPack": false,
+      "fileFingerprint": 3352492363,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 2464251221 },
+        { "name": "com", "fingerprint": 3287786878 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "assets", "fingerprint": 316575402 },
+        { "name": "mcmod.info", "fingerprint": 3518608738 }
+      ]
+    },
+    {
+      "id": 5715711,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "v0.11.1",
+      "fileName": "zbgt-0.11.1.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "b14dbbcb9e715f55bddd2d73f3b0d96fe3b5a7ca", "algo": 1 },
+        { "value": "bcc824e184e1ee0de27351fac4fc969a", "algo": 2 }
+      ],
+      "fileDate": "2024-09-12T03:55:33.05Z",
+      "fileLength": 327267,
+      "downloadCount": 15,
+      "fileSizeOnDisk": 617541,
+      "downloadUrl": "https://edge.forgecdn.net/files/5715/711/zbgt-0.11.1.jar",
+      "gameVersions": ["Client", "Forge", "Server", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Client",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+          "gameVersionTypeId": 75208
+        },
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Server",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+          "gameVersionTypeId": 75208
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 570458, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 564858, "relationType": 3 }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2812860522,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 2464251221 },
+        { "name": "com", "fingerprint": 90924054 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "assets", "fingerprint": 817071149 },
+        { "name": "mcmod.info", "fingerprint": 1279260785 }
+      ]
+    },
+    {
+      "id": 5715624,
+      "gameId": 432,
+      "modId": 1101263,
+      "isAvailable": true,
+      "displayName": "v0.11.0",
+      "fileName": "zbgt-0.11.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        { "value": "45bdae5861754988b5ca03009bf1b1fc0a4e745e", "algo": 1 },
+        { "value": "88a09a73d3a3a1d6dbbe81153712f691", "algo": 2 }
+      ],
+      "fileDate": "2024-09-12T03:11:23.093Z",
+      "fileLength": 325206,
+      "downloadCount": 1,
+      "fileSizeOnDisk": 614192,
+      "downloadUrl": "https://edge.forgecdn.net/files/5715/624/zbgt-0.11.0.jar",
+      "gameVersions": ["Client", "Forge", "Server", "1.12.2"],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Client",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+          "gameVersionTypeId": 75208
+        },
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Server",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+          "gameVersionTypeId": 75208
+        },
+        {
+          "gameVersionName": "1.12.2",
+          "gameVersionPadded": "0000000001.0000000012.0000000002",
+          "gameVersion": "1.12.2",
+          "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+          "gameVersionTypeId": 628
+        }
+      ],
+      "dependencies": [
+        { "modId": 564858, "relationType": 2 },
+        { "modId": 557242, "relationType": 3 },
+        { "modId": 570458, "relationType": 2 }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2758900819,
+      "modules": [
+        { "name": "META-INF", "fingerprint": 2464251221 },
+        { "name": "com", "fingerprint": 330314980 },
+        { "name": "pack.mcmeta", "fingerprint": 2836077886 },
+        { "name": "assets", "fingerprint": 1813082592 },
+        { "name": "mcmod.info", "fingerprint": 648374997 }
+      ]
+    }
+  ],
+  "pagination": {
+    "index": 0,
+    "pageSize": 50,
+    "resultCount": 23,
+    "totalCount": 23
+  }
+}
