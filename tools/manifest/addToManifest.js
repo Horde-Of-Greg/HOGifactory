@@ -62,7 +62,6 @@ if (side !== "server" && side !== "client" && side !== "both") {
 //TODO: check if modID and fileID are not already in the manifest
 
 let newManifest = manifest;
-console.log(newManifest);
 newManifest.files.push({
   projectID: parseInt(modID),
   fileID: parseInt(fileID),

@@ -64,6 +64,12 @@
       "name": "ThermalFoundation-1.12.2-2.6.7.1-universal.jar"
     },
     {
+      "projectID": 223008,
+      "fileID": 6390867,
+      "required": true,
+      "name": "OpenComputers-MC1.12.2-1.8.8+8da357f.jar"
+    },
+    {
       "projectID": 223565,
       "fileID": 3431261,
       "required": true,
@@ -91,14 +97,18 @@
       "projectID": 226406,
       "fileID": 2857869,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "CustomMainMenu-MC1.12.2-2.0.9.1.jar"
     },
     {
       "projectID": 226447,
       "fileID": 2477566,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "ResourceLoader-MC1.12.1-1.5.3.jar"
     },
     {
@@ -177,7 +187,9 @@
       "projectID": 238747,
       "fileID": 2739582,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "modnametooltip_1.12.2-1.10.1.jar"
     },
     {
@@ -214,7 +226,9 @@
       "projectID": 243478,
       "fileID": 2745657,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "moreoverlays-1.15.1-mc1.12.2.jar"
     },
     {
@@ -269,7 +283,9 @@
       "projectID": 250398,
       "fileID": 4428378,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "Controlling-3.0.12.2.jar"
     },
     {
@@ -288,7 +304,9 @@
       "projectID": 251407,
       "fileID": 2624712,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "ClientTweaks_1.12.2-3.1.11.jar"
     },
     {
@@ -391,7 +409,9 @@
       "projectID": 267602,
       "fileID": 2915363,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "CTM-MC1.12.2-1.0.2.31.jar"
     },
     {
@@ -434,7 +454,9 @@
       "projectID": 282313,
       "fileID": 2689835,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "TipTheScales-1.12.2-1.0.4.jar"
     },
     {
@@ -447,7 +469,9 @@
       "projectID": 297038,
       "fileID": 6354438,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "CraftPresence-2.5.4+1.12.2-forge.jar"
     },
     {
@@ -496,7 +520,9 @@
       "projectID": 306555,
       "fileID": 2707092,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "moresoundconfig-1.0.4.jar"
     },
     {
@@ -563,7 +589,9 @@
       "projectID": 383632,
       "fileID": 3056455,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "dynamistics-1.0.2.jar"
     },
     {
@@ -606,7 +634,9 @@
       "projectID": 461660,
       "fileID": 5876158,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "mousetweaks-1.12.2-3.1.5.jar"
     },
     {
@@ -619,7 +649,9 @@
       "projectID": 513857,
       "fileID": 3739783,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "oauth-1.06.4.jar"
     },
     {
@@ -657,6 +689,12 @@
       "fileID": 4630499,
       "required": true,
       "name": "JEI-Utilities-1.12.2-0.2.12.jar"
+    },
+    {
+      "projectID": 623955,
+      "fileID": 5751930,
+      "required": true,
+      "name": "Fluid Craft for AE2-2.6.6-r.jar"
     },
     {
       "projectID": 624243,
@@ -794,7 +832,9 @@
       "projectID": 1056812,
       "fileID": 6088140,
       "required": true,
-      "sides": ["client"],
+      "sides": [
+        "client"
+      ],
       "name": "UniLib-1.0.5+1.12.2-forge.jar"
     },
     {
@@ -802,6 +842,12 @@
       "fileID": 5531643,
       "required": true,
       "name": "LibrarianLib-Continuous-1.12.2-4.22-2.0-1.jar"
+    },
+    {
+      "projectID": 1101263,
+      "fileID": 6399818,
+      "required": true,
+      "name": "zbgt-0.16.1.jar"
     }
   ]
 }
