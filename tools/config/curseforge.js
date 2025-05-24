@@ -18,5 +18,13 @@ export class CurseForgeConfig {
         `Please set the environment variable ${this.apiKeyName} to your CurseForge Core API key. \n See https://support.curseforge.com/en/support/solutions/articles/9000208346-about-the-curseforge-api-and-how-to-apply-for-a-key for more information.`
       );
     }
+    this.headers = {
+      Accept: "application/json",
+      "X-Api-Key": this.apiKey,
+    };
+    this.options = {
+      method: "GET",
+      headers: this.headers,
+    };
   }
 }

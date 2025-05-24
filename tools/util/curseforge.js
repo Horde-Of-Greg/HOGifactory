@@ -2,42 +2,48 @@ import { CurseForgeConfig } from "../config/curseforge.js";
 const CFConf = new CurseForgeConfig();
 
 export class CurseForgeUtil {
-  static makeFileRequest = async (rawMod) => {
-    const headers = {
-      Accept: "application/json",
-      "X-Api-Key": CFConf.apiKey,
-    };
-    const options = {
-      method: "GET",
-      headers,
-    };
-    const url = `${CFConf.apiURL}/mods/${rawMod.projectID}/files/${rawMod.fileID}`;
-    const response = await fetch(url, options);
-    if (!response.ok) {
-      throw new Error(`Error: ${response.status} ${response.statusText}`);
-    }
-    return response.json();
-  };
-
-  static makeFilesRequest = async (modID) => {
-    let output = [];
-    const headers = {
-      Accept: "application/json",
-      "X-Api-Key": CFConf.apiKey,
-    };
-    const options = {
-      method: "GET",
-      headers,
-    };
-    const url = `${CFConf.apiURL}/mods/${modID}/files`;
-    const response = await fetch(url, options);
+  /**
+   * @description Make a file request for a given mod and file.
+   * @param {number} modID The mod ID
+   * @param {number} fileID The file ID of the mod
+   * @returns {Promise<Object>} A promise resolving to the file data as a JSON object.
+   */
+  static fetchFileData = async (modID, fileID) => {
+    const url = `${CFConf.apiURL}/mods/${modID}/files/${fileID}`;
+    const response = await fetch(url, CFConf.options);
     if (!response.ok) {
       throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
     const json = await response.json();
-    json.data.forEach((file) => {
-      if (file.gameVersions.includes("Forge" && "1.12.2")) output.push(file);
-    });
-    return output;
+    return json.data;
+  };
+
+  /**
+   * @description Make a request for all the given mod's data.
+   * @param {number} modID The mod ID
+   * @returns {Promise<Object>} A promise resolving to all of the file's data as a JSON object.
+   */
+  static fetchModData = async (modID) => {
+    const url = `${CFConf.apiURL}/mods/${modID}/`;
+    const response = await fetch(url, CFConf.options);
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+    const json = await response.json();
+    return json.data;
+  };
+  /**
+   * @description Make a request for all the given mod's files.
+   * @param {number} modID The mod ID
+   * @returns {Promise<Object>} A promise resolving to all of the file's data as a JSON object.
+   */
+  static fetchAllFilesData = async (modID) => {
+    const url = `${CFConf.apiURL}/mods/${modID}/files`;
+    const response = await fetch(url, CFConf.options);
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+    const json = await response.json();
+    return json.data;
   };
 }

@@ -1,6 +1,5 @@
 import path from "path";
 import promptSync from "prompt-sync";
-import { exec } from "child_process";
 import { GlobalUtil } from "../util/global.js";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
@@ -10,11 +9,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const prompt = promptSync();
 
+// TODO: Args support
+
 const filesRunnable = GlobalUtil.indexFiles(path.join(__dirname, "./"), [
   "manifest.js",
 ]);
-filesRunnable.forEach((element, n) => {
-  console.log(`${n + 1}: ${path.basename(element)}`);
+filesRunnable.forEach((filePath, n) => {
+  const fileName = path.basename(filePath).replace(".js", "");
+  if (fileName.match()) console.log(`${n + 1}: ${fileName}`);
 });
 const fileToRun = prompt("Enter the number of the you want to run: ");
 const file = filesRunnable[fileToRun - 1];

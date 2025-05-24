@@ -5,7 +5,7 @@ import PromptSync from "prompt-sync";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { CurseForgeUtil } from "../util/curseforge.js";
-import { spawn } from "child_process";
+import { GlobalUtil } from "../util/global.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -21,17 +21,16 @@ if (!modID.match(/^\d+$/)) {
   process.exit(1);
 }
 
-await (async () => {
-  try {
-    const files = await CurseForgeUtil.makeFilesRequest(modID);
-    console.log(`Last 10 files for ${files[0].fileName} :`);
-    files.slice(0, 10).forEach((file) => {
-      console.log(`- ${file.fileName} (${file.id})`);
-    });
-  } catch (error) {
-    console.error("Error:", error);
-  }
-})();
+let files = await CurseForgeUtil.fetchAllFilesData(modID);
+files = files.filter((file) => file.gameVersions.includes("1.12.2"));
+const modName = await GlobalUtil.getModName(modID);
+console.log(`Last 10 files for ${modName} :`);
+for (const file of files.slice(0, 10)) {
+  const modVersion = await GlobalUtil.getModVersion(modID, file.id);
+  console.log(
+    `Version: ${modVersion} | ID: ${file.id} | Loader ${file.gameVersions[0]}`
+  );
+}
 
 const fileID = prompt("Enter the file ID or quit: ");
 if (fileID === "quit") {
@@ -67,30 +66,14 @@ newManifest.files.push({
   fileID: parseInt(fileID),
   ...(required ? { required: true } : {}),
   ...(side !== "both" ? { sides: [side] } : {}),
+  name: await GlobalUtil.formatModNameVer(modID, fileID),
 });
 
 newManifest.files.sort((a, b) => parseInt(a.projectID) - parseInt(b.projectID));
 
 fs.writeFileSync(
-  path.join(__dirname, "../../manifest.json"),
+  path.join(__dirname, "../templates/manifest.json"),
   JSON.stringify(newManifest, null, 2),
   "utf-8"
 );
-
-console.log("Manifest updated with new mod");
-
-const child = spawn(
-  "node",
-  [path.join(__dirname, "./makeReadableManifest.js")],
-  {
-    stdio: "inherit",
-  }
-);
-
-child.on("close", (code) => {
-  if (code !== 0) {
-    console.error(`Child process exited with code ${code}`);
-  }
-});
-
 console.log("Template manifest updated with new mod");
