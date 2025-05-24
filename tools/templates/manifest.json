@@ -67,7 +67,7 @@
       "projectID": 223008,
       "fileID": 6390867,
       "required": true,
-      "name": "OpenComputers-MC1.12.2-1.8.8+8da357f.jar"
+      "name": "OpenComputers 357"
     },
     {
       "projectID": 223565,
@@ -100,7 +100,7 @@
       "sides": [
         "client"
       ],
-      "name": "CustomMainMenu-MC1.12.2-2.0.9.1.jar"
+      "name": "Custom Main Menu 2.0.9.1"
     },
     {
       "projectID": 226447,
@@ -109,7 +109,7 @@
       "sides": [
         "client"
       ],
-      "name": "ResourceLoader-MC1.12.1-1.5.3.jar"
+      "name": "Resource Loader 1.5.3"
     },
     {
       "projectID": 227083,
@@ -190,7 +190,7 @@
       "sides": [
         "client"
       ],
-      "name": "modnametooltip_1.12.2-1.10.1.jar"
+      "name": "Mod Name Tooltip 1.10.1"
     },
     {
       "projectID": 240630,
@@ -229,7 +229,7 @@
       "sides": [
         "client"
       ],
-      "name": "moreoverlays-1.15.1-mc1.12.2.jar"
+      "name": "More Overlays 1.15.1"
     },
     {
       "projectID": 245174,
@@ -286,7 +286,7 @@
       "sides": [
         "client"
       ],
-      "name": "Controlling-3.0.12.2.jar"
+      "name": "Controlling 3.0.12.2"
     },
     {
       "projectID": 250419,
@@ -307,7 +307,7 @@
       "sides": [
         "client"
       ],
-      "name": "ClientTweaks_1.12.2-3.1.11.jar"
+      "name": "Client Tweaks 3.1.11"
     },
     {
       "projectID": 251792,
@@ -412,7 +412,7 @@
       "sides": [
         "client"
       ],
-      "name": "CTM-MC1.12.2-1.0.2.31.jar"
+      "name": "ConnectedTexturesMod 1.0.2.31"
     },
     {
       "projectID": 269024,
@@ -457,7 +457,7 @@
       "sides": [
         "client"
       ],
-      "name": "TipTheScales-1.12.2-1.0.4.jar"
+      "name": "TipTheScales 1.0.4"
     },
     {
       "projectID": 283644,
@@ -472,7 +472,7 @@
       "sides": [
         "client"
       ],
-      "name": "CraftPresence-2.5.4+1.12.2-forge.jar"
+      "name": "CraftPresence 2.5.4+"
     },
     {
       "projectID": 297209,
@@ -523,7 +523,7 @@
       "sides": [
         "client"
       ],
-      "name": "moresoundconfig-1.0.4.jar"
+      "name": "Sound Device Options 1.0.4"
     },
     {
       "projectID": 306770,
@@ -592,7 +592,7 @@
       "sides": [
         "client"
       ],
-      "name": "dynamistics-1.0.2.jar"
+      "name": "Dynamistics 1.0.2"
     },
     {
       "projectID": 391401,
@@ -637,7 +637,7 @@
       "sides": [
         "client"
       ],
-      "name": "mousetweaks-1.12.2-3.1.5.jar"
+      "name": "Mouse Tweaks Unofficial 3.1.5"
     },
     {
       "projectID": 490698,
@@ -652,7 +652,7 @@
       "sides": [
         "client"
       ],
-      "name": "oauth-1.06.4.jar"
+      "name": "OAuth 1.06.4"
     },
     {
       "projectID": 557242,
@@ -694,7 +694,7 @@
       "projectID": 623955,
       "fileID": 5751930,
       "required": true,
-      "name": "Fluid Craft for AE2-2.6.6-r.jar"
+      "name": "AE2 Fluid Crafting Rework 2.6.6"
     },
     {
       "projectID": 624243,
@@ -835,19 +835,19 @@
       "sides": [
         "client"
       ],
-      "name": "UniLib-1.0.5+1.12.2-forge.jar"
+      "name": "UniLib 1.0.5+"
     },
     {
       "projectID": 1058274,
       "fileID": 5531643,
       "required": true,
-      "name": "LibrarianLib-Continuous-1.12.2-4.22-2.0-1.jar"
+      "name": "LibrarianLib-Continuous 1"
     },
     {
       "projectID": 1101263,
       "fileID": 6399818,
       "required": true,
-      "name": "zbgt-0.16.1.jar"
+      "name": "ZBGT 0.16.1"
     }
   ]
 }
