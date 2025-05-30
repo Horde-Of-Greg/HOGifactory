@@ -11,30 +11,6 @@ mods.gregtech.mixer.recipeBuilder()
         .EUt(VA[IV]).duration(600)
         .buildAndRegister()
 
-mods.gregtech.electric_blast_furnace.recipeBuilder()
-        .inputs(metaitem('dustLumiumPalladium'))
-        .circuit(1)
-        .outputs(metaitem('ingotHotLumiumPalladium'))
-        .EUt(VA[IV]).duration(800)
-        .property("temperature", 4000)
-        .buildAndRegister()
-
-mods.gregtech.electric_blast_furnace.recipeBuilder()
-        .inputs(metaitem('dustLumiumPalladium'))
-        .fluidInputs(fluid('helium') * 250)
-        .circuit(2)
-        .outputs(metaitem('ingotHotLumiumPalladium'))
-        .EUt(VA[IV]).duration(536)
-        .property("temperature", 4000)
-        .buildAndRegister()
-
-// Lumium Palladium needs to a seperate material
-mods.gregtech.vacuum_freezer.recipeBuilder()
-        .inputs(metaitem('ingotHotLumiumPalladium'))
-        .outputs(metaitem('ingotLumiumPalladium'))
-        .EUt(VA[HV]).duration(357)
-        .buildAndRegister()
-
 mods.gregtech.chemical_bath.changeByOutput([fluid('rhodium_sulfate_solution')], null)
         .forEach { ChangeRecipeBuilder builder -> 
           .builder { RecipeBuilder recipe ->
