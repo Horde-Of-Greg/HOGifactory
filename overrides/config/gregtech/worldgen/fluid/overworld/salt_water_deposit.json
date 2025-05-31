@@ -1,0 +1,24 @@
+{
+  "weight": 0,
+  "name": "Overworld Infinite Salt Water Deposit",
+  "yield": {
+    "min": 50,
+    "max": 100
+  },
+  "depletion": {
+    "amount": 0,
+    "chance": 0,
+    "depleted_yield": 50
+  },
+  "fluid": "salt_water",
+  "dimension_filter": [
+    "name:overworld",
+    "name:lostcities"
+  ],
+  "biome_modifier": {
+    "type": "biome_map",
+    "ocean": 150,
+    "frozen_ocean": 150,
+    "deep_ocean": 200
+  }
+}

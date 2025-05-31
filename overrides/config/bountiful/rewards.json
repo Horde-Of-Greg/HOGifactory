@@ -1,0 +1,38 @@
+[
+  {
+    "content": "nomilabs:nomicoin100",
+    "unitWorth": 100,
+    "weight": 10,
+	"amount": {
+      "min": 1,
+      "max": 3
+    }
+  },
+  {
+    "content": "nomilabs:nomicoin5",
+    "unitWorth": 5,
+    "weight": 100,
+	"amount": {
+      "min": 10,
+      "max": 20
+    }
+  },
+  {
+    "content": "nomilabs:nomicoin25",
+    "unitWorth": 25,
+    "weight": 50,
+	"amount": {
+      "min": 5,
+      "max": 10
+    }
+  },
+  {
+    "content": "nomilabs:nomicoin",
+    "unitWorth": 1,
+    "weight": 100,
+	"amount": {
+      "min": 10,
+      "max": 50
+    }
+  }
+]
