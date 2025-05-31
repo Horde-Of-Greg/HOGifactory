@@ -31,11 +31,11 @@
 *   - you can have a line "define a_key !value!" to make the compiler replace all a_key with !value! at runtime.
 */
 
-define func function
-define english "en_us"
+// define func function
+// define english "en_us"
 
 /** This function is called when mod is being constructed */
-func init()
+// func init()
 {
 	// Example: (textures are extracted in /textures/ by default), uncomment to try it out! (Requires game restart)
 	
