@@ -1,4 +1,3 @@
-import manifest from "../../manifest.json" assert { type: "json" };
 import fs from "fs";
 import path from "path";
 import PromptSync from "prompt-sync";
@@ -9,6 +8,9 @@ import { GlobalUtil } from "../util/global.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+const manifest = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../../manifest.json"), "utf-8")
+);
 const prompt = PromptSync();
 
 const modID = prompt("Enter the mod ID or quit: ");

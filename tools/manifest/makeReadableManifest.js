@@ -1,4 +1,3 @@
-import originalManifest from "../../manifest.json" assert { type: "json" };
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -7,6 +6,9 @@ import { GlobalUtil } from "../util/global.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+const originalManifest = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../../manifest.json"), "utf-8")
+);
 
 (async () => {
   await Promise.all(
