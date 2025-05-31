@@ -28,22 +28,10 @@
       "name": "Morpheus 3.5.106"
     },
     {
-      "projectID": 69162,
-      "fileID": 2920433,
-      "required": true,
-      "name": "CoFH Core 4.6.6.1"
-    },
-    {
       "projectID": 70496,
       "fileID": 4675629,
       "required": true,
       "name": "BdLib 1.14.4.1"
-    },
-    {
-      "projectID": 70631,
-      "fileID": 2939416,
-      "required": true,
-      "name": "Redstone Arsenal 2.6.6.1"
     },
     {
       "projectID": 78778,
