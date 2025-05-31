@@ -1,4 +1,3 @@
-import template from "../templates/manifest.json" assert { type: "json" };
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -6,6 +5,9 @@ import { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+const template = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../templates/manifest.json"), "utf-8")
+);
 
 template.files = template.files.map(({ name, ...rest }) => rest);
 
