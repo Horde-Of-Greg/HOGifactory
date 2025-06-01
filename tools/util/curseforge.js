@@ -21,7 +21,7 @@ export class CurseForgeUtil {
   /**
    * @description Make a request for all the given mod's data.
    * @param {number} modID The mod ID
-   * @returns {Promise<Object>} A promise resolving to all of the file's data as a JSON object.
+   * @returns {Promise<Object>} A promise resolving to all the file's data as a JSON object.
    */
   static fetchModData = async (modID) => {
     const url = `${CFConf.apiURL}/mods/${modID}/`;
@@ -35,7 +35,7 @@ export class CurseForgeUtil {
   /**
    * @description Make a request for all the given mod's files.
    * @param {number} modID The mod ID
-   * @returns {Promise<Object>} A promise resolving to all of the file's data as a JSON object.
+   * @returns {Promise<Object>} A promise resolving to all the file's data as a JSON object.
    */
   static fetchAllFilesData = async (modID) => {
     const url = `${CFConf.apiURL}/mods/${modID}/files`;
@@ -45,5 +45,17 @@ export class CurseForgeUtil {
     }
     const json = await response.json();
     return json.data;
+  };
+
+  /**
+   * @description Add a local API key to the environment variables.
+   * @param {string} apiKey The CurseForge Core API key to add.
+   */
+  static addLocalApiKey = (apiKey) => {
+    if (!apiKey) {
+      throw new Error("API key is required");
+    }
+    // TODO: Validate the API key format
+    process.env[CFConf.apiKeyName] = apiKey;
   };
 }

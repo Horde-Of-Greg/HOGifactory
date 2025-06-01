@@ -41,7 +41,7 @@ export class GlobalUtil {
 
     const list = fileName.match(/[\d+.?]+/g);
     if (!list) return fileName;
-    if (list[list.length - 1] == "0") return fileName;
+    if (list[list.length - 1] === "0") return fileName;
 
     return list[list.length - 1];
   }
