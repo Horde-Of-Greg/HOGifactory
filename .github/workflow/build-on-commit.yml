@@ -33,7 +33,8 @@ jobs:
           - 'tools/templates/manifest.json'  
 
       - if: steps.changes.outputs.manifest-template == 'true'
-        steps:
+        run:
+          steps:
 
           - name: Setup NodeJS v20
             uses: actions/setup-node@v4
