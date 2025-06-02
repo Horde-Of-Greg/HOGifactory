@@ -82,6 +82,9 @@ jobs:
         working-directory: tools
         run: npm ci
 
+      - name: Grant permissions
+        run: chmod +x ./tools/build/buildClient.js
+
       - name: Build the pack
         working-directory: tools
         run: npm run a-build-client
