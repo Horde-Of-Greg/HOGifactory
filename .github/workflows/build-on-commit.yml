@@ -45,13 +45,31 @@ jobs:
         working-directory: tools
         run: npm ci
 
+      - name: Cache old Manifest
+        run: cp config.json config.json.orig
+
       - name: Sync manifest
         if: steps.changes.outputs.manifest-template == 'true'
         working-directory: tools
         run: npm run a-sync-manifest
 
-      - name: Commit updated manifest
+        # I don't think this will ever come into play but let's just be safe
+      - name: Check if Manifest Changed
         if: steps.changes.outputs.manifest-template == 'true'
+        id: diff
+        run: |
+            if cmp -s config.json config.json.orig; then
+              echo "changed=false" >>"$GITHUB_OUTPUT"
+            else
+              echo "changed=true"  >>"$GITHUB_OUTPUT"
+            fi  
+
+      - name: Bump Manifest ver
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run a-bump-manifest
+
+      - name: Commit updated manifest
+        if: steps.diff.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'sync manifest.json from template'
