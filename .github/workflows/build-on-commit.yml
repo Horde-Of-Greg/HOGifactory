@@ -56,8 +56,8 @@ jobs:
         with:
           commit_message: 'sync manifest.json from template'
           branch: ${{ github.head_ref || github.ref_name }}
-          commit_user_name: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
-          commit_author: 'hog-management[bot]'
+          commit_author: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
+          commit_user_name: 'hog-management[bot]'
           commit_user_email: '1048098+hog-management[bot]@users.noreply.github.com'
 
   build-pack:

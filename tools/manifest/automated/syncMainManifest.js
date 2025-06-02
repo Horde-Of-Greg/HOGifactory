@@ -15,7 +15,7 @@ template.files = template.files.map(({ name, ...rest }) => rest);
 template.version = newVersion;
 
 fs.writeFileSync(
-    path.join(__dirname, "../../../test-manifest.json"),
+    path.join(__dirname, "../../../manifest.json"),
     JSON.stringify(template, null, 2),
     "utf-8"
 );
