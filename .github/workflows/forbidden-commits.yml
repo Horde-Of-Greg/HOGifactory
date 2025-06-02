@@ -1,0 +1,17 @@
+name: Error on Forbidden Commits
+description: This action checks if the commit contains changes that we do not allow, such as manual edits to the manifest.json file.
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'manifest.json'
+
+jobs:
+  manifest-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if not GitHub Actions bot
+        if: ${{ github.actor != 'hog-management[bot]' }}
+        run: echo "Only automated changes to manifest.json are allowed" && exit 1

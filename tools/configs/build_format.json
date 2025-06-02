@@ -1,0 +1,11 @@
+{
+  "client": {
+    "overrides": {
+      "config": "/overrides/config",
+      "groovy": "/overrides/groovy",
+      "resources": "/overrides/resources"
+    },
+    "manifest.json": "/manifest.json",
+    "README.md": "/README.md"
+  }
+}

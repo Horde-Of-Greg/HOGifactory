@@ -1,0 +1,100 @@
+name: Build Client
+
+on:
+  push:
+    branches:
+      - 'master'
+  pull_request:
+
+
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+jobs:
+  sync-manifest:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Checkout Ref
+        uses: actions/checkout@v4
+
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            manifest-template:
+              - 'tools/templates/manifest.json'  
+
+      # Everything below runs only when the template changed
+      - name: Setup Node.js 20
+        if: steps.changes.outputs.manifest-template == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          check-latest: true
+
+      - name: Install NPM deps
+        if: steps.changes.outputs.manifest-template == 'true'
+        working-directory: tools
+        run: npm ci
+
+      - name: Sync manifest
+        if: steps.changes.outputs.manifest-template == 'true'
+        working-directory: tools
+        run: npm run a-sync-manifest
+
+      - name: Commit updated manifest
+        if: steps.changes.outputs.manifest-template == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'sync manifest.json from template'
+          file_pattern: 'tools/templates/manifest.json'
+          branch: ${{ github.head_ref || github.ref_name }}
+          commit_user_name: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
+          commit_author: 'hog-management[bot]'
+          commit_user_email: '1048098+hog-management[bot]@users.noreply.github.com'
+
+  build-pack:
+    runs-on: ubuntu-latest
+    needs: sync-manifest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          check-latest: true
+
+      - name: Install NPM deps
+        working-directory: tools
+        run: npm ci
+
+      - name: Build the pack
+        working-directory: tools
+        run: npm run a-build-client
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hogifactory-client
+          path: ./temp/build/client
+          if-no-files-found: error
+          compression-level: 9
+
+
+
+
+

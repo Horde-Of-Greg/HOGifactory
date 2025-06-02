@@ -3,7 +3,7 @@
 .env
 overrides/config/brandon3055/ProjectIntelligence
 overrides/config/brandon3055/ResourceCache
-build
+# build
 tools/node_modules
 
 *iml
@@ -31,3 +31,4 @@ tools/.dest/
 
 # NPM
 */node_modules/*
+/temp/
