@@ -3,7 +3,7 @@ name: Build Client
 on:
   push:
     branches:
-      - '!master'
+      - 'master'
   pull_request:
 
 
