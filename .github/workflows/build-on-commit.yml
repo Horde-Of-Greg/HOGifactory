@@ -64,6 +64,9 @@ jobs:
               echo "changed=true"  >>"$GITHUB_OUTPUT"
             fi  
 
+      - name: Delete the Cache
+        run: rm manifest.json.orig
+
       - name: Bump Manifest ver
         if: steps.diff.outputs.changed == 'true'
         working-directory: tools

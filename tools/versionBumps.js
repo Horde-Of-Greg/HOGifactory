@@ -7,8 +7,8 @@ const args = process.argv.slice(2);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const templateManifest = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "./templates/manifest.json"), "utf-8")
+const manifest = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "../manifest.json"), "utf-8")
 );
 
 //switch (args[0])
@@ -16,11 +16,11 @@ const templateManifest = JSON.parse(
         const version = fs.readFileSync(path.join(__dirname, "../.manifest-version-lock.txt")).toString();
         const newVersion = version.split(".").fill((parseInt(version.split(".")[1]) + 1).toString(), 1, 2).join(".");
 
-        templateManifest.version = newVersion
+        manifest.version = newVersion
 
         fs.writeFileSync(
             path.join(__dirname, "../manifest.json"),
-            JSON.stringify(templateManifest, null, 2),
+            JSON.stringify(manifest, null, 2),
             "utf-8"
         );
 
