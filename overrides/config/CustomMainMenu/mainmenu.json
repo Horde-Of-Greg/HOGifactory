@@ -5,45 +5,45 @@
         "gui": "mods",
         "type": "openGui"
       },
-      "alignment": "left_center",
+      "alignment": "center",
       "height": 20,
-      "posX": 4,
-      "posY": -14,
+      "posX": -120,
+      "posY": 6,
       "text": "fml.menu.mods",
-      "width": 120
+      "width": 119
     },
     "multiplayer": {
       "action": {
         "gui": "multiplayer",
         "type": "openGui"
       },
-      "alignment": "left_center",
+      "alignment": "center",
       "height": 20,
-      "posX": 125,
-      "posY": -38,
+      "posX": -120,
+      "posY": -16,
       "text": "menu.multiplayer",
-      "width": 120
+      "width": 240
     },
     "options": {
       "action": {
         "gui": "options",
         "type": "openGui"
       },
-      "alignment": "left_center",
+      "alignment": "center",
       "height": 20,
-      "posX": 125,
-      "posY": -14,
+      "posX": 2,
+      "posY": 6,
       "text": "menu.options",
-      "width": 120
+      "width": 119
     },
     "quit": {
       "action": {
         "type": "quit"
       },
-      "alignment": "left_center",
+      "alignment": "center",
       "height": 20,
-      "posX": 4,
-      "posY": 82,
+      "posX": -120,
+      "posY": 62,
       "text": "menu.quit",
       "width": 240
     },
@@ -52,24 +52,24 @@
         "gui": "singleplayer",
         "type": "openGui"
       },
-      "alignment": "left_center",
+      "alignment": "center",
       "height": 20,
-      "posX": 4,
+      "posX": -120,
       "posY": -38,
       "text": "menu.singleplayer",
-      "width": 120
+      "width": 240
     },
     "update": {
       "action": {
         "link": "https://github.com/Horde-Of-Greg/HOGifactory/releases/tag/0.1.0",
         "type": "openLink"
       },
-      "alignment": "left_center",
+      "alignment": "center",
       "height": 20,
-      "posX": 125,
-      "posY": 34,
+      "posX": -120,
+      "posY": 40,
       "text": "hogi.main_menu.update",
-      "width": 120
+      "width": 240
     }
   },
   "images": {
@@ -80,15 +80,6 @@
       "posX": -150,
       "posY": 4,
       "width": 300
-    }
-  },
-  "labels": {
-    "mojang": {
-      "alignment": "bottom_right",
-      "color": -1,
-      "posX": -197,
-      "posY": -10,
-      "text": "Copyright Mojang AB. Do not distribute!"
     }
   },
   "other": {
