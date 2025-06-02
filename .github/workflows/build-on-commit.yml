@@ -46,7 +46,7 @@ jobs:
         run: npm ci
 
       - name: Cache old Manifest
-        run: cp config.json config.json.orig
+        run: cp manifest.json manifest.json.orig
 
       - name: Sync manifest
         if: steps.changes.outputs.manifest-template == 'true'
@@ -58,7 +58,7 @@ jobs:
         if: steps.changes.outputs.manifest-template == 'true'
         id: diff
         run: |
-            if cmp -s config.json config.json.orig; then
+            if cmp -s manifest.json manifest.json.orig; then
               echo "changed=false" >>"$GITHUB_OUTPUT"
             else
               echo "changed=true"  >>"$GITHUB_OUTPUT"
