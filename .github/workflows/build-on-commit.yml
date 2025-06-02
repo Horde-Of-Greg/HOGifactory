@@ -55,7 +55,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'sync manifest.json from template'
-          file_pattern: 'tools/templates/manifest.json'
           branch: ${{ github.head_ref || github.ref_name }}
           commit_user_name: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
           commit_author: 'hog-management[bot]'
