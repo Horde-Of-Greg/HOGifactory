@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "mkctao",
   "name": "hogifactory",
   "files": [
@@ -316,11 +316,6 @@
     {
       "projectID": 262823,
       "fileID": 2619249,
-      "required": true
-    },
-    {
-      "projectID": 266736,
-      "fileID": 2668113,
       "required": true
     },
     {
