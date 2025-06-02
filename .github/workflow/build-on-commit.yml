@@ -1,0 +1,90 @@
+name: Build Client
+
+on:
+  push:
+    branches:
+      - '!master'
+  pull_request:
+
+
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+jobs:
+  sync-manifest:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Checkout Ref
+        uses: actions/checkout@v4
+
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+        filters: |
+          manifest-template:
+          - 'tools/templates/manifest.json'  
+
+      - if: steps.changes.outputs.manifest-template == 'true'
+        steps:
+
+          - name: Setup NodeJS v20
+            uses: actions/setup-node@v4
+            with:
+              node-version: 20
+              check-latest: true
+
+          - name: Setup NPM Packages
+            working-directory: ./tools
+            run: npm ci
+
+          - name: Sync Manifest
+            working-directory: ./tools
+            run: npm run a-sync-manifest
+
+          - uses: stefanzweifel/git-auto-commit-action@v5
+            with:
+              commit_message: 'sync manifest.json from template'
+              file_pattern: 'tools/templates/manifest.json'
+              author_name: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
+              author_user_name: 'hog-management[bot]'
+              author_email: '1048098+hog-management[bot]@users.noreply.github.com'
+              branch: ${{ github.head_ref || github.ref_name }}
+
+  build-pack:
+
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Setup NodeJS v20
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        check-latest: true
+
+    - name: Setup NPM Packages
+      working-directory: ./tools
+      run: npm ci
+
+    - name: Build the pack
+      working-directory: ./tools
+      run: npm run a-build-client
+
+    - name: Upload the pack to artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: hogifactory-client.zip
+        path: ./temp/build/client
+        if-no-files-found: error
+        compression-level: 9
+
+
+

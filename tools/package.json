@@ -9,7 +9,8 @@
     "edit-manifest": "node ./manifest/manifest.js",
     "set-cf-api-key": "node ./runTasks.js set-cf-core-api-key",
     "a-actions-env": "node ./runTasks.js set-actions-env",
-    "a-sync-manifest": "node manifest/automated/syncMainManifest.js"
+    "a-sync-manifest": "node manifest/automated/syncMainManifest.js",
+    "a-build-client": "node build/buildClient.js"
   },
   "imports": {},
   "author": "mkctao",
