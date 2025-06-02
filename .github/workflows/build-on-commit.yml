@@ -56,6 +56,7 @@ jobs:
         # I don't think this will ever come into play but let's just be safe
       - name: Check if Manifest Changed
         if: steps.changes.outputs.manifest-template == 'true'
+        working-directory: tools
         id: diff
         run: |
             if cmp -s manifest.json manifest.json.orig; then
