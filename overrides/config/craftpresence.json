@@ -12,7 +12,7 @@
     "detectDimensionData": false,
     "detectWorldData": true,
     "clientId": "1222869945398853733",
-    "defaultIcon": "nomi-ceu",
+    "defaultIcon": "hogi",
     "enableJoinRequests": false,
     "preferredClientLevel": 3,
     "resetTimeOnInit": false,
@@ -156,11 +156,11 @@
   },
   "serverSettings": {
     "fallbackServerIcon": "logo-{custom.modeSlug}",
-    "fallbackServerName": "Nomi-CEu Server",
-    "fallbackServerMotd": "Nomifactory CEu Server",
+    "fallbackServerName": "HOGi Server",
+    "fallbackServerMotd": "HOGifactory Server",
     "serverData": {
       "default": {
-        "textOverride": "Playing Multiplayer ({custom.mode} Mode)"
+        "textOverride": "Playing Multiplayer"
       }
     },
     "pingRateInterval": 5,
@@ -218,7 +218,7 @@
       }
     },
     "lanData": {
-      "textOverride": "Playing on LAN ({custom.mode} Mode)",
+      "textOverride": "Playing on LAN",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -226,7 +226,7 @@
         "activityType": 0,
         "partyPrivacy": 1,
         "details": "",
-        "gameState": "Playing on LAN ({custom.mode} Mode)",
+        "gameState": "Playing on LAN",
         "largeImageKey": "",
         "largeImageText": "",
         "smallImageKey": "",
@@ -242,7 +242,7 @@
       }
     },
     "singleplayerData": {
-      "textOverride": "Playing Singleplayer ({custom.mode} Mode)",
+      "textOverride": "Playing Singleplayer",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -250,7 +250,7 @@
         "activityType": 0,
         "partyPrivacy": 1,
         "details": "",
-        "gameState": "Playing Singleplayer ({custom.mode} Mode)",
+        "gameState": "Playing Singleplayer",
         "largeImageKey": "",
         "largeImageText": "",
         "smallImageKey": "",
@@ -266,7 +266,7 @@
       }
     },
     "realmData": {
-      "textOverride": "Playing on Realm ({custom.mode} Mode)",
+      "textOverride": "Playing on Realm",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -274,7 +274,7 @@
         "activityType": 0,
         "partyPrivacy": 1,
         "details": "",
-        "gameState": "Playing on Realm ({custom.mode} Mode)",
+        "gameState": "Playing on Realm",
         "largeImageKey": "",
         "largeImageText": "",
         "smallImageKey": "",
@@ -359,12 +359,8 @@
           "url": "https://google.com"
         },
         "github": {
-          "label": "Nomi-CEu GitHub",
-          "url": "https://github.com/Nomi-CEu/Nomi-CEu"
-        },
-        "discord": {
-          "label": "Nomi-CEu Discord",
-          "url": "https://discord.com/invite/zwQzqP8b6q"
+          "label": "HOGi GitHub",
+          "url": "https://github.com/Horde-Of-Greg/HOGifactory"
         }
       }
     },

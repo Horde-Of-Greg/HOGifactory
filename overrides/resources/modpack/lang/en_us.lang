@@ -31,14 +31,6 @@ nomiceu.tooltip.actuallyadditions.solidifed_xp.desc.2=§aa Fluid Solidifier or E
 # Output: §eGives 8 XP, of 32% of a XP Level!§r (% is Escaped)
 nomiceu.tooltip.actuallyadditions.solidifed_xp.amount=§eGives 8 XP, or 32%% of an XP Level!§r
 
-# Advanced Rocketry
-nomiceu.tooltip.advancedrocketry.orbital_laser_drill.1=§7Glory to the PGS!§r
-nomiceu.tooltip.advancedrocketry.orbital_laser_drill.2=§7Consult the AR Wiki for building instructions.§r
-nomiceu.tooltip.advancedrocketry.orbital_laser_drill.3=§7Consumes §e1,000,000§r RF/t§r
-nomiceu.tooltip.advancedrocketry.orbital_laser_drill.4=§cExtremely finicky. Use at your own risk.§r
-nomiceu.tooltip.advancedrocketry.orbital_laser_drill.5=§cTry restarting your world if it isn't working.§r
-nomiceu.tooltip.advancedrocketry.basic_lens=§7A basic lens, used for the Orbital Laser Drill.§r
-
 # AE2 & NAE2
 nomiceu.tooltip.ae2.crafting_terminal_removal.1=§cThis item is being removed.§r
 nomiceu.tooltip.ae2.crafting_terminal_removal.2=§cA temporary conversion recipe has been added.§r
@@ -96,21 +88,12 @@ nomiceu.tooltip.dme.glitch_fragment=§bObtained by crushing Glitch Hearts agains
 nomiceu.tooltip.dme.matter=§eGives %s%% of a XP Level!§r
 nomiceu.tooltip.dme.matter.full_level=§eGives One XP Level!§r
 
-# Thermal Expansion
-nomiceu.tooltip.thermalexpansion.capacitors=§cCannot be discharged in GT Battery Buffers or Machines!§r
-
 # GregTech
 nomiceu.tooltip.gregtech.prospector.1=§6§lUsage:§r
 nomiceu.tooltip.gregtech.prospector.2=Grid squares = 1 chunk, up is north.
 nomiceu.tooltip.gregtech.prospector.3=Click an ore in the sidebar to isolate it.
 nomiceu.tooltip.gregtech.prospector.4=Use JEI to check the potential vein depth.
 nomiceu.tooltip.gregtech.facade=§3GTCEu facades can be made from most non-tile-entities.§r
-
-# Ender IO
-nomiceu.tooltip.eio.fused_glass.make=Made with §6Tempered Glass§r and §7White Dye§r
-nomiceu.tooltip.eio.glass.dye=Can be §bDyed§r!
-nomiceu.tooltip.eio.liquid_xp=§e20L = 1XP, 500L = 1 XP Level!§r
-nomiceu.tooltip.eio.facade=§cMay cause FPS lag if used excessively!§r
 
 # Project Red
 nomiceu.tooltip.projectred.wire=§eFor use with ProjectRed.§r
