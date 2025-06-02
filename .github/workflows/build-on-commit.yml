@@ -56,7 +56,6 @@ jobs:
         # I don't think this will ever come into play but let's just be safe
       - name: Check if Manifest Changed
         if: steps.changes.outputs.manifest-template == 'true'
-        working-directory: tools
         id: diff
         run: |
             if cmp -s manifest.json manifest.json.orig; then
@@ -67,6 +66,7 @@ jobs:
 
       - name: Bump Manifest ver
         if: steps.diff.outputs.changed == 'true'
+        working-directory: tools
         run: npm run a-bump-manifest
 
       - name: Commit updated manifest
