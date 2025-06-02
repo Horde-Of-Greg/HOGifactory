@@ -11,63 +11,54 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.3.0",
+  "version": "0.2.0",
   "author": "mkctao",
   "name": "hogifactory",
   "files": [
     {
       "projectID": 32274,
       "fileID": 5172461,
-      "required": true,
-      "name": "JourneyMap 3"
+      "required": true
     },
     {
       "projectID": 69118,
       "fileID": 2664449,
-      "required": true,
-      "name": "Morpheus 3.5.106"
+      "required": true
     },
     {
       "projectID": 70496,
       "fileID": 4675629,
-      "required": true,
-      "name": "BdLib 1.14.4.1"
+      "required": true
     },
     {
       "projectID": 78778,
       "fileID": 2524058,
-      "required": true,
-      "name": "Chest Transporter 2.8.8"
+      "required": true
     },
     {
       "projectID": 223008,
       "fileID": 6390867,
-      "required": true,
-      "name": "OpenComputers 357"
+      "required": true
     },
     {
       "projectID": 223565,
       "fileID": 3431261,
-      "required": true,
-      "name": "Draconic Evolution 2.3.28.354"
+      "required": true
     },
     {
       "projectID": 223852,
       "fileID": 5981297,
-      "required": true,
-      "name": "Storage Drawers 5.5.3"
+      "required": true
     },
     {
       "projectID": 225561,
       "fileID": 2678374,
-      "required": true,
-      "name": "Extra Utilities 1.9.9"
+      "required": true
     },
     {
       "projectID": 226254,
       "fileID": 3074246,
-      "required": true,
-      "name": "NuclearCraft 2.18"
+      "required": true
     },
     {
       "projectID": 226406,
@@ -75,8 +66,7 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Custom Main Menu 2.0.9.1"
+      ]
     },
     {
       "projectID": 226447,
@@ -84,80 +74,67 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Resource Loader 1.5.3"
+      ]
     },
     {
       "projectID": 227083,
       "fileID": 2518667,
-      "required": true,
-      "name": "Baubles 1.5.2"
+      "required": true
     },
     {
       "projectID": 228404,
       "fileID": 3117927,
-      "required": true,
-      "name": "Actually Additions 152"
+      "required": true
     },
     {
       "projectID": 228525,
       "fileID": 2836960,
-      "required": true,
-      "name": "Bookshelf 2.3.590"
+      "required": true
     },
     {
       "projectID": 228702,
       "fileID": 2745545,
-      "required": true,
-      "name": "Project Red - Core 4.9.4.120"
+      "required": true
     },
     {
       "projectID": 229002,
       "fileID": 2735197,
-      "required": true,
-      "name": "MrTJPCore 2.1.4.43"
+      "required": true
     },
     {
       "projectID": 229045,
       "fileID": 2745548,
-      "required": true,
-      "name": "Project Red - Integration 4.9.4.120"
+      "required": true
     },
     {
       "projectID": 230497,
       "fileID": 2450900,
-      "required": true,
-      "name": "Chameleon 4.1.3"
+      "required": true
     },
     {
       "projectID": 231382,
       "fileID": 3408276,
-      "required": true,
-      "name": "Brandon's Core 2.4.20.162"
+      "required": true
     },
     {
       "projectID": 235279,
       "fileID": 2915375,
-      "required": true,
-      "name": "Chisel 1.0.2.45"
+      "required": true
     },
     {
       "projectID": 235577,
       "fileID": 2722385,
-      "required": true,
-      "name": "TrashSlot 8.4.10"
+      "required": true
     },
     {
       "projectID": 237102,
       "fileID": 3157548,
-      "required": true,
-      "name": "FTB Utilities (Forge) 5.4.1.131"
+      "required": true
     },
     {
       "projectID": 237167,
       "fileID": 2985811,
-      "required": true,
-      "name": "FTB Library (Forge) (Legacy) 5.4.7.2"
+      "required": true
     },
     {
       "projectID": 238747,
@@ -165,38 +142,32 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Mod Name Tooltip 1.10.1"
+      ]
     },
     {
       "projectID": 240630,
       "fileID": 2728585,
-      "required": true,
-      "name": "Just Enough Resources (JER) 0.9.2.60"
+      "required": true
     },
     {
       "projectID": 241344,
       "fileID": 2480458,
-      "required": true,
-      "name": "Snad 1.7.09.16"
+      "required": true
     },
     {
       "projectID": 242195,
       "fileID": 2813586,
-      "required": true,
-      "name": "Dark Utilities 1.8.230"
+      "required": true
     },
     {
       "projectID": 242223,
       "fileID": 3524685,
-      "required": true,
-      "name": "Just Enough Calculation 3.2.7"
+      "required": true
     },
     {
       "projectID": 242818,
       "fileID": 2779848,
-      "required": true,
-      "name": "CodeChicken Lib 1.8.+ 3.2.3.358"
+      "required": true
     },
     {
       "projectID": 243478,
@@ -204,56 +175,47 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "More Overlays 1.15.1"
+      ]
     },
     {
       "projectID": 245174,
       "fileID": 2755787,
-      "required": true,
-      "name": "Ender Storage 1.8.+ 2.4.6.137"
+      "required": true
     },
     {
       "projectID": 245211,
       "fileID": 2667280,
-      "required": true,
-      "name": "The One Probe 1.4.28"
+      "required": true
     },
     {
       "projectID": 246974,
       "fileID": 3050838,
-      "required": true,
-      "name": "Solar Flux Reborn 12.4.11"
+      "required": true
     },
     {
       "projectID": 246996,
       "fileID": 3440963,
-      "required": true,
-      "name": "B.A.S.E 3.14.0"
+      "required": true
     },
     {
       "projectID": 247111,
       "fileID": 2887479,
-      "required": true,
-      "name": "TOP Addons 1.13.0"
+      "required": true
     },
     {
       "projectID": 248055,
       "fileID": 2580332,
-      "required": true,
-      "name": "TheDragonLib 5.3.0"
+      "required": true
     },
     {
       "projectID": 248787,
       "fileID": 2987247,
-      "required": true,
-      "name": "AppleSkin 1.0.14"
+      "required": true
     },
     {
       "projectID": 250363,
       "fileID": 2746011,
-      "required": true,
-      "name": "AutoRegLib 32"
+      "required": true
     },
     {
       "projectID": 250398,
@@ -261,20 +223,17 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Controlling 3.0.12.2"
+      ]
     },
     {
       "projectID": 250419,
       "fileID": 2689502,
-      "required": true,
-      "name": "Enchantment Descriptions 1.1.15"
+      "required": true
     },
     {
       "projectID": 250832,
       "fileID": 2845365,
-      "required": true,
-      "name": "OpenBlocks Elevator 1.3.14"
+      "required": true
     },
     {
       "projectID": 251407,
@@ -282,104 +241,87 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Client Tweaks 3.1.11"
+      ]
     },
     {
       "projectID": 251792,
       "fileID": 3017440,
-      "required": true,
-      "name": "Simply Jetpacks 2 2.2.15.69"
+      "required": true
     },
     {
       "projectID": 252354,
       "fileID": 2464501,
-      "required": true,
-      "name": "Open Glider 1.1.0"
+      "required": true
     },
     {
       "projectID": 252848,
       "fileID": 2893527,
-      "required": true,
-      "name": "Nature's Compass 1.8.5"
+      "required": true
     },
     {
       "projectID": 253211,
       "fileID": 3308160,
-      "required": true,
-      "name": "MTLib 3.0.7"
+      "required": true
     },
     {
       "projectID": 254268,
       "fileID": 3529742,
-      "required": true,
-      "name": "Torchmaster 1.8.5.0"
+      "required": true
     },
     {
       "projectID": 255232,
       "fileID": 2830265,
-      "required": true,
-      "name": "p455w0rd's Library 2.3.161"
+      "required": true
     },
     {
       "projectID": 256717,
       "fileID": 2666198,
-      "required": true,
-      "name": "Clumps 3.1.2"
+      "required": true
     },
     {
       "projectID": 257573,
       "fileID": 3248033,
-      "required": true,
-      "name": "Xtones 1.2.2"
+      "required": true
     },
     {
       "projectID": 257814,
       "fileID": 4722163,
-      "required": true,
-      "name": "CreativeCore 1.10.71"
+      "required": true
     },
     {
       "projectID": 257818,
       "fileID": 5180387,
-      "required": true,
-      "name": "LittleTiles 1.5.87"
+      "required": true
     },
     {
       "projectID": 258426,
       "fileID": 2755790,
-      "required": true,
-      "name": "CB Multipart 2.6.2.83"
+      "required": true
     },
     {
       "projectID": 258881,
       "fileID": 2512758,
-      "required": true,
-      "name": "Faster Ladder Climbing 146"
+      "required": true
     },
     {
       "projectID": 260262,
       "fileID": 3459767,
-      "required": true,
-      "name": "Tool Belt 1.9.14"
+      "required": true
     },
     {
       "projectID": 261348,
       "fileID": 3143349,
-      "required": true,
-      "name": "Avaritia 1.1x 3.3.0.37"
+      "required": true
     },
     {
       "projectID": 262823,
       "fileID": 2619249,
-      "required": true,
-      "name": "Tomb Many Graves 2 4.2.0"
+      "required": true
     },
     {
       "projectID": 266736,
       "fileID": 2668113,
-      "required": true,
-      "name": "More Plates 5.5.2"
+      "required": true
     },
     {
       "projectID": 267602,
@@ -387,50 +329,42 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "ConnectedTexturesMod 1.0.2.31"
+      ]
     },
     {
       "projectID": 269024,
       "fileID": 2861574,
-      "required": true,
-      "name": "The Lost Cities 2.0.22"
+      "required": true
     },
     {
       "projectID": 270789,
       "fileID": 2920436,
-      "required": true,
-      "name": "Redstone Flux 2.1.1.1"
+      "required": true
     },
     {
       "projectID": 272335,
       "fileID": 2645867,
-      "required": true,
-      "name": "Cucumber Library 1.1.3"
+      "required": true
     },
     {
       "projectID": 273430,
       "fileID": 2459131,
-      "required": true,
-      "name": "Actually Baubles 1.1"
+      "required": true
     },
     {
       "projectID": 277631,
       "fileID": 4344128,
-      "required": true,
-      "name": "ArchitectureCraft - TridentMC Version 3.108"
+      "required": true
     },
     {
       "projectID": 278398,
       "fileID": 2567799,
-      "required": true,
-      "name": "PackMode 1.2.0"
+      "required": true
     },
     {
       "projectID": 278799,
       "fileID": 2833002,
-      "required": true,
-      "name": "Dense Metals 2.0.0.30"
+      "required": true
     },
     {
       "projectID": 282313,
@@ -438,14 +372,12 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "TipTheScales 1.0.4"
+      ]
     },
     {
       "projectID": 283644,
       "fileID": 2694382,
-      "required": true,
-      "name": "Placebo 1.6.0"
+      "required": true
     },
     {
       "projectID": 297038,
@@ -453,44 +385,37 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "CraftPresence 2.5.4+"
+      ]
     },
     {
       "projectID": 297209,
       "fileID": 2607310,
-      "required": true,
-      "name": "Hooked 1.0.3"
+      "required": true
     },
     {
       "projectID": 298187,
       "fileID": 3005950,
-      "required": true,
-      "name": "Building Gadgets 2.8.4"
+      "required": true
     },
     {
       "projectID": 299815,
       "fileID": 3038801,
-      "required": true,
-      "name": "Worley's Caves 1.5.2"
+      "required": true
     },
     {
       "projectID": 302113,
       "fileID": 2847346,
-      "required": true,
-      "name": "Effortless Building 2.16"
+      "required": true
     },
     {
       "projectID": 304920,
       "fileID": 2669468,
-      "required": true,
-      "name": "More Libs 1.2.2"
+      "required": true
     },
     {
       "projectID": 306028,
       "fileID": 2833640,
-      "required": true,
-      "name": "Project Intelligence 1.0.9.28"
+      "required": true
     },
     {
       "projectID": 306555,
@@ -498,62 +423,57 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Sound Device Options 1.0.4"
+      ]
     },
     {
       "projectID": 306770,
       "fileID": 3162874,
-      "required": true,
-      "name": "Patchouli 23.6"
+      "required": true
     },
     {
       "projectID": 308380,
       "fileID": 6312996,
-      "required": true,
-      "name": "PackagedAuto 1.0.18.63"
+      "required": true
+    },
+    {
+      "projectID": 309516,
+      "fileID": 2949667,
+      "required": true
     },
     {
       "projectID": 313141,
       "fileID": 2675884,
-      "required": true,
-      "name": "Advanced Solar Materials 1.0"
+      "required": true
     },
     {
       "projectID": 314904,
       "fileID": 2819669,
-      "required": true,
-      "name": "FTB Backups (Forge) 1.1.0.1"
+      "required": true
     },
     {
       "projectID": 322861,
       "fileID": 6293114,
-      "required": true,
-      "name": "PackagedExCrafting 1.0.2.27"
+      "required": true
     },
     {
       "projectID": 342584,
       "fileID": 3533131,
-      "required": true,
-      "name": "Collective 3.0"
+      "required": true
     },
     {
       "projectID": 361579,
       "fileID": 3245793,
-      "required": true,
-      "name": "spark 1122"
+      "required": true
     },
     {
       "projectID": 363856,
       "fileID": 2886150,
-      "required": true,
-      "name": "Super Sound Muffler: Revived 1.0.2.10"
+      "required": true
     },
     {
       "projectID": 376351,
       "fileID": 3015136,
-      "required": true,
-      "name": "Framed Compacting Drawers 1.2.7"
+      "required": true
     },
     {
       "projectID": 383632,
@@ -561,44 +481,37 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Dynamistics 1.0.2"
+      ]
     },
     {
       "projectID": 391401,
       "fileID": 3613142,
-      "required": true,
-      "name": "More Furnaces: Nomifactory Edition 1.11.0"
+      "required": true
     },
     {
       "projectID": 398267,
       "fileID": 5778512,
-      "required": true,
-      "name": "Extended Crafting: Nomifactory Edition 1.7.0.7"
+      "required": true
     },
     {
       "projectID": 419286,
       "fileID": 5640857,
-      "required": true,
-      "name": "MixinBooter 9.3"
+      "required": true
     },
     {
       "projectID": 431982,
       "fileID": 3671689,
-      "required": true,
-      "name": "Dimensional Edibles: Nomifactory Edition 1.6.4"
+      "required": true
     },
     {
       "projectID": 456403,
       "fileID": 5624708,
-      "required": true,
-      "name": "Forgelin-Continuous 2.0.10.0"
+      "required": true
     },
     {
       "projectID": 460609,
       "fileID": 6333774,
-      "required": true,
-      "name": "CensoredASM 5.28"
+      "required": true
     },
     {
       "projectID": 461660,
@@ -606,14 +519,12 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "Mouse Tweaks Unofficial 3.1.5"
+      ]
     },
     {
       "projectID": 490698,
       "fileID": 3337685,
-      "required": true,
-      "name": "Default World Generator without Server Side Prompts 2.3.1"
+      "required": true
     },
     {
       "projectID": 513857,
@@ -621,182 +532,152 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "OAuth 1.06.4"
+      ]
     },
     {
       "projectID": 557242,
       "fileID": 5519022,
-      "required": true,
-      "name": "GregTech CE Unofficial 2.8.10"
+      "required": true
     },
     {
       "projectID": 557549,
       "fileID": 6187146,
-      "required": true,
-      "name": "Had Enough Items 4.27.3"
+      "required": true
     },
     {
       "projectID": 564858,
       "fileID": 5619513,
-      "required": true,
-      "name": "Gregicality Multiblocks 1.2.11"
+      "required": true
     },
     {
       "projectID": 570458,
       "fileID": 5378163,
-      "required": true,
-      "name": "AE2 Unofficial Extended Life 0.56.5"
+      "required": true
     },
     {
       "projectID": 610085,
       "fileID": 3748963,
-      "required": true,
-      "name": "FindMyItemsAndFluids 1.0.0"
+      "required": true
     },
     {
       "projectID": 616190,
       "fileID": 4630499,
-      "required": true,
-      "name": "JEI Utilities 0.2.12"
+      "required": true
     },
     {
       "projectID": 623955,
       "fileID": 5751930,
-      "required": true,
-      "name": "AE2 Fluid Crafting Rework 2.6.6"
+      "required": true
     },
     {
       "projectID": 624243,
       "fileID": 4996326,
-      "required": true,
-      "name": "ModularUI 2.4.2"
+      "required": true
     },
     {
       "projectID": 629629,
       "fileID": 5183601,
-      "required": true,
-      "name": "Better Questing Unofficial 4.2.2"
+      "required": true
     },
     {
       "projectID": 632327,
       "fileID": 5650806,
-      "required": true,
-      "name": "Inventory Bogo Sorter 1.4.9"
+      "required": true
     },
     {
       "projectID": 633720,
       "fileID": 3852709,
-      "required": true,
-      "name": "Crafting Tweaks Unofficial 9.0.1"
+      "required": true
     },
     {
       "projectID": 635555,
       "fileID": 4912949,
-      "required": true,
-      "name": "ULV Covers 2.8.0"
+      "required": true
     },
     {
       "projectID": 687577,
       "fileID": 5635093,
-      "required": true,
-      "name": "GroovyScript 1.1.3"
+      "required": true
     },
     {
       "projectID": 705000,
       "fileID": 6123916,
-      "required": true,
-      "name": "Universal Tweaks 1.14.0"
+      "required": true
     },
     {
       "projectID": 737252,
       "fileID": 5985530,
-      "required": true,
-      "name": "Deep Mob Evolution 1.2.3"
+      "required": true
     },
     {
       "projectID": 833931,
       "fileID": 6034816,
-      "required": true,
-      "name": "PackagedDraconic 1.0.2.19"
+      "required": true
     },
     {
       "projectID": 845779,
       "fileID": 5006537,
-      "required": true,
-      "name": "Gregtech Drawers 1.0.7"
+      "required": true
     },
     {
       "projectID": 870276,
       "fileID": 5212709,
-      "required": true,
-      "name": "ConfigAnytime 3.0"
+      "required": true
     },
     {
       "projectID": 870486,
       "fileID": 4569618,
-      "required": true,
-      "name": "No Nether Portals 1.1.0"
+      "required": true
     },
     {
       "projectID": 871198,
       "fileID": 6300725,
-      "required": true,
-      "name": "VintageFix 0.5.5"
+      "required": true
     },
     {
       "projectID": 873867,
       "fileID": 6147102,
-      "required": true,
-      "name": "Red Core 0.6"
+      "required": true
     },
     {
       "projectID": 884359,
       "fileID": 5380800,
-      "required": true,
-      "name": "Neeve's AE2: Extended Life Additions 1.6.4"
+      "required": true
     },
     {
       "projectID": 895539,
       "fileID": 5828524,
-      "required": true,
-      "name": "VisualOres 0.2.6"
+      "required": true
     },
     {
       "projectID": 896591,
       "fileID": 5187152,
-      "required": true,
-      "name": "SerializationIsBad 1.5.2"
+      "required": true
     },
     {
       "projectID": 910715,
       "fileID": 6182667,
-      "required": true,
-      "name": "Alfheim Lighting Engine 1.5"
+      "required": true
     },
     {
       "projectID": 932060,
       "fileID": 6438352,
-      "required": true,
-      "name": "Nomi Labs 0.15.1"
+      "required": true
     },
     {
       "projectID": 943734,
       "fileID": 4928154,
-      "required": true,
-      "name": "Betterer P2P 1.3.2"
+      "required": true
     },
     {
       "projectID": 945503,
       "fileID": 4941450,
-      "required": true,
-      "name": "RealBench: Nomi-CEu Edition 1.0.4"
+      "required": true
     },
     {
       "projectID": 951064,
       "fileID": 5002181,
-      "required": true,
-      "name": "AE2 Stuff Unofficial 0.9"
+      "required": true
     },
     {
       "projectID": 1056812,
@@ -804,20 +685,17 @@
       "required": true,
       "sides": [
         "client"
-      ],
-      "name": "UniLib 1.0.5+"
+      ]
     },
     {
       "projectID": 1058274,
       "fileID": 5531643,
-      "required": true,
-      "name": "LibrarianLib-Continuous 1"
+      "required": true
     },
     {
       "projectID": 1101263,
       "fileID": 6399818,
-      "required": true,
-      "name": "ZBGT 0.16.1"
+      "required": true
     }
   ]
 }
