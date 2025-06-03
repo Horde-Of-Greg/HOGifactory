@@ -53,12 +53,13 @@ jobs:
         if: steps.changes.outputs.manifest-template == 'true'
         id: diff
         run: |
+          cat manifest.json
           if git diff --quiet --exit-code HEAD manifest.json; then
             echo "changed=false" >>"$GITHUB_OUTPUT"
-            echo "changed"
+            echo "not changed"
           else
             echo "changed=true"  >>"$GITHUB_OUTPUT"
-            echo "not changed"
+            echo "changed"
           fi
 
       - name: Bump Manifest ver
