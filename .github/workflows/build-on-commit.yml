@@ -3,9 +3,8 @@ name: Build Client
 on:
   push:
     branches:
-      - 'master'
+      - "master"
   pull_request:
-
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
@@ -30,7 +29,7 @@ jobs:
         with:
           filters: |
             manifest-template:
-              - 'tools/templates/manifest.json'  
+              - 'tools/templates/manifest.json'
 
       # Everything below runs only when the template changed
       - name: Setup Node.js 20
@@ -45,9 +44,6 @@ jobs:
         working-directory: tools
         run: npm ci
 
-      - name: Cache old Manifest
-        run: cp manifest.json manifest.json.orig
-
       - name: Sync manifest
         if: steps.changes.outputs.manifest-template == 'true'
         working-directory: tools
@@ -58,14 +54,11 @@ jobs:
         if: steps.changes.outputs.manifest-template == 'true'
         id: diff
         run: |
-            if cmp -s manifest.json manifest.json.orig; then
-              echo "changed=false" >>"$GITHUB_OUTPUT"
-            else
-              echo "changed=true"  >>"$GITHUB_OUTPUT"
-            fi  
-
-      - name: Delete the Cache
-        run: rm manifest.json.orig
+          if git diff --quiet --exit-code -- manifest.json; then
+            echo "changed=false" >>"$GITHUB_OUTPUT"
+          else
+            echo "changed=true"  >>"$GITHUB_OUTPUT"
+          fi
 
       - name: Bump Manifest ver
         if: steps.diff.outputs.changed == 'true'
@@ -76,11 +69,11 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'sync manifest.json from template'
+          commit_message: "sync manifest.json from template"
           branch: ${{ github.head_ref || github.ref_name }}
-          commit_author: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
-          commit_user_name: 'hog-management[bot]'
-          commit_user_email: '1048098+hog-management[bot]@users.noreply.github.com'
+          commit_author: "hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>"
+          commit_user_name: "hog-management[bot]"
+          commit_user_email: "1048098+hog-management[bot]@users.noreply.github.com"
 
   build-pack:
     runs-on: ubuntu-latest
@@ -114,8 +107,3 @@ jobs:
           path: ./temp/build/client
           if-no-files-found: error
           compression-level: 9
-
-
-
-
-
