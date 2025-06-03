@@ -49,12 +49,11 @@ jobs:
         working-directory: tools
         run: npm run a-sync-manifest
 
-        # I don't think this will ever come into play but let's just be safe
       - name: Check if Manifest Changed
         if: steps.changes.outputs.manifest-template == 'true'
         id: diff
         run: |
-          if git diff --quiet --exit-code -- manifest.json; then
+          if git diff --quiet --exit-code HEAD manifest.json; then
             echo "changed=false" >>"$GITHUB_OUTPUT"
           else
             echo "changed=true"  >>"$GITHUB_OUTPUT"
