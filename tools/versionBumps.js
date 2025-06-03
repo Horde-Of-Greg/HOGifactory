@@ -8,25 +8,34 @@ const args = process.argv.slice(2);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const manifest = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../manifest.json"), "utf-8")
+  fs.readFileSync(path.join(__dirname, "../manifest.json"), "utf-8")
+);
+const templateManifest = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "./templates/manifest.json"), "utf-8")
 );
 
 //switch (args[0])
-    //case manifest
-        const version = fs.readFileSync(path.join(__dirname, "../.manifest-version-lock.txt")).toString();
-        const newVersion = version.split(".").fill((parseInt(version.split(".")[1]) + 1).toString(), 1, 2).join(".");
+//case manifest
+const version = fs.readFileSync(
+  path.join(__dirname, "./manifest.json")
+).version;
+const newVersion = version
+  .split(".")
+  .fill((parseInt(version.split(".")[1]) + 1).toString(), 1, 2)
+  .join(".");
 
-        manifest.version = newVersion
+manifest.version = newVersion;
+templateManifest.version = newVersion;
 
-        fs.writeFileSync(
-            path.join(__dirname, "../manifest.json"),
-            JSON.stringify(manifest, null, 2),
-            "utf-8"
-        );
+fs.writeFileSync(
+  path.join(__dirname, "../manifest.json"),
+  JSON.stringify(manifest, null, 2),
+  "utf-8"
+);
 
-        fs.writeFileSync(
-            path.join(__dirname, "../.manifest-version-lock.txt"),
-            newVersion,
-            "utf8"
-        );
-        // break;
+fs.writeFileSync(
+  path.join(__dirname, "./templates/manifest.json"),
+  JSON.stringify(templateManifest, null, 2),
+  "utf-8"
+);
+// break;
