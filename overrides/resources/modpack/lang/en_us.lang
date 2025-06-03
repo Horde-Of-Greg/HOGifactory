@@ -1,5 +1,6 @@
 # Custom Main Menu
-hogi.main_menu.update=Update Changes
+hogi.main_menu.update=Update Changes.
+hogi.main_menu.credit1=Thank you to IntegerLimit, Tracer and Exa for making the original packs.
 
 # No Nether Portals
 nomifactory.nonetherportals=Nether Portals are disabled in §5Nomi-CEu§r. Follow the Quest Book to unlock §6Nether Cakes§r!
