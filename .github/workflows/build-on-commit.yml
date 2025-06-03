@@ -69,6 +69,10 @@ jobs:
         working-directory: tools
         run: npm run a-bump-manifest
 
+      - name: Remove Temp Manifest
+        if: steps.diff.outputs.changed == 'true'
+        run: rm manifest.json.orig
+
       - name: Commit updated manifest
         if: steps.diff.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
