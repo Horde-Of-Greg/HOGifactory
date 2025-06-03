@@ -17,7 +17,7 @@ const templateManifest = JSON.parse(
 //switch (args[0])
 //case manifest
 const version = fs.readFileSync(
-  path.join(__dirname, "./manifest.json")
+  path.join(__dirname, "../manifest.json")
 ).version;
 const newVersion = version
   .split(".")
