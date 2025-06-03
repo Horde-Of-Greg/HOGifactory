@@ -55,8 +55,10 @@ jobs:
         run: |
           if git diff --quiet --exit-code HEAD manifest.json; then
             echo "changed=false" >>"$GITHUB_OUTPUT"
+            echo "changed"
           else
             echo "changed=true"  >>"$GITHUB_OUTPUT"
+            echo "not changed"
           fi
 
       - name: Bump Manifest ver
