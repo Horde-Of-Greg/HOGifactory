@@ -55,13 +55,10 @@ jobs:
         if: steps.changes.outputs.manifest-template == 'true'
         id: diff
         run: |
-          cat manifest.json
           if cmp -s manifest.json manifest.json.orig; then
             echo "changed=false" >>"$GITHUB_OUTPUT"
-            echo "not changed"
           else
             echo "changed=true"  >>"$GITHUB_OUTPUT"
-            echo "changed"
           fi
 
       - name: Bump Manifest ver
