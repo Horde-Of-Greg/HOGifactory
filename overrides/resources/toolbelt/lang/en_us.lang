@@ -1,0 +1,5 @@
+key.toolbelt.open=Open GUI
+key.toolbelt.slot=Open Belt Slot
+key.toolbelt.cycle.left=Cycle Tool Left
+key.toolbelt.cycle.right=Cycle Tool Right
+text.toolbelt.tooltip=Upgrades: %s (%s Slots)

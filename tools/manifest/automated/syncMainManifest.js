@@ -12,9 +12,9 @@ const template = JSON.parse(
 template.files = template.files.map(({ name, ...rest }) => rest);
 
 fs.writeFileSync(
-  path.join(__dirname, "../../../manifest.json"),
-  JSON.stringify(template, null, 2),
-  "utf-8"
+    path.join(__dirname, "../../../manifest.json"),
+    JSON.stringify(template, null, 2),
+    "utf-8"
 );
 
 console.log("Manifest synced");

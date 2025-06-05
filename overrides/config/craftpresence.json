@@ -1,0 +1,389 @@
+{
+  "_schemaVersion": 6,
+  "_lastMCVersionId": 340,
+  "generalSettings": {
+    "detectATLauncherInstance": false,
+    "detectCurseManifest": false,
+    "detectMultiMCManifest": false,
+    "detectMCUpdaterInstance": false,
+    "detectTechnicPack": false,
+    "detectModrinthPack": false,
+    "detectBiomeData": false,
+    "detectDimensionData": false,
+    "detectWorldData": true,
+    "clientId": "1222869945398853733",
+    "defaultIcon": "hogi",
+    "enableJoinRequests": false,
+    "preferredClientLevel": 3,
+    "resetTimeOnInit": false,
+    "autoRegister": false
+  },
+  "biomeSettings": {
+    "fallbackBiomeIcon": "unknown",
+    "biomeData": {
+      "default": {
+        "textOverride": "Playing in {biome.name}"
+      }
+    }
+  },
+  "dimensionSettings": {
+    "fallbackDimensionIcon": "overworld",
+    "dimensionData": {
+      "the_nether": {
+        "textOverride": "In the {dimension.name}",
+        "iconOverride": "the_nether",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "the_end": {
+        "textOverride": "In the {dimension.name}",
+        "iconOverride": "the_end",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "space": {
+        "textOverride": "In the {dimension.name}",
+        "iconOverride": "space_warp",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "planet": {
+        "textOverride": "In the {dimension.name}",
+        "iconOverride": "planet",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "jed_surface_0": {
+        "textOverride": "In the {dimension.name}",
+        "iconOverride": "void_world",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "jed_surface_loaded_0": {
+        "textOverride": "In the {dimension.name}",
+        "iconOverride": "void_world",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "default": {
+        "textOverride": "In the {dimension.name}"
+      }
+    }
+  },
+  "serverSettings": {
+    "fallbackServerIcon": "logo-{custom.modeSlug}",
+    "fallbackServerName": "HOGi Server",
+    "fallbackServerMotd": "HOGifactory Server",
+    "serverData": {
+      "default": {
+        "textOverride": "Playing Multiplayer"
+      }
+    },
+    "pingRateInterval": 5,
+    "pingRateUnit": "minutes"
+  },
+  "statusMessages": {
+    "mainMenuData": {
+      "textOverride": "In the Main Menu",
+      "iconOverride": "{custom.logo_slug}",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
+    },
+    "loadingData": {
+      "textOverride": "Loading...",
+      "iconOverride": "loading",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "loading",
+        "largeImageText": "",
+        "smallImageKey": "logo-{custom.modeSlug}",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
+    },
+    "lanData": {
+      "textOverride": "Playing on LAN",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "Playing on LAN",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
+    },
+    "singleplayerData": {
+      "textOverride": "Playing Singleplayer",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "Playing Singleplayer",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
+    },
+    "realmData": {
+      "textOverride": "Playing on Realm",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "Playing on Realm",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
+    }
+  },
+  "advancedSettings": {
+    "enablePerGui": false,
+    "enablePerItem": false,
+    "enablePerEntity": false,
+    "formatWords": false,
+    "debugMode": false,
+    "verboseMode": false,
+    "refreshRate": 2,
+    "allowPlaceholderPreviews": false,
+    "guiSettings": {
+      "fallbackGuiIcon": "unknown",
+      "guiData": {
+        "default": {
+          "textOverride": "In {screen.name}"
+        }
+      }
+    },
+    "itemMessages": {
+      "default": "Holding {item.message.holding}"
+    },
+    "entitySettings": {
+      "fallbackEntityIcon": "unknown",
+      "targetData": {
+        "default": {
+          "textOverride": "Targeting {entity.target.name}"
+        }
+      },
+      "ridingData": {
+        "default": {
+          "textOverride": "Riding {entity.riding.name}"
+        }
+      }
+    },
+    "allowEndpointIcons": true,
+    "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
+    "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
+    "allowDuplicatePackets": false,
+    "maxConnectionAttempts": 10,
+    "enableClassGraph": false,
+    "useClassLoader": true
+  },
+  "accessibilitySettings": {
+    "languageId": "en_us",
+    "stripTranslationColors": false,
+    "stripTranslationFormatting": false,
+    "stripExtraGuiElements": false,
+    "configKeyCode": 0
+  },
+  "displaySettings": {
+    "presenceData": {
+      "enabled": true,
+      "useAsMain": false,
+      "isInstance": false,
+      "activityType": 0,
+      "partyPrivacy": 1,
+      "details": "{getFirst(menu.message)}",
+      "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
+      "largeImageKey": "{getOrDefault(menu.icon, custom.logoSlug)}",
+      "largeImageText": "Playing {custom.windowTitle}",
+      "smallImageKey": "{custom.tierSlug}",
+      "smallImageText": "Stage: {custom.tierName}",
+      "startTimestamp": "{data.general.time}",
+      "endTimestamp": "",
+      "buttons": {
+        "default": {
+          "label": "Example Text",
+          "url": "https://google.com"
+        },
+        "github": {
+          "label": "HOGi GitHub",
+          "url": "https://github.com/Horde-Of-Greg/HOGifactory"
+        }
+      }
+    },
+    "dynamicIcons": {
+      "default": "https://via.placeholder.com/256.png",
+      "IntegerLimit_": "https://mc-heads.net/avatar/ba3d12a4b7f347309db3b9f71531e8d6"
+    },
+    "dynamicVariables": {
+      "mods": "{general.mods} Mod(s)",
+      "players": "{server.players.current} / {server.players.max} Players",
+      "player_info_items": "Items: {item.main_hand.message}",
+      "windowTitle": "{executeMethod('com.nomiceu.nomilabs.util.LabsDisplayHelper', null, 'getWindowTitle')}",
+      "player_info_health": "Health: {player.health.current}/{player.health.max}",
+      "pack": "{pack.name}",
+      "mode": "{executeMethod('com.nomiceu.nomilabs.util.LabsModeHelper', null, 'getFormattedMode')}",
+      "logoSlug": "logo-{executeMethod('com.nomiceu.nomilabs.util.LabsModeHelper', null, 'getMode')}",
+      "tierSlug": "{executeMethod('com.nomiceu.nomilabs.integration.betterquesting.LabsTierHelper', null, 'getTierSlug')}",
+      "default": "Example Text",
+      "player_info_coordinate": "At {player.position.x}, {player.position.z}",
+      "player_info_in": "({custom.player_info.health})",
+      "tierName": "{executeMethod('com.nomiceu.nomilabs.integration.betterquesting.LabsTierHelper', null, 'getTierName')}",
+      "player_info_out": "As {player.name}",
+      "world_info": "On {world.name}"
+    }
+  }
+}

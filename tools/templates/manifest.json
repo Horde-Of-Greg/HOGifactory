@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.1.0",
+  "version": "0.4.0",
   "author": "mkctao",
   "name": "hogifactory",
   "files": [
@@ -22,28 +22,10 @@
       "name": "JourneyMap 3"
     },
     {
-      "projectID": 64578,
-      "fileID": 4674244,
-      "required": true,
-      "name": "Ender IO 5.3.72"
-    },
-    {
       "projectID": 69118,
       "fileID": 2664449,
       "required": true,
       "name": "Morpheus 3.5.106"
-    },
-    {
-      "projectID": 69162,
-      "fileID": 2920433,
-      "required": true,
-      "name": "CoFH Core 4.6.6.1"
-    },
-    {
-      "projectID": 69163,
-      "fileID": 2926431,
-      "required": true,
-      "name": "Thermal Expansion 5.5.7.1"
     },
     {
       "projectID": 70496,
@@ -52,28 +34,16 @@
       "name": "BdLib 1.14.4.1"
     },
     {
-      "projectID": 70631,
-      "fileID": 2939416,
-      "required": true,
-      "name": "Redstone Arsenal 2.6.6.1"
-    },
-    {
       "projectID": 78778,
       "fileID": 2524058,
       "required": true,
       "name": "Chest Transporter 2.8.8"
     },
     {
-      "projectID": 220954,
-      "fileID": 3488553,
+      "projectID": 223008,
+      "fileID": 6390867,
       "required": true,
-      "name": "ModTweaker 4.0.20.5"
-    },
-    {
-      "projectID": 222880,
-      "fileID": 2926428,
-      "required": true,
-      "name": "Thermal Foundation 2.6.7.1"
+      "name": "OpenComputers 357"
     },
     {
       "projectID": 223565,
@@ -166,12 +136,6 @@
       "name": "Brandon's Core 2.4.20.162"
     },
     {
-      "projectID": 231868,
-      "fileID": 4671384,
-      "required": true,
-      "name": "EnderCore 0.5.78"
-    },
-    {
       "projectID": 235279,
       "fileID": 2915375,
       "required": true,
@@ -182,18 +146,6 @@
       "fileID": 2722385,
       "required": true,
       "name": "TrashSlot 8.4.10"
-    },
-    {
-      "projectID": 236541,
-      "fileID": 2949886,
-      "required": true,
-      "name": "LibVulpes 75"
-    },
-    {
-      "projectID": 236542,
-      "fileID": 3015079,
-      "required": true,
-      "name": "Advanced Rocketry 232"
     },
     {
       "projectID": 237102,
@@ -208,12 +160,6 @@
       "name": "FTB Library (Forge) (Legacy) 5.4.7.2"
     },
     {
-      "projectID": 237366,
-      "fileID": 2803109,
-      "required": true,
-      "name": "ArmorPlus 11.25.1.62"
-    },
-    {
       "projectID": 238747,
       "fileID": 2739582,
       "required": true,
@@ -221,12 +167,6 @@
         "client"
       ],
       "name": "Mod Name Tooltip 1.10.1"
-    },
-    {
-      "projectID": 239197,
-      "fileID": 4723169,
-      "required": true,
-      "name": "CraftTweaker 4.1.20.692"
     },
     {
       "projectID": 240630,
@@ -259,12 +199,6 @@
       "name": "CodeChicken Lib 1.8.+ 3.2.3.358"
     },
     {
-      "projectID": 243146,
-      "fileID": 2540650,
-      "required": true,
-      "name": "Craftable Elytra 1.1"
-    },
-    {
       "projectID": 243478,
       "fileID": 2745657,
       "required": true,
@@ -272,12 +206,6 @@
         "client"
       ],
       "name": "More Overlays 1.15.1"
-    },
-    {
-      "projectID": 244559,
-      "fileID": 2830252,
-      "required": true,
-      "name": "Wireless Crafting Terminal 3.12.97"
     },
     {
       "projectID": 245174,
@@ -448,12 +376,6 @@
       "name": "Tomb Many Graves 2 4.2.0"
     },
     {
-      "projectID": 266736,
-      "fileID": 2668113,
-      "required": true,
-      "name": "More Plates 5.5.2"
-    },
-    {
       "projectID": 267602,
       "fileID": 2915363,
       "required": true,
@@ -473,18 +395,6 @@
       "fileID": 2920436,
       "required": true,
       "name": "Redstone Flux 2.1.1.1"
-    },
-    {
-      "projectID": 271384,
-      "fileID": 2920434,
-      "required": true,
-      "name": "CoFH World 1.4.0.1"
-    },
-    {
-      "projectID": 271835,
-      "fileID": 2920437,
-      "required": true,
-      "name": "Thermal Cultivation 0.3.6.1"
     },
     {
       "projectID": 272335,
@@ -517,12 +427,6 @@
       "name": "Dense Metals 2.0.0.30"
     },
     {
-      "projectID": 279172,
-      "fileID": 2491542,
-      "required": true,
-      "name": "CraftingNetherStar 1.1"
-    },
-    {
       "projectID": 282313,
       "fileID": 2689835,
       "required": true,
@@ -536,12 +440,6 @@
       "fileID": 2694382,
       "required": true,
       "name": "Placebo 1.6.0"
-    },
-    {
-      "projectID": 291737,
-      "fileID": 2920441,
-      "required": true,
-      "name": "Thermal Innovation 0.3.6.1"
     },
     {
       "projectID": 297038,
@@ -577,18 +475,6 @@
       "name": "Effortless Building 2.16"
     },
     {
-      "projectID": 304024,
-      "fileID": 2830114,
-      "required": true,
-      "name": "AE2 Wireless Terminal Library 1.0.34"
-    },
-    {
-      "projectID": 304346,
-      "fileID": 4674241,
-      "required": true,
-      "name": "Ender IO Endergy 5.3.72"
-    },
-    {
       "projectID": 304920,
       "fileID": 2669468,
       "required": true,
@@ -620,12 +506,6 @@
       "fileID": 6312996,
       "required": true,
       "name": "PackagedAuto 1.0.18.63"
-    },
-    {
-      "projectID": 309516,
-      "fileID": 2949667,
-      "required": true,
-      "name": "Bountiful 2.2.2"
     },
     {
       "projectID": 313141,
@@ -724,12 +604,6 @@
       "name": "Mouse Tweaks Unofficial 3.1.5"
     },
     {
-      "projectID": 473325,
-      "fileID": 3407210,
-      "required": true,
-      "name": "Uber Conduit Probe 1.0.3"
-    },
-    {
       "projectID": 490698,
       "fileID": 3337685,
       "required": true,
@@ -779,6 +653,12 @@
       "fileID": 4630499,
       "required": true,
       "name": "JEI Utilities 0.2.12"
+    },
+    {
+      "projectID": 623955,
+      "fileID": 5751930,
+      "required": true,
+      "name": "AE2 Fluid Crafting Rework 2.6.6"
     },
     {
       "projectID": 624243,
@@ -926,6 +806,12 @@
       "fileID": 5531643,
       "required": true,
       "name": "LibrarianLib-Continuous 1"
+    },
+    {
+      "projectID": 1101263,
+      "fileID": 6399818,
+      "required": true,
+      "name": "ZBGT 0.16.1"
     }
   ]
 }

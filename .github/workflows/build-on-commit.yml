@@ -3,9 +3,8 @@ name: Build Client
 on:
   push:
     branches:
-      - 'master'
+      - "master"
   pull_request:
-
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
@@ -18,19 +17,17 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-
       - name: Checkout Ref
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - uses: dorny/paths-filter@v3
         id: changes
         with:
           filters: |
             manifest-template:
-              - 'tools/templates/manifest.json'  
+              - 'tools/templates/manifest.json'
 
       # Everything below runs only when the template changed
       - name: Setup Node.js 20
@@ -45,21 +42,43 @@ jobs:
         working-directory: tools
         run: npm ci
 
+      - name: Copy the manifest as temp
+        if: steps.changes.outputs.manifest-template == 'true'
+        run: cp manifest.json manifest.json.orig
+
       - name: Sync manifest
         if: steps.changes.outputs.manifest-template == 'true'
         working-directory: tools
         run: npm run a-sync-manifest
 
-      - name: Commit updated manifest
+      - name: Check if Manifest Changed
         if: steps.changes.outputs.manifest-template == 'true'
+        id: diff
+        run: |
+          if cmp -s manifest.json manifest.json.orig; then
+            echo "changed=false" >>"$GITHUB_OUTPUT"
+          else
+            echo "changed=true"  >>"$GITHUB_OUTPUT"
+          fi
+
+      - name: Bump Manifest ver
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: tools
+        run: npm run a-bump-manifest
+
+      - name: Remove Temp Manifest
+        if: steps.diff.outputs.changed == 'true'
+        run: rm manifest.json.orig
+
+      - name: Commit updated manifest
+        if: steps.diff.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'sync manifest.json from template'
-          file_pattern: 'tools/templates/manifest.json'
+          commit_message: "sync manifest.json from template"
           branch: ${{ github.head_ref || github.ref_name }}
-          commit_user_name: 'hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>'
-          commit_author: 'hog-management[bot]'
-          commit_user_email: '1048098+hog-management[bot]@users.noreply.github.com'
+          commit_author: "hog-management[bot] <1048098+hog-management[bot]@users.noreply.github.com>"
+          commit_user_name: "hog-management[bot]"
+          commit_user_email: "1048098+hog-management[bot]@users.noreply.github.com"
 
   build-pack:
     runs-on: ubuntu-latest
@@ -93,8 +112,3 @@ jobs:
           path: ./temp/build/client
           if-no-files-found: error
           compression-level: 9
-
-
-
-
-
